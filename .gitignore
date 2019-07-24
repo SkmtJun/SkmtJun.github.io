@@ -2,7 +2,7 @@
 Thumbs.db
 db.json
 *.log
-QuickOrder.txt
+QuickUpload.bat
 node_modules/
 public/
 .deploy*/
