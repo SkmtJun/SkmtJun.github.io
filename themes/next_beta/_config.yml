@@ -205,7 +205,7 @@ social:
 social_icons:
   enable: true
   icons_only: false
-  transition: true
+  transition: false
 
 # Blog rolls
 links_icon: link
