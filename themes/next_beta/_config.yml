@@ -156,7 +156,7 @@ menu:
   categories: /categories/ || th
   #archives: /archives/ || archive
   #schedule: /schedule/ || calendar
-  sitemap: /sitemap.xml || sitemap
+  #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
 
 # Enable / Disable menu icons / item badges.
@@ -205,7 +205,7 @@ Weibo: https://weibo.com/u/3844256440/ || weibo
 social_icons:
   enable: true
   icons_only: false
-  transition: false
+  transition: true
 
 # Blog rolls
 links_icon: link
@@ -220,7 +220,7 @@ avatar:
   # In theme directory (source/images): /images/avatar.gif
   # In site directory (source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  url: #/images/avatar.gif
+  url: /images/dice.jpg
   # If true, the avatar would be dispalyed in circle.
   rounded: false
   # If true, the avatar would be rotated with the cursor.
