@@ -192,7 +192,8 @@ site_state: true
 social:
   #GitHub: https://github.com/yourname || github
   #E-Mail: mailto:yourname@gmail.com || envelope
-  微博: https://weibo.com/u/3844256440/ || weibo
+  个人微博: https://www.weibo.com/u/3844256440 || weibo
+  社团微博: https://www.weibo.com/u/6722148364 || weibo
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -213,7 +214,7 @@ links_title: Links
 links_layout: block
 #links_layout: inline
 links:
-  #Title: http://example.com
+  Title: http://example.com
 
 # Sidebar Avatar
 avatar:
