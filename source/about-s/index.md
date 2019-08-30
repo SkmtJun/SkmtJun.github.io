@@ -102,7 +102,7 @@ date: 2019-08-30 14:36:45
 ----
 # 游戏经历
 
-部分可在我Steam主页查看。
+部分可在我[Steam主页](https://steamcommunity.com/profiles/76561198143500469/)查看。
 
 ## 深入游玩
 
