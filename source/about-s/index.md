@@ -6,9 +6,9 @@ date: 2019-08-30 14:36:45
 # 关于博客和本页面
 
 记录了我在平常写的一些东西，包括但不限于：
-- **脑洞练习/企划**——可在**分类**[**作品**](https://skmtjun.github.io/categories/%E4%BD%9C%E5%93%81/)内找到。这里也包含了一些随笔散文诗歌。
-- **阅读笔记**——可在**分类**[**笔记**](https://skmtjun.github.io/categories/%E7%AC%94%E8%AE%B0/)内找到。这里也包含了平常收集的零散知识。
-- **游戏测评/分析**——可在**分类**[**测评**](https://skmtjun.github.io/categories/%E6%B5%8B%E8%AF%84/)和[**分析**](https://skmtjun.github.io/categories/%E5%88%86%E6%9E%90/)内找到。
+- **脑洞练习/企划**——可在[**分类作品**](https://skmtjun.github.io/categories/%E4%BD%9C%E5%93%81/)内找到。这里也包含了一些随笔散文诗歌。
+- **阅读笔记**——可在[**分类笔记**](https://skmtjun.github.io/categories/%E7%AC%94%E8%AE%B0/)内找到。这里也包含了平常收集的零散知识。
+- **游戏测评/分析**——可在[**分类测评**](https://skmtjun.github.io/categories/%E6%B5%8B%E8%AF%84/)和[**分类分析**](https://skmtjun.github.io/categories/%E5%88%86%E6%9E%90/)内找到。
 
 下文会较详细地介绍本人，姑且算个人简历的强化版。S是Secret的意思（笑）。
 
@@ -38,6 +38,7 @@ date: 2019-08-30 14:36:45
 	- 文字冒险游戏剧本
 	- TRPG（COC和DND）剧本
 	- 世界观设定构成及相关文案
+	- （文字风格主要为日式轻文和各式说明文，新风格尝试中）
 - 游戏策划
 	- 关卡设计和数值设计
 	- 主持TRPG
@@ -46,7 +47,7 @@ date: 2019-08-30 14:36:45
 	- 熟悉使用Photoshop和SAI
 	- 基础手绘
 - 编程
-	- 了解C、JAVA
+	- 了解C、JAVA（本专业课程学习）
 - 语言
 	- 大学英语四级
 
@@ -176,6 +177,6 @@ date: 2019-08-30 14:36:45
 	- 这样写出好故事
 
 ----
-# 链接
+# 社交链接
 
 见左。
