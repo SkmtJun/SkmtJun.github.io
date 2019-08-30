@@ -6,9 +6,9 @@ date: 2019-08-30 14:36:45
 # 关于博客和本页面
 
 记录了我在平常写的一些东西，包括但不限于：
-- **脑洞练习/企划**——可在分类[作品](https://skmtjun.github.io/categories/%E4%BD%9C%E5%93%81/)内找到。这里也包含了一些随笔散文诗歌。
-- **阅读笔记**——可在分类[笔记](https://skmtjun.github.io/categories/%E7%AC%94%E8%AE%B0/)内找到。这里也包含了平常收集的零散知识。
-- **游戏测评/分析**——可在分类[测评](https://skmtjun.github.io/categories/%E6%B5%8B%E8%AF%84/)和[分析](https://skmtjun.github.io/categories/%E5%88%86%E6%9E%90/)内找到。
+- **脑洞练习/企划**——可在**分类**[**作品**](https://skmtjun.github.io/categories/%E4%BD%9C%E5%93%81/)内找到。这里也包含了一些随笔散文诗歌。
+- **阅读笔记**——可在**分类**[**笔记**](https://skmtjun.github.io/categories/%E7%AC%94%E8%AE%B0/)内找到。这里也包含了平常收集的零散知识。
+- **游戏测评/分析**——可在**分类**[**测评**](https://skmtjun.github.io/categories/%E6%B5%8B%E8%AF%84/)和[**分析**](https://skmtjun.github.io/categories/%E5%88%86%E6%9E%90/)内找到。
 
 下文会较详细地介绍本人，姑且算个人简历的强化版。S是Secret的意思（笑）。
 
