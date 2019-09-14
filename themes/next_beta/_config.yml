@@ -40,8 +40,8 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/shun16_w.png
-  medium: /images/shun32_w.png
+  small: /images/icon16.png
+  medium: /images/icon32.png
   apple_touch_icon: /images/icon180.png
   safari_pinned_tab: /images/icon.svg
   #android_manifest: /images/manifest.json
