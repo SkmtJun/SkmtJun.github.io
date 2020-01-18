@@ -192,8 +192,8 @@ site_state: true
 social:
   #GitHub: https://github.com/yourname || github
   #E-Mail: mailto:yourname@gmail.com || envelope
-  微博-个人: https://www.weibo.com/u/3844256440/ || weibo
-  微博-社团: https://www.weibo.com/u/6722148364/ || weibo
+  #微博-个人: https://www.weibo.com/u/3844256440/ || weibo
+  #微博-社团: https://www.weibo.com/u/6722148364/ || weibo
   Steam: https://steamcommunity.com/profiles/76561198143500469/ || steam
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
