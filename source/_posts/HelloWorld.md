@@ -6,7 +6,7 @@ tags:
 - 学习
 - 博客
 categories: 
-- 学习
+- 笔记
 ---
 
 # 第一篇blog
