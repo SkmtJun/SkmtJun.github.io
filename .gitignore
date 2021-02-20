@@ -2,7 +2,6 @@
 Thumbs.db
 db.json
 *.log
-*.bat
 node_modules/
 public/
 .deploy*/
