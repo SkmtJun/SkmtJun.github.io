@@ -27,7 +27,7 @@
 <meta property="og:site_name" content="SecluSong">
 <meta property="og:description" content="消除类游戏试解析基于《Bejeweled 3》案例的游戏设计分析 前言说到消除类游戏，能想到很多曾经或现在依然在活跃的游戏。我所知国内的包括《开心消消乐》《天天消一消》等三消游戏，仍是很多人kill time的首选。如果按照类型作联想，则会想到泡泡龙、扫雷、祖玛、俄罗斯方块、横竖三消这些细化分类（分类不一定准确）。 上文所言《开心消消乐》一类的三消游戏，其始祖就是美国宝开游戏（PopCap Gam">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://seclusong.xyz/image%5C%E6%B6%88%E9%99%A4%E7%B1%BB%E6%B8%B8%E6%88%8F%E8%AF%95%E8%A7%A3%E6%9E%90%5C%E5%AE%9D%E7%9F%B3%E4%BB%8B%E7%BB%8D.png">
+<meta property="og:image" content="https://seclusong.xyz/image/%E6%B6%88%E9%99%A4%E7%B1%BB%E6%B8%B8%E6%88%8F%E8%AF%95%E8%A7%A3%E6%9E%90/%E5%AE%9D%E7%9F%B3%E4%BB%8B%E7%BB%8D.png">
 <meta property="article:published_time" content="2018-04-17T04:47:09.000Z">
 <meta property="article:modified_time" content="2018-04-17T04:47:09.000Z">
 <meta property="article:author" content="顺风幽SecluSong">
@@ -36,7 +36,7 @@
 <meta property="article:tag" content="游戏案例分析">
 <meta property="article:tag" content="消除类游戏">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://seclusong.xyz/image%5C%E6%B6%88%E9%99%A4%E7%B1%BB%E6%B8%B8%E6%88%8F%E8%AF%95%E8%A7%A3%E6%9E%90%5C%E5%AE%9D%E7%9F%B3%E4%BB%8B%E7%BB%8D.png">
+<meta name="twitter:image" content="https://seclusong.xyz/image/%E6%B6%88%E9%99%A4%E7%B1%BB%E6%B8%B8%E6%88%8F%E8%AF%95%E8%A7%A3%E6%9E%90/%E5%AE%9D%E7%9F%B3%E4%BB%8B%E7%BB%8D.png">
 
 <link rel="canonical" href="https://seclusong.xyz/2018/04/17/%E6%B6%88%E9%99%A4%E7%B1%BB%E6%B8%B8%E6%88%8F%E8%AF%95%E8%A7%A3%E6%9E%90/">
 
@@ -254,12 +254,12 @@
 <span id="more"></span>
 <h2 id="核心玩法"><a href="#核心玩法" class="headerlink" title="核心玩法"></a>核心玩法</h2><p>《宝石迷阵3》（后称《宝3》）的核心玩法直接继承自初代，其灵感来源由于个人能力而不可考，在此只作简单分析。</p>
 <h3 id="基本玩法"><a href="#基本玩法" class="headerlink" title="基本玩法"></a>基本玩法</h3><p>《宝3》的游戏场景为一8*8的二维网格，上面遍布<strong>红橙黄绿蓝紫白</strong>七种颜色的宝石。玩家可以互换任意横竖方向上临近的两个宝石，但必须使其在<strong>互换</strong>后能使某<strong>三个相同颜色的宝石</strong>在竖向或横向排成一列，称为<strong>配对</strong>。之后那三个宝石就会<strong>消失</strong>，竖向上位于上面的宝石会落下填充空位（顶部会刷新出新的宝石）。<strong>如果达不成配对条件，则不会互换。</strong>换言之，玩家的每一步操作都必须能够达成配对。</p>
-<p>![经典模式 第四关开始](image\消除类游戏试解析\经典模式 第四关开始.jpg)</p>
+<p>![经典模式 第四关开始](image/消除类游戏试解析/经典模式 第四关开始.jpg)</p>
 <h3 id="扩展玩法：消除"><a href="#扩展玩法：消除" class="headerlink" title="扩展玩法：消除"></a>扩展玩法：消除</h3><p>而在实际游戏中，并不只有一次将三个宝石配对的情况，所以将针对这点进行玩法扩展。</p>
 <p>四个配对：被玩家操作的那个宝石变成相同颜色的<strong>爆炸宝石</strong>（被消除时消除以自己为中心的3*3范围的宝石）。</p>
 <p>横竖方向同时配对：被玩家操作的那个宝石变成相同颜色的<strong>闪电宝石</strong>（被消除时消除当前所在横向和纵向所有宝石）。</p>
 <p>五个配对：被玩家操作的那个宝石变成没有颜色的<strong>超能魔方</strong>（被互换时消除所有特定颜色的宝石，颜色由被互换时的另一个宝石决定；特别的，当两个超能魔方互换时将消除所有宝石）。</p>
-<p><img src="/image%5C%E6%B6%88%E9%99%A4%E7%B1%BB%E6%B8%B8%E6%88%8F%E8%AF%95%E8%A7%A3%E6%9E%90%5C%E5%AE%9D%E7%9F%B3%E4%BB%8B%E7%BB%8D.png" alt="各类特殊宝石"></p>
+<p><img src="/image/%E6%B6%88%E9%99%A4%E7%B1%BB%E6%B8%B8%E6%88%8F%E8%AF%95%E8%A7%A3%E6%9E%90/%E5%AE%9D%E7%9F%B3%E4%BB%8B%E7%BB%8D.png" alt="各类特殊宝石"></p>
 <p>那之外，当六个宝石配对时，将产生<strong>超新星宝石</strong>，并立刻消除以其为中心3*3及其所有同列同行的宝石。</p>
 <h3 id="扩展玩法：目标"><a href="#扩展玩法：目标" class="headerlink" title="扩展玩法：目标"></a>扩展玩法：目标</h3><p>有了基本玩法之后，需要给玩家一个目标以继续游戏。《宝3》有很多有趣的模式（玩法），其目标设置大致可分为数量消除和位置消除。</p>
 <p>数量消除要求在一定限制中消除足量的（特定）宝石，而位置消除要求在场景指定区域消除普通宝石或者特殊宝石。</p>
