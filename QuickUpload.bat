@@ -5,7 +5,7 @@ call hexo d
 
 @echo ********************
 @echo.
-@echo       Blog已部署
+@echo      Blog已部署
 @echo.
 @echo ********************
 
