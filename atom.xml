@@ -147,11 +147,11 @@
     <category term="笔记" scheme="https://seclusong.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="CC协议" scheme="https://seclusong.xyz/tags/CC%E5%8D%8F%E8%AE%AE/"/>
-    
     <category term="字体" scheme="https://seclusong.xyz/tags/%E5%AD%97%E4%BD%93/"/>
     
     <category term="平面设计" scheme="https://seclusong.xyz/tags/%E5%B9%B3%E9%9D%A2%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="CC协议" scheme="https://seclusong.xyz/tags/CC%E5%8D%8F%E8%AE%AE/"/>
     
   </entry>
   
@@ -172,15 +172,15 @@
     <category term="笔记" scheme="https://seclusong.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="字体" scheme="https://seclusong.xyz/tags/%E5%AD%97%E4%BD%93/"/>
-    
-    <category term="平面设计" scheme="https://seclusong.xyz/tags/%E5%B9%B3%E9%9D%A2%E8%AE%BE%E8%AE%A1/"/>
-    
     <category term="UI" scheme="https://seclusong.xyz/tags/UI/"/>
     
     <category term="UX" scheme="https://seclusong.xyz/tags/UX/"/>
     
     <category term="翻译" scheme="https://seclusong.xyz/tags/%E7%BF%BB%E8%AF%91/"/>
+    
+    <category term="字体" scheme="https://seclusong.xyz/tags/%E5%AD%97%E4%BD%93/"/>
+    
+    <category term="平面设计" scheme="https://seclusong.xyz/tags/%E5%B9%B3%E9%9D%A2%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
