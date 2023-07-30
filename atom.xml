@@ -6,7 +6,7 @@
   <link href="https://seclusong.xyz/atom.xml" rel="self"/>
   
   <link href="https://seclusong.xyz/"/>
-  <updated>2023-04-22T07:31:21.000Z</updated>
+  <updated>2023-07-30T12:55:03.000Z</updated>
   <id>https://seclusong.xyz/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Minecraft养老服务器构想</title>
+    <link href="https://seclusong.xyz/2023/07/30/2023-07-30-%E5%91%A8%E6%97%A5-20-55-01MC/"/>
+    <id>https://seclusong.xyz/2023/07/30/2023-07-30-%E5%91%A8%E6%97%A5-20-55-01MC/</id>
+    <published>2023-07-30T12:55:03.000Z</published>
+    <updated>2023-07-30T12:55:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Minecraft养老服设计构想"><a href="#Minecraft养老服设计构想" class="headerlink" title="Minecraft养老服设计构想"></a>Minecraft养老服设计构想</h1><p>我有很多坑（初心），MC服务器就是一个。</p><p>终究还是希望能有一个一直在运营的，可以回来休息娱乐的地方。 </p><span id="more"></span><hr><h2 id="基本理念"><a href="#基本理念" class="headerlink" title="基本理念"></a>基本理念</h2><p><em><strong>养老<br>　　　科技<br>　　　　　　RPG</strong></em></p><p>当然其实这些主题多少是有些重合又有些矛盾的，终究只是我个人兴趣与情怀所在的堆砌。</p><h3 id="零到一：养老"><a href="#零到一：养老" class="headerlink" title="零到一：养老"></a>零到一：<strong>养老</strong></h3><p>这个服务器/整合包，首先，得是休闲养老的。</p><p>这意味着它不会设立任何目标，不该有什么竞争压力。朋友们在久违地打开客户端进入游戏之后，能很快地重新捡起来，能怀念曾经在里面投入的时间与精力。</p><p>我们需要<strong>更多的作物</strong>，<strong>更多的建筑装饰</strong>，让<strong>种田</strong>和<strong>建筑</strong>可以完全有一套自己的玩法路线。</p><p>不过我不喜欢使用原版的生电玩法，它利用了大量的<del>BUG</del>特性，很破坏游戏直观呈现的逻辑。所以我们也需要一套<strong>经济/商店/交易系统</strong>来破坏它——生电能解放的生产力，我希望插件与mod的组合也可以实现。让建筑和种田选手不再有生存和探索，尤其是挖掘建材的压力。</p><h3 id="两个主题：科技"><a href="#两个主题：科技" class="headerlink" title="两个主题：科技"></a>两个主题：<strong>科技</strong></h3><p><strong>科学</strong> × <strong>魔法</strong></p><p>这是我玩MCmod一直以来执念的主题。让<strong>科技风的科技mod</strong>和<strong>魔幻风的科技mod</strong>同时存在，相互作用，这是我做MC整合的趣味所在。</p><p>这些mod会带来新的探索、新的生产力和新的建筑艺术/RPG成长。</p><p>当然，上一节提到的经济系统可能会破坏一部分科技mod的需求，尤其是生产力科技提升的部分。但这也是我的设计意图所在：终究这是一个养老服，休闲与艺术才是它的始与结。</p><h3 id="第三个维度：RPG"><a href="#第三个维度：RPG" class="headerlink" title="第三个维度：RPG"></a>第三个维度：<strong>RPG</strong></h3><p>这是用来回答这个问题的：用什么来为投入保底？</p><p>这终究是个生存服，而不会改变的就是方块和物品依然是身外之物。一切积蓄依然有可能在一次炸服或者掉入岩浆时毁于一旦。</p><p><strong>RPG系统</strong>不是为了补偿意外，而是为了让挫败成为再次站起来的动力。让投入积累在角色本身，而不仅仅是那些物品和方块上。</p><p>当然，也是为了能最终为另一群渴望冒险的玩家一个可以投入的玩法路线。</p><hr><h2 id="结构方案设计"><a href="#结构方案设计" class="headerlink" title="结构方案设计"></a>结构方案设计</h2><ul><li>游戏版本：<strong>1.18往后</strong><ul><li><em>当初我就很欣赏洞穴更新带来的整个地图在高度上的扩展，会为将来的mod带来更大的发挥空间。遗憾的是似乎新的地图生成算法杀死了很多mod的后续更新的可能。但我依然选择了这之后的版本，我心怀希望。</em></li><li>替代：1.12.2<br></li></ul></li><li>服务端选择：（仍需调查，使用mod+插件服）<br></li><li>服务器配置：<ul><li>作为新晋垃圾佬，我自己解决。唯一问题在于我自家服务器的上行速度很有限。<br></li></ul></li><li><strong>目标实现</strong>：<ul><li>多世界实现一定程度的玩法分离，进一步希望可选择性的资源共通<ul><li>主城世界、家园世界、生存/冒险世界等等</li></ul></li><li>经济、皮肤、签到等功能</li><li>性能优化、自动备份</li><li>mod物品管理</li><li>RPG插件</li><li>各类权限管理</li><li>增加风味/趣味的mod</li></ul></li></ul><hr><h2 id="具体mod-插件选择"><a href="#具体mod-插件选择" class="headerlink" title="具体mod/插件选择"></a>具体mod/插件选择</h2><p>（待补充）</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Minecraft养老服设计构想&quot;&gt;&lt;a href=&quot;#Minecraft养老服设计构想&quot; class=&quot;headerlink&quot; title=&quot;Minecraft养老服设计构想&quot;&gt;&lt;/a&gt;Minecraft养老服设计构想&lt;/h1&gt;&lt;p&gt;我有很多坑（初心），MC服务器就是一个。&lt;/p&gt;
+&lt;p&gt;终究还是希望能有一个一直在运营的，可以回来休息娱乐的地方。 &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="计划" scheme="https://seclusong.xyz/categories/%E8%AE%A1%E5%88%92/"/>
+    
+    
+    <category term="网络" scheme="https://seclusong.xyz/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="Minecraft" scheme="https://seclusong.xyz/tags/Minecraft/"/>
+    
+    <category term="服务器" scheme="https://seclusong.xyz/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>Stable Diffusion入门笔记</title>
@@ -358,9 +384,9 @@
     
     <category term="游戏设计" scheme="https://seclusong.xyz/tags/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="豆知识" scheme="https://seclusong.xyz/tags/%E8%B1%86%E7%9F%A5%E8%AF%86/"/>
-    
     <category term="4X" scheme="https://seclusong.xyz/tags/4X/"/>
+    
+    <category term="豆知识" scheme="https://seclusong.xyz/tags/%E8%B1%86%E7%9F%A5%E8%AF%86/"/>
     
     <category term="科幻" scheme="https://seclusong.xyz/tags/%E7%A7%91%E5%B9%BB/"/>
     
@@ -558,34 +584,6 @@
     
     
     <category term="角色设定" scheme="https://seclusong.xyz/tags/%E8%A7%92%E8%89%B2%E8%AE%BE%E5%AE%9A/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【一周的鸽 vol.5】三月第1周</title>
-    <link href="https://seclusong.xyz/2020/03/01/2020-02-22-11-45-01%E5%91%A8%E6%95%B4%E7%90%86/"/>
-    <id>https://seclusong.xyz/2020/03/01/2020-02-22-11-45-01%E5%91%A8%E6%95%B4%E7%90%86/</id>
-    <published>2020-03-01T06:45:04.000Z</published>
-    <updated>2020-03-01T06:45:04.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="vol-5-翻译完论文我现在只想玩博德之门3"><a href="#vol-5-翻译完论文我现在只想玩博德之门3" class="headerlink" title="vol.5 翻译完论文我现在只想玩博德之门3"></a>vol.5 翻译完论文我现在只想玩博德之门3</h1><p>给这个系列改个名，强迫自己周更。每个月的第几周是按照第几个周日来算的。</p><p>本期导视：</p><ul><li>几个名词</li><li>对博德之门3先行演示的一点看法</li></ul><span id="more"></span><hr><h2 id="一些名词"><a href="#一些名词" class="headerlink" title="一些名词"></a>一些名词</h2><ul><li><strong>黑天鹅效应</strong>。指极不可能发生，实际上却又发生的事件。<ul><li>一般具有三个特点：<ul><li>意外突发。</li><li>影响重大。</li><li>因为令人震惊，人们会为此编造理由试图解释。</li></ul></li><li>典故：在18世纪欧洲人发现澳洲之前，由于他们所见过的天鹅都是白色的，所以在当时欧洲人眼中，天鹅只有白色的品种。直到欧洲人发现了澳洲，看到当地的黑天鹅后，人们认识天鹅的视野才打开，只需一个黑天鹅的观察结果就能使从无数次对白天鹅的观察中推理出的一般结论失效，引起了人们对认知的反思——以往认为对的不等于以后总是对的。“黑天鹅”隐喻那些意外事件：它们极为罕见，在通常的预期之外，在发生前，没有任何前例可以证明，但一旦发生，就会产生极端的影响。</li><li>著名事件包括911事件等。</li><li>出处：<a href="https://zh.wikipedia.org/wiki/%E9%BB%91%E5%A4%A9%E9%B5%9D%E6%95%88%E6%87%89">黑天鹅效应 - 维基百科</a></li></ul></li></ul><p>希望人们能更理智地看待这些事件。毕竟，个人能认知和理解到的事物总是有限的。</p><ul><li><strong>感数Subitize</strong>。指人们对于1到4个左右的物体可以直接准确感知到其数量。也可译为“数感，数量感知，认数”。<ul><li>不及物动词。</li><li>与之相对的就是<strong>计数Count</strong>，指一个一个累加得到数量。</li><li><em>V</em> to perceive the number of (a group of items) at a glance and without counting 直感 [psychol]——柯林斯英汉双解大词典</li></ul></li></ul><p>在我翻译的论文中提到，那些经常玩游戏的人，能数感到的数量会比普通人多一点。玩游戏有好处，确实。</p><ul><li><strong>非模态Amodal</strong>。指人们可以通过局部认知到整体。也可直接译为“模态”。</li></ul><p>又去查了几次，在其他领域也有“变形”等意思，这个暂且不作深入了。</p><hr><h2 id="拉瑞安的博德3先行演示"><a href="#拉瑞安的博德3先行演示" class="headerlink" title="拉瑞安的博德3先行演示"></a>拉瑞安的博德3先行演示</h2><p><a href="https://www.bilibili.com/video/av92340893">90%命中：Miss！《博德之门3》实机演示公开_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</a>，演示视频由机核网提供。</p><p>看这CG！看这光！看这水！看这大触手飞船和小触手夺心魔！（蠕虫恐惧的选手请自觉回避）</p><p>目前来看更像是一个DND5e规则下的神界原罪3。当然我们有理由相信拉瑞安会在最后成品的时候把神界原罪的要素剔除干净的。</p><p>拉瑞安用多个技能来表示5e里的各类动作，不过目前只能看到疾走和战技（推撞）。另外跳跃也被设置成了技能，消耗了移动力是当然的，但是消耗了附赠动作让我有些不解。另外，从多高的地方跳下也不会掉血。推撞动作击退的距离相当远，但在桌游中只能退离5英尺。</p><p>角色可以在有限的高度爬上爬下，更大的高低差则可以使用跳跃。堆箱子也有了意义。</p><p>初见的怪物是我们熟悉的噬脑怪，规则书里它们还挺强的，这里变成小怪了。而且还变大了（书中只是微型生物）。</p><p>战斗中召唤出的法师之手被视作召唤物（本应是无敌的，也没有生命值），而且还被敌人打死了。这过于可笑，相信拉瑞安之后会对其修正。顺便法师之手的推撞能力也让我有些迷惑：这距离是不是有点太远了？</p><p>然后就是喜闻乐见的“我要脱下我的靴子丢向它”。靴子被当作临时武器丢出去，造成1d4+敏捷调整值的伤害。然后每次都能砸4点左右，那你怎么还能90%命中miss呢，主持人?</p><p>可以在火上为弓附魔？可以理解为点燃箭头，不知道之后会怎么圆上。</p><p>攻击的大成功会在屏幕上显示一个金色的20，此外其他检定也会有一个掷骰动画。这很桌游，我很爽，莫多莫多阿里嘎多。</p><p>长休会在地图某处扎营（这让我想起了ff15），然后主角和NPC队友聊天，然后自言自语。这种角色塑造确实挺神界原罪的。</p><p>主持人在进入场景之后第一件事就是卸除满地骷髅的武装，不得不说真是太懂了。</p><p>翻车率极高，角色很容易就死了，这简直太还原DND的初期了。敌人甚至会对濒死的角色补刀，太狠了。</p><p>这次我见到最有趣的设计就是即时制和回合制的切换。通过按钮切换，在敌人转身的瞬间停住时间，然后偷偷溜过去。这很回合制，我觉得很不错。</p><p>这正好引出我在贴吧看见的论战。博德12的老玩家们对拉瑞安的回合制十分不满，认为这丢掉了半即时制（即时间流逝中可以随时暂停）的传统精髓，认为这只是一个神界原罪2的换皮游戏。新玩家们则认为半即时制早就该死了，近年来成功的CRPG只有神界原罪一家。回合制是大势所趋，更何况5e本来就是回合制游戏。</p><p>对此，我不发表看法（笑）。</p><p>不过我相信拉瑞安能把博德之门3做好，他们有这个能力。虽然演示最后以恶性BUG结尾了。</p><p>再说一遍，玩不到博德之门3我要死了。</p>]]></content>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;vol-5-翻译完论文我现在只想玩博德之门3&quot;&gt;&lt;a href=&quot;#vol-5-翻译完论文我现在只想玩博德之门3&quot; class=&quot;headerlink&quot; title=&quot;vol.5 翻译完论文我现在只想玩博德之门3&quot;&gt;&lt;/a&gt;vol.5 翻译完论文我现在只想玩博德之门3&lt;/h1&gt;&lt;p&gt;给这个系列改个名，强迫自己周更。每个月的第几周是按照第几个周日来算的。&lt;/p&gt;
-&lt;p&gt;本期导视：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;几个名词&lt;/li&gt;
-&lt;li&gt;对博德之门3先行演示的一点看法&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://seclusong.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="豆知识" scheme="https://seclusong.xyz/tags/%E8%B1%86%E7%9F%A5%E8%AF%86/"/>
-    
-    <category term="杂谈" scheme="https://seclusong.xyz/tags/%E6%9D%82%E8%B0%88/"/>
     
   </entry>
   
