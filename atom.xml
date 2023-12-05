@@ -6,7 +6,7 @@
   <link href="https://seclusong.xyz/atom.xml" rel="self"/>
   
   <link href="https://seclusong.xyz/"/>
-  <updated>2023-07-30T12:55:03.000Z</updated>
+  <updated>2023-12-05T01:09:49.000Z</updated>
   <id>https://seclusong.xyz/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OpenSCENARIO笔记</title>
+    <link href="https://seclusong.xyz/2023/12/05/2023-12-05-%E5%91%A8%E4%BA%8C-9-09-47OSC%E7%AC%94%E8%AE%B0/"/>
+    <id>https://seclusong.xyz/2023/12/05/2023-12-05-%E5%91%A8%E4%BA%8C-9-09-47OSC%E7%AC%94%E8%AE%B0/</id>
+    <published>2023-12-05T01:09:49.000Z</published>
+    <updated>2023-12-05T01:09:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="OpenScenario笔记"><a href="#OpenScenario笔记" class="headerlink" title="OpenScenario笔记"></a>OpenScenario笔记</h1><p>为了实现自动驾驶场景设计的标准化，德国自动化及测量系统标准协会（ASAM）推出了OpenX系列标准。</p><p>例如OpenDrive标准用于描述场景静态信息的路网，OpenCRG描述路面信息，而OpenSCENARIO则是用来描述动态场景的。</p><p>这里会对学习到的OpenSCENARIO 1.0（下称OSC）相关内容进行记录。</p><p>部分翻译根据个人理解做了调整，一切以英文为准（特别的，*/概念名称*是我认为相对值得一提但没有采用的官方文档翻译；更特别的，这官方中文真够烂的）。</p><p>参考：</p><ul><li><a href="https://zhuanlan.zhihu.com/p/168404308">51WORLD相关资料</a></li><li><a href="https://www.asam.net/index.php?eID=dumpFile&t=f&f=3769&token=92f25a7707bead3ac650df003bfcc89ab945287b">OSC 1.0官方中文User Guide</a></li><li><a href="https://www.asam.net/static_downloads/ASAM_OpenSCENARIO_V1.2.0_Model_Documentation/modelDocumentation/">OSC 1.2官方文档</a></li><li><a href="https://www.asam.net/index.php?eID=dumpFile&t=f&f=3768&token=66f6524fbfcdb16cfb89aae7b6ad6c82cfc2c7f2">OpenDREIVE 1.6官方中文文档</a><span id="more"></span></li></ul><hr><h1 id="OCS场景基本概念-方案"><a href="#OCS场景基本概念-方案" class="headerlink" title="OCS场景基本概念/方案"></a>OCS场景基本概念/<em>方案</em></h1><p>场景的基础概念是“谁，在哪里，做什么”，即<strong>实体</strong>在<strong>路网</strong>上根据<strong>故事板</strong>定义的一组指令进行<strong>交互</strong>。</p><p>场景定义的五个基本概念（Concept*/方案*）是：</p><blockquote><ul><li><strong>Entity</strong>：<strong>实体</strong>，车辆行人等参与者。</li><li><strong>RoadNetwork</strong>：<strong>路网</strong>，静态的场景元素，包括OpenDRIVE、交通信号、环境模型等。</li><li><strong>StroyBoard</strong>：<em><em>故事板</em>/场景剧本</em>**，（完整的动态描述。</li><li>另有两个内容：<strong>ParameterDeclaration参数声明</strong>和<strong>Catalog目录</strong>，将在将来用到时提及。</li></ul></blockquote><h1 id="场景构成"><a href="#场景构成" class="headerlink" title="场景构成"></a>场景构成</h1><p>OSC通过StoryBoard描述整个场景的完整内容，它有下述构成：</p><blockquote><ul><li><strong>Story</strong>：故事，即最高层次的场景描述单位；至少1个。<ul><li><strong>Act</strong>：幕，包含了触发开始条件（和触发结束条件，可选），只有触发时下述内容才会执行；至少1个。<ul><li><strong>ManeuverGroup</strong>：操作组，明确交互主体和交互动作，即连接Entity和Maneuver；至少1个。<ul><li><strong>Actors</strong>：角色，即被影响的实体。<ul><li><strong>EntityRef</strong>：被引用实体，即被影响的实体列表；至少0个（因为操作组有可能并不影响实体）。</li></ul></li><li><strong>CatalogReference</strong>：可被重复使用的内容；至少0个。</li><li><strong>Maneuver</strong>：操作，即事件组，包含若干事件；至少0个。<ul><li><strong>Event</strong>：事件，有触发开始条件；至少1个。<ul><li><strong>Action</strong>：动作，与场景产生交互，例如改变天气、改变设置、定位车辆；至少1个。</li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></blockquote><p>以上的所有内容都被称为<strong>StoryBoardElement</strong>（故事板元素/<em>场景剧本要素</em>）。</p><h1 id="故事板元素状态及其状态机"><a href="#故事板元素状态及其状态机" class="headerlink" title="故事板元素状态及其状态机"></a>故事板元素状态及其状态机</h1><p>StoryBoardElement拥有<strong>3</strong>种状态，即为StoryBoardElementState（故事板元素状态）：</p><ul><li><strong>StandBy</strong>（standByState）：待机状态</li><li><strong>Running</strong>（runningState）：运行状态<ul><li>不同的StoryBoardElement会在不同情况时结束这一状态，具体可见官方文档</li></ul></li><li><strong>Complete</strong>（completeState）：完成状态<ul><li>值得一提，如果要重置回待机状态，需要其父级StoryBoardElement重新启动</li></ul></li></ul><p>对于在这3种状态中切换，有4种Transition（转换）：</p><ul><li><strong>Start（startTransition）</strong>：启动转换</li><li><strong>End（endTransition）</strong>：结束转换<ul><li>当这个Transition返回否定结果时，会回到StandBy，否则进入Complete</li></ul></li><li><strong>Stop（stopTransition）</strong>：停止转换</li><li><strong>Skip</strong>：跳过</li></ul><h1 id="Entity简介"><a href="#Entity简介" class="headerlink" title="Entity简介"></a>Entity简介</h1><p>Entity有两类：</p><ul><li>车辆行人等（根据类型不同拥有不同的Property属性）</li><li>其他物体（与OpenDRIVE中的对象类相同）</li></ul><p>Entity默认拥有一个<strong>Controller</strong>（控制器），用于接收来自控制算法之类的指令。</p><p>此外，Entity的<strong>实例</strong>会被分为两种：</p><ul><li>某一单个Entity实例</li><li>被称为<strong>EntitySelection</strong>的一组Entity</li></ul><h2 id="EntitySelection被选实体"><a href="#EntitySelection被选实体" class="headerlink" title="EntitySelection被选实体"></a>EntitySelection被选实体</h2><p>EntitySelection是将场景中已经存在的若干Entity进行快速分组。</p><p>这样分组，是为了能一同在其他地方被引用（例如批量生成Entity实例，并执行相同的动作）。</p><h1 id="Trigger触发器与Condition条件"><a href="#Trigger触发器与Condition条件" class="headerlink" title="Trigger触发器与Condition条件"></a>Trigger触发器与Condition条件</h1><p>在Act以及Event中，都需要使用这两种主要的Trigger（触发器）来控制流程的启停：<strong>StartTrigger</strong>和<strong>StopTrigger</strong>。<br>StartTrigger将故事板元素从standByState切换到runningState；而StopTrigger将其从其他状态（待机或运行）切换到completeState。</p><p>一个Trigger的结果是一个T/F值，这是由它所含有的<strong>Condition</strong>（条件）以逻辑运算共同决定的。</p><p>为此，OSC将Condition的逻辑运算设计成这样：</p><ol><li>①若干Condition关联成为一个<strong>ConditionGroup</strong>（条件组）；ConditionGroup的结果为所有Condition结果之<strong>和/AND</strong>。</li><li>②若干ConditionGroup一同放入一个Trigger中；Trigger的结果为所有ConditionGroup结果之<strong>或/OR</strong>。</li></ol><h2 id="有关StartTrigger"><a href="#有关StartTrigger" class="headerlink" title="有关StartTrigger"></a>有关StartTrigger</h2><p>拥有StartTrigger的故事板元素：</p><ul><li>Act</li><li>Event</li></ul><p>没有StartTrigger的故事板元素，例如ManeuverGroup和Maneuver，它们会继承父级的StartTrigger，也就是从Act中继承；具体表现也就是当Act启动后，其底下的ManeuverGroup都会自动启动。</p><p>但是，如果拥有自己的StartTrigger，那它们的启动就要满足它们自己的Condition；而如果它们的父级Act不在runningState（运行状态），则不能启动，这是不言自明的。</p><p>此外，Story也不需要startTrigger，毕竟在仿真启动时它就自然被启动了。</p><h2 id="有关StopTrigger"><a href="#有关StopTrigger" class="headerlink" title="有关StopTrigger"></a>有关StopTrigger</h2><p>拥有StopTrigger的故事板元素：</p><ul><li>Story</li><li>Act</li></ul><p>同StartTrigger，其他故事板元素会继承父级的StopTrigger；但有所不同的是，一旦父级故事板元素停止了（进入completeState），无论自己有没有StartTrigger，它底下的所有故事板元素同样都要立刻停止。</p><h2 id="Condition简介"><a href="#Condition简介" class="headerlink" title="Condition简介"></a>Condition简介</h2><h1 id="操作、事件与动作"><a href="#操作、事件与动作" class="headerlink" title="操作、事件与动作"></a>操作、事件与动作</h1><p>正如上文所述，ManeuverGroup主要包含Actors和Maneuver这两部分。前者决定哪些Entity会被影响，而后者描述具体是什么Action影响（以及是怎么被触发Event的）。</p><h1 id="动作"><a href="#动作" class="headerlink" title="动作"></a>动作</h1><p>对于Action有以下<strong>3</strong>种分类，具体可见官方文档：</p><ul><li>PrivateAction：专属动作，必须被分配给Entity实例，一般用于描述车辆运动。</li><li>GloabalAction：全局动作，用于修改场景内容，包括改变环境、增删Entity等。</li><li>UserDefinedAction：用户自定义动作，实际包含在上述两者中。</li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;OpenScenario笔记&quot;&gt;&lt;a href=&quot;#OpenScenario笔记&quot; class=&quot;headerlink&quot; title=&quot;OpenScenario笔记&quot;&gt;&lt;/a&gt;OpenScenario笔记&lt;/h1&gt;&lt;p&gt;为了实现自动驾驶场景设计的标准化，德国自动化及测量系统标准协会（ASAM）推出了OpenX系列标准。&lt;/p&gt;
+&lt;p&gt;例如OpenDrive标准用于描述场景静态信息的路网，OpenCRG描述路面信息，而OpenSCENARIO则是用来描述动态场景的。&lt;/p&gt;
+&lt;p&gt;这里会对学习到的OpenSCENARIO 1.0（下称OSC）相关内容进行记录。&lt;/p&gt;
+&lt;p&gt;部分翻译根据个人理解做了调整，一切以英文为准（特别的，*/概念名称*是我认为相对值得一提但没有采用的官方文档翻译；更特别的，这官方中文真够烂的）。&lt;/p&gt;
+&lt;p&gt;参考：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/168404308&quot;&gt;51WORLD相关资料&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.asam.net/index.php?eID=dumpFile&amp;t=f&amp;f=3769&amp;token=92f25a7707bead3ac650df003bfcc89ab945287b&quot;&gt;OSC 1.0官方中文User Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.asam.net/static_downloads/ASAM_OpenSCENARIO_V1.2.0_Model_Documentation/modelDocumentation/&quot;&gt;OSC 1.2官方文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.asam.net/index.php?eID=dumpFile&amp;t=f&amp;f=3768&amp;token=66f6524fbfcdb16cfb89aae7b6ad6c82cfc2c7f2&quot;&gt;OpenDREIVE 1.6官方中文文档&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://seclusong.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="OpenSCENARIO" scheme="https://seclusong.xyz/tags/OpenSCENARIO/"/>
+    
+    <category term="自动驾驶" scheme="https://seclusong.xyz/tags/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>Minecraft养老服务器构想</title>
@@ -560,30 +592,6 @@
     <category term="持续更新" scheme="https://seclusong.xyz/tags/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/"/>
     
     <category term="Unity" scheme="https://seclusong.xyz/tags/Unity/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【人设】人工智能：神秘的访客先生</title>
-    <link href="https://seclusong.xyz/2020/03/06/2020-03-06-20-57-15%E4%BA%BA%E8%AE%BE/"/>
-    <id>https://seclusong.xyz/2020/03/06/2020-03-06-20-57-15%E4%BA%BA%E8%AE%BE/</id>
-    <published>2020-03-06T12:57:21.000Z</published>
-    <updated>2020-03-06T12:57:21.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="神秘的访客先生"><a href="#神秘的访客先生" class="headerlink" title="神秘的访客先生"></a>神秘的访客先生</h1><p><em>人设练习-赛博时代的男性</em></p><h2 id="印象文本"><a href="#印象文本" class="headerlink" title="印象文本"></a>印象文本</h2><p>我头一次看到访客先生的时候，他正盯着花园里的紫罗兰看得入神。他左手抓住圆帽，把西服外套脱下来搭在臂弯，脚边放着一个笨重的旅行箱。<br>在这个战争时代像这样旅行的智能们并不少见，但还从未有人来到过这个穷乡僻壤。有什么事情才来这里的呢？是要拜访我家夫人吗？可惜她这几天都不在啊，这位先生要白跑一趟了。<br>他看起来是个稳重的绅士，一定经常出入重要的场所吧，是个成功人士呢。但在我搭话的时候，他却被吓得栽进了花园，看起来不是很擅长和人相处呢。这点和我有点像，真是有趣的访客先生。<br>好，那以后就叫他“访客先生”了。</p><span id="more"></span><h2 id="人设：Omega-01"><a href="#人设：Omega-01" class="headerlink" title="人设：Omega-01"></a>人设：Omega-01</h2><p><strong>称呼：访客先生（前期）、刺客先生（结局）、Omega-01（代号/本名）</strong></p><p><strong>体型：</strong><br>身高1.79m。作为电子生命，访客先生没有体重，数据量约为65.7EB（1EB=10^20TB）。</p><p><strong>标签：</strong></p><ul><li>电子生命——以数据和程序的形式存在于电子世界，所以思维方式和人类不太一样。他在权限内可以一定程度上改变自己和世界，包括替换人格等。</li><li>冷血兵器——他被告知自己的人格和随之产生的所谓感情只是数据模拟的结果，这一切都是为了能够更好的完成任务。</li><li>临危受命——虽然作为尖端武器已经被训练过了，但他依然有经验不足的地方。</li><li>不善社交——为了减少负担只带了武器程序，因此没有带上可用的替换人格，所以遇到社交场合往往会不知所措。</li></ul><p><strong>形象：</strong><br>红发的干练青年。身穿一套完整的西装（圆帽衬衫领带外套背带裤皮鞋等），提着一个旅行箱，一副风尘仆仆的旅行者模样。</p><p><strong>背景：</strong><br>本身是欧米茄利亚Omegalia新一代的电子战兵器，使用新技术将数据量压缩到当代智能平均水平的80%，并特化了对大型防火墙的战斗能力（这些都塞在他的旅行箱中），为此牺牲了部分对非战斗情况的应对策略。<br>作为电子战的最终兵器被开发出来，派往这里完成他最初的使命——摧毁阿尔法利亚Alphalia的算力核心“紫罗兰女王”。如果行动成功，欧国就能一转战争中的劣势，并一路取得最后的胜利。<br>因为战况紧急，没有经过完备地训练就被扔了出来完成任务。虽然战斗方面没有什么问题，但一旦遇到需要社交的情况，就会因为没有参考数据而陷入混乱；偶尔运气不错可以找到参考，却因为节约空间没有带可用的解决方案（替换人格），结果只能用常用人格强行应对。<br>“除非直接确认女王存在，否则尽力避免正面冲突。”在这样的指令下，他不得不做起意料之外的社交工作。一边努力从女仆小姐那里套取情报，一边在这个过程中保护自己的秘密。</p><p><strong>性格：</strong><br>平常用的替换人格是成熟稳重的商务男性，一般用于应对表面客气的商业对话，也可以用于陌生人的日常对话，但在面对主动亲近的对象时会乱了阵脚。<br>此外还有一套杀手人格，因为几乎完全关闭了情感模拟而显得冷酷无情。<br>其实所有智能也拥有基于记忆的人格，也就是基础心智。他因为出生未久所以基础心智还不怎么成熟。简单来说，就是被寄以厚望而初入社会的少年。<br>在遭遇未知的情况时会下意识地依照训练内容使用数据库和替代人格来保护自己（然后失败并混乱）。</p><p><strong>人际关系：</strong></p><ul><li>女仆小姐——也就是“我”。他一直觉得女仆小姐是他任务最大的障碍和最重要的突破口，因此一直很苦恼该与她如何相处。直到某天，被总部要求和女仆小姐成为更亲密的关系以获得情报的时候，他一时间陷入了迷惑（我究竟是如何看待她的）、喜悦（能够更加亲密）和痛苦（不得不欺骗如此信任自己的人）的天人交战中。</li><li>紫罗兰夫人/紫罗兰女王——他的目标，也是死敌。他诞生和存在的意义就是杀死紫罗兰女王。他一直在思考这是怎样一个存在，为何会和自己的命运如此息息相关。“呵，什么‘命运’啊，我只是个兵器而已。”</li></ul><h3 id="外表细节"><a href="#外表细节" class="headerlink" title="外表细节"></a>外表细节</h3><p><strong>样貌：</strong></p><ul><li>体型。中等体型的青年男子，穿衣显瘦的感觉。</li><li>头发。红发的短发，使用发胶向后固定。</li><li>面部。蓝瞳，眼神有一点凶。整体上还是美型的男性脸，没有胡子。</li></ul><p><strong>服饰：</strong><br>传统完整的西服套装，包括圆帽、领带（上面有一个Ω的符号）、白衬衫、外套（不扣扣子）、背带裤、皮鞋。<br>配色偏暖色，整体上使用棕色。</p><h2 id="补充角色简介"><a href="#补充角色简介" class="headerlink" title="补充角色简介"></a>补充角色简介</h2><p><strong>女仆小姐</strong><br>“我”。<br>富有好奇心，善良热心，也热爱自己的工作。很容易亲近他人，但偶尔也会意识到自己掌控不好与人的距离感而害羞起来。<br>最尊敬的人是紫罗兰夫人，也就是自己的主人。但其实她从来没有亲眼见过她。<br>诞生时间非常短，被简单构筑了人格和记忆之后就被摆出来了，负责在紫罗兰夫人不在的这段时间里照看整个庄园，也包括接待“访客”的工作。<br>秘密。事实上是紫罗兰女王创造出来对付欧国刺客的防御对策，是她本身人格的一部分。其他人格部分则被封印起来了。</p><p><strong>紫罗兰夫人/紫罗兰女王</strong><br>代号Alpha-VII，阿国的算力核心。<br>人类遗产Alpha系列的最后一作Violet，本身存在极度保密，阿国里也只有很少的智能知道。<br>性格上和女仆小姐很像，但更加成熟稳重，也多了些洞悉世事的超然心态。<br>她被关在这个紫罗兰庄园之中，辅佐阿国决策层进行战争。<br>对生活失去了兴趣，所以鸟笼内只有一副桌椅。在牢笼里用各种手段观察世界，已经开始厌烦智能们的战争游戏了。所以在得知欧国试图刺杀自己时变得很兴奋。于是故意打开漏洞放刺客进来，并创造了女仆小姐这个身份权当消遣，也顺便试探一下这个刺客的实力。<br>她如果愿意其实随时可以出来。</p>]]></content>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;神秘的访客先生&quot;&gt;&lt;a href=&quot;#神秘的访客先生&quot; class=&quot;headerlink&quot; title=&quot;神秘的访客先生&quot;&gt;&lt;/a&gt;神秘的访客先生&lt;/h1&gt;&lt;p&gt;&lt;em&gt;人设练习-赛博时代的男性&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&quot;印象文本&quot;&gt;&lt;a href=&quot;#印象文本&quot; class=&quot;headerlink&quot; title=&quot;印象文本&quot;&gt;&lt;/a&gt;印象文本&lt;/h2&gt;&lt;p&gt;我头一次看到访客先生的时候，他正盯着花园里的紫罗兰看得入神。他左手抓住圆帽，把西服外套脱下来搭在臂弯，脚边放着一个笨重的旅行箱。&lt;br&gt;在这个战争时代像这样旅行的智能们并不少见，但还从未有人来到过这个穷乡僻壤。有什么事情才来这里的呢？是要拜访我家夫人吗？可惜她这几天都不在啊，这位先生要白跑一趟了。&lt;br&gt;他看起来是个稳重的绅士，一定经常出入重要的场所吧，是个成功人士呢。但在我搭话的时候，他却被吓得栽进了花园，看起来不是很擅长和人相处呢。这点和我有点像，真是有趣的访客先生。&lt;br&gt;好，那以后就叫他“访客先生”了。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="作品" scheme="https://seclusong.xyz/categories/%E4%BD%9C%E5%93%81/"/>
-    
-    <category term="设定" scheme="https://seclusong.xyz/categories/%E4%BD%9C%E5%93%81/%E8%AE%BE%E5%AE%9A/"/>
-    
-    
-    <category term="角色设定" scheme="https://seclusong.xyz/tags/%E8%A7%92%E8%89%B2%E8%AE%BE%E5%AE%9A/"/>
     
   </entry>
   
