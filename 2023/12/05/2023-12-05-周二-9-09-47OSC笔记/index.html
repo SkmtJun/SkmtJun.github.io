@@ -221,14 +221,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.7k</span>
+              <span>3.5k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>3 分钟</span>
             </span>
 
         </div>
@@ -248,12 +248,12 @@
 <ul>
 <li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/168404308">51WORLD相关资料</a></li>
 <li><a target="_blank" rel="noopener" href="https://www.asam.net/index.php?eID=dumpFile&t=f&f=3769&token=92f25a7707bead3ac650df003bfcc89ab945287b">OSC 1.0官方中文User Guide</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.asam.net/static_downloads/ASAM_OpenSCENARIO_V1.2.0_Model_Documentation/modelDocumentation/">OSC 1.2官方文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.asam.net/static_downloads/ASAM_OpenSCENARIO_V1.2.0_Model_Documentation/modelDocumentation/">OSC 1.2官方XML文档</a></li>
 <li><a target="_blank" rel="noopener" href="https://www.asam.net/index.php?eID=dumpFile&t=f&f=3768&token=66f6524fbfcdb16cfb89aae7b6ad6c82cfc2c7f2">OpenDREIVE 1.6官方中文文档</a><span id="more"></span></li>
 </ul>
 <hr>
 <h1 id="OCS场景基本概念-方案"><a href="#OCS场景基本概念-方案" class="headerlink" title="OCS场景基本概念/方案"></a>OCS场景基本概念/<em>方案</em></h1><p>场景的基础概念是“谁，在哪里，做什么”，即<strong>实体</strong>在<strong>路网</strong>上根据<strong>故事板</strong>定义的一组指令进行<strong>交互</strong>。</p>
-<p>场景定义的五个基本概念（Concept*/方案*）是：</p>
+<p>场景定义的五个基本概念（Concept/<em>方案</em>）是：</p>
 <blockquote>
 <ul>
 <li><strong>Entity</strong>：<strong>实体</strong>，车辆行人等参与者。</li>
@@ -308,7 +308,10 @@
 <li>当这个Transition返回否定结果时，会回到StandBy，否则进入Complete</li>
 </ul>
 </li>
-<li><strong>Stop（stopTransition）</strong>：停止转换</li>
+<li><strong>Stop（stopTransition）</strong>：停止转换<ul>
+<li>和上一个不同，无论是StandBy和Running，这个Transition都会让故事板元素状态变为Complete。</li>
+</ul>
+</li>
 <li><strong>Skip</strong>：跳过</li>
 </ul>
 <h1 id="Entity简介"><a href="#Entity简介" class="headerlink" title="Entity简介"></a>Entity简介</h1><p>Entity有两类：</p>
@@ -345,13 +348,41 @@
 <li>Act</li>
 </ul>
 <p>同StartTrigger，其他故事板元素会继承父级的StopTrigger；但有所不同的是，一旦父级故事板元素停止了（进入completeState），无论自己有没有StartTrigger，它底下的所有故事板元素同样都要立刻停止。</p>
-<h2 id="Condition简介"><a href="#Condition简介" class="headerlink" title="Condition简介"></a>Condition简介</h2><h1 id="操作、事件与动作"><a href="#操作、事件与动作" class="headerlink" title="操作、事件与动作"></a>操作、事件与动作</h1><p>正如上文所述，ManeuverGroup主要包含Actors和Maneuver这两部分。前者决定哪些Entity会被影响，而后者描述具体是什么Action影响（以及是怎么被触发Event的）。</p>
-<h1 id="动作"><a href="#动作" class="headerlink" title="动作"></a>动作</h1><p>对于Action有以下<strong>3</strong>种分类，具体可见官方文档：</p>
+<h2 id="Condition简介"><a href="#Condition简介" class="headerlink" title="Condition简介"></a>Condition简介</h2><p>Condition有3个属性：</p>
+<ul>
+<li>name：标识名</li>
+<li>delay：延迟，从触发conditionEdge到返回True结果之间的时间差</li>
+<li>conditionEdge：条件边缘，其有4种类型：<ul>
+<li>rising：上升沿，逻辑表达式从False向True跳转的瞬间返回True，否则一直返回False</li>
+<li>falling：下降沿，逻辑表达式从True向False跳转的瞬间返回True，否则一直返回False</li>
+<li>risingOrFalling：上升或下降沿，逻辑表达式一旦变化就返回True，否则一直返回False</li>
+<li>none：无，直接返回逻辑表达式结果</li>
+</ul>
+</li>
+</ul>
+<p>和2个元素，会与conditionEdge有关联：</p>
+<ul>
+<li>byEntityCondition：与实体有关的条件，即该Condition的逻辑表达式与某些实体有关，有2个元素：<ul>
+<li>triggerringEntities：说明与哪些Entity有关</li>
+<li>entityCondition：具体的Condition逻辑表达</li>
+</ul>
+</li>
+<li>byValueCondition：与数据有关的条件，即该逻辑表达式和非实体的数据，比如信号灯信息等有关</li>
+</ul>
+<h1 id="操作、事件与动作"><a href="#操作、事件与动作" class="headerlink" title="操作、事件与动作"></a>操作、事件与动作</h1><p>正如上文所述，ManeuverGroup主要包含Actors和Maneuver这两部分。前者决定哪些Entity会被影响，而后者描述具体是什么Action影响（以及是怎么被触发Event的）。</p>
+<p>特别的，Actors元素拥有一个属性selectTriggeringEntities（选择触发实体）。当其为真时，之前提到的byEntityCondition的triggerringEntities中的所有Entity，都会在Condition为真时被加入到Actors中。</p>
+<h2 id="Action动作"><a href="#Action动作" class="headerlink" title="Action动作"></a>Action动作</h2><p>对于Action有以下<strong>3</strong>种分类，各自的下层元素具体可见官方文档：</p>
 <ul>
 <li>PrivateAction：专属动作，必须被分配给Entity实例，一般用于描述车辆运动。</li>
 <li>GloabalAction：全局动作，用于修改场景内容，包括改变环境、增删Entity等。</li>
-<li>UserDefinedAction：用户自定义动作，实际包含在上述两者中。</li>
+<li>UserDefinedAction：用户自定义动作。</li>
 </ul>
+<p>动作会应用在2种场合中：</p>
+<ul>
+<li>Init初始化阶段，设置各种对象的初始状态</li>
+<li>Event里，在其被触发时执行</li>
+</ul>
+<p>当同时执行的Action在修改相同的数据，此时就可能会被认为是冲突了。根据冲突两者的类型不同，不同的冲突会有不同的处理方式，但一般而言，后出现的Action会覆盖前一个Action（意味着触发了它的stopTrigger）。</p>
 
     </div>
 
@@ -434,7 +465,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#OpenScenario%E7%AC%94%E8%AE%B0"><span class="nav-number">1.</span> <span class="nav-text">OpenScenario笔记</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#OCS%E5%9C%BA%E6%99%AF%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5-%E6%96%B9%E6%A1%88"><span class="nav-number">2.</span> <span class="nav-text">OCS场景基本概念&#x2F;方案</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%BA%E6%99%AF%E6%9E%84%E6%88%90"><span class="nav-number">3.</span> <span class="nav-text">场景构成</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%85%E4%BA%8B%E6%9D%BF%E5%85%83%E7%B4%A0%E7%8A%B6%E6%80%81%E5%8F%8A%E5%85%B6%E7%8A%B6%E6%80%81%E6%9C%BA"><span class="nav-number">4.</span> <span class="nav-text">故事板元素状态及其状态机</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Entity%E7%AE%80%E4%BB%8B"><span class="nav-number">5.</span> <span class="nav-text">Entity简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#EntitySelection%E8%A2%AB%E9%80%89%E5%AE%9E%E4%BD%93"><span class="nav-number">5.1.</span> <span class="nav-text">EntitySelection被选实体</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Trigger%E8%A7%A6%E5%8F%91%E5%99%A8%E4%B8%8ECondition%E6%9D%A1%E4%BB%B6"><span class="nav-number">6.</span> <span class="nav-text">Trigger触发器与Condition条件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%89%E5%85%B3StartTrigger"><span class="nav-number">6.1.</span> <span class="nav-text">有关StartTrigger</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%89%E5%85%B3StopTrigger"><span class="nav-number">6.2.</span> <span class="nav-text">有关StopTrigger</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Condition%E7%AE%80%E4%BB%8B"><span class="nav-number">6.3.</span> <span class="nav-text">Condition简介</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E3%80%81%E4%BA%8B%E4%BB%B6%E4%B8%8E%E5%8A%A8%E4%BD%9C"><span class="nav-number">7.</span> <span class="nav-text">操作、事件与动作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8A%A8%E4%BD%9C"><span class="nav-number">8.</span> <span class="nav-text">动作</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#OpenScenario%E7%AC%94%E8%AE%B0"><span class="nav-number">1.</span> <span class="nav-text">OpenScenario笔记</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#OCS%E5%9C%BA%E6%99%AF%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5-%E6%96%B9%E6%A1%88"><span class="nav-number">2.</span> <span class="nav-text">OCS场景基本概念&#x2F;方案</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%BA%E6%99%AF%E6%9E%84%E6%88%90"><span class="nav-number">3.</span> <span class="nav-text">场景构成</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%85%E4%BA%8B%E6%9D%BF%E5%85%83%E7%B4%A0%E7%8A%B6%E6%80%81%E5%8F%8A%E5%85%B6%E7%8A%B6%E6%80%81%E6%9C%BA"><span class="nav-number">4.</span> <span class="nav-text">故事板元素状态及其状态机</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Entity%E7%AE%80%E4%BB%8B"><span class="nav-number">5.</span> <span class="nav-text">Entity简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#EntitySelection%E8%A2%AB%E9%80%89%E5%AE%9E%E4%BD%93"><span class="nav-number">5.1.</span> <span class="nav-text">EntitySelection被选实体</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Trigger%E8%A7%A6%E5%8F%91%E5%99%A8%E4%B8%8ECondition%E6%9D%A1%E4%BB%B6"><span class="nav-number">6.</span> <span class="nav-text">Trigger触发器与Condition条件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%89%E5%85%B3StartTrigger"><span class="nav-number">6.1.</span> <span class="nav-text">有关StartTrigger</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%89%E5%85%B3StopTrigger"><span class="nav-number">6.2.</span> <span class="nav-text">有关StopTrigger</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Condition%E7%AE%80%E4%BB%8B"><span class="nav-number">6.3.</span> <span class="nav-text">Condition简介</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E3%80%81%E4%BA%8B%E4%BB%B6%E4%B8%8E%E5%8A%A8%E4%BD%9C"><span class="nav-number">7.</span> <span class="nav-text">操作、事件与动作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Action%E5%8A%A8%E4%BD%9C"><span class="nav-number">7.1.</span> <span class="nav-text">Action动作</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -518,12 +549,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">184k</span>
+    <span title="站点总字数">185k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:47</span>
+    <span title="站点阅读时长">2:48</span>
 </div>
 
         
