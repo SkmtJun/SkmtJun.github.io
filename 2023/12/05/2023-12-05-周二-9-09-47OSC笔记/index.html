@@ -20,20 +20,23 @@
     var CONFIG = {"hostname":"seclusong.xyz","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="OpenScenario笔记为了实现自动驾驶场景设计的标准化，德国自动化及测量系统标准协会（ASAM）推出了OpenX系列标准。 例如OpenDrive标准用于描述场景静态信息的路网，OpenCRG描述路面信息，而OpenSCENARIO则是用来描述动态场景的。 这里会对学习到的OpenSCENARIO 1.0（下称OSC）相关内容进行记录。 部分翻译根据个人理解做了调整，一切以英文为准（特别的，">
+  <meta name="description" content="OpenScenario1.0笔记为了实现自动驾驶场景设计的标准化，德国自动化及测量系统标准协会（ASAM）推出了OpenX系列标准。 例如OpenDrive标准用于描述场景静态信息的路网，OpenCRG描述路面信息，而OpenSCENARIO则是用来描述动态场景的。 这里会对学习到的OpenSCENARIO 1.0（下称OSC）相关内容进行记录。 部分翻译根据个人理解做了调整，一切以英文为准（特">
 <meta property="og:type" content="article">
-<meta property="og:title" content="OpenSCENARIO笔记">
+<meta property="og:title" content="OpenSCENARIO1.0笔记">
 <meta property="og:url" content="https://seclusong.xyz/2023/12/05/2023-12-05-%E5%91%A8%E4%BA%8C-9-09-47OSC%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="SecluSong">
-<meta property="og:description" content="OpenScenario笔记为了实现自动驾驶场景设计的标准化，德国自动化及测量系统标准协会（ASAM）推出了OpenX系列标准。 例如OpenDrive标准用于描述场景静态信息的路网，OpenCRG描述路面信息，而OpenSCENARIO则是用来描述动态场景的。 这里会对学习到的OpenSCENARIO 1.0（下称OSC）相关内容进行记录。 部分翻译根据个人理解做了调整，一切以英文为准（特别的，">
+<meta property="og:description" content="OpenScenario1.0笔记为了实现自动驾驶场景设计的标准化，德国自动化及测量系统标准协会（ASAM）推出了OpenX系列标准。 例如OpenDrive标准用于描述场景静态信息的路网，OpenCRG描述路面信息，而OpenSCENARIO则是用来描述动态场景的。 这里会对学习到的OpenSCENARIO 1.0（下称OSC）相关内容进行记录。 部分翻译根据个人理解做了调整，一切以英文为准（特">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://seclusong.xyz/image%5C2023-12-05-%E5%91%A8%E4%BA%8C-9-09-47OSC%E7%AC%94%E8%AE%B0%5CStoryBoard.png">
+<meta property="og:image" content="https://seclusong.xyz/image%5C2023-12-05-%E5%91%A8%E4%BA%8C-9-09-47OSC%E7%AC%94%E8%AE%B0%5CState.svg">
 <meta property="article:published_time" content="2023-12-05T01:09:49.000Z">
 <meta property="article:modified_time" content="2023-12-05T01:09:49.000Z">
 <meta property="article:author" content="顺风幽SecluSong">
-<meta property="article:tag" content="OpenSCENARIO">
 <meta property="article:tag" content="自动驾驶">
+<meta property="article:tag" content="OpenSCENARIO">
 <meta property="article:tag" content="XML">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://seclusong.xyz/image%5C2023-12-05-%E5%91%A8%E4%BA%8C-9-09-47OSC%E7%AC%94%E8%AE%B0%5CStoryBoard.png">
 
 <link rel="canonical" href="https://seclusong.xyz/2023/12/05/2023-12-05-%E5%91%A8%E4%BA%8C-9-09-47OSC%E7%AC%94%E8%AE%B0/">
 
@@ -48,7 +51,7 @@
   };
 </script>
 
-  <title>OpenSCENARIO笔记 | SecluSong</title>
+  <title>OpenSCENARIO1.0笔记 | SecluSong</title>
   
 
 
@@ -173,7 +176,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          OpenSCENARIO笔记
+          OpenSCENARIO1.0笔记
         </h1>
 
         <div class="post-meta">
@@ -196,7 +199,7 @@
             </span>
 
           
-            <span id="/2023/12/05/2023-12-05-%E5%91%A8%E4%BA%8C-9-09-47OSC%E7%AC%94%E8%AE%B0/" class="post-meta-item leancloud_visitors" data-flag-title="OpenSCENARIO笔记" title="阅读次数">
+            <span id="/2023/12/05/2023-12-05-%E5%91%A8%E4%BA%8C-9-09-47OSC%E7%AC%94%E8%AE%B0/" class="post-meta-item leancloud_visitors" data-flag-title="OpenSCENARIO1.0笔记" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -241,19 +244,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="OpenScenario笔记"><a href="#OpenScenario笔记" class="headerlink" title="OpenScenario笔记"></a>OpenScenario笔记</h1><p>为了实现自动驾驶场景设计的标准化，德国自动化及测量系统标准协会（ASAM）推出了OpenX系列标准。</p>
+        <h1 id="OpenScenario1-0笔记"><a href="#OpenScenario1-0笔记" class="headerlink" title="OpenScenario1.0笔记"></a>OpenScenario1.0笔记</h1><p>为了实现自动驾驶场景设计的标准化，德国自动化及测量系统标准协会（ASAM）推出了OpenX系列标准。</p>
 <p>例如OpenDrive标准用于描述场景静态信息的路网，OpenCRG描述路面信息，而OpenSCENARIO则是用来描述动态场景的。</p>
 <p>这里会对学习到的OpenSCENARIO 1.0（下称OSC）相关内容进行记录。</p>
-<p>部分翻译根据个人理解做了调整，一切以英文为准（特别的，/<em>概念名称</em>是我认为相对值得一提但没有采用的官方文档翻译；更特别的，这官方中文真够烂的）。</p>
+<p>部分翻译根据个人理解做了调整，一切以英文为准（特别的，“/<em>概念名称</em>”是我认为相对值得一提但没有采用的官方文档翻译；更特别的，这官方中文真够烂的）。</p>
 <p>参考：</p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/168404308">51WORLD相关资料</a></li>
 <li><a target="_blank" rel="noopener" href="https://www.asam.net/index.php?eID=dumpFile&t=f&f=3769&token=92f25a7707bead3ac650df003bfcc89ab945287b">OSC 1.0官方中文User Guide</a></li>
 <li><a target="_blank" rel="noopener" href="https://www.asam.net/static_downloads/ASAM_OpenSCENARIO_V1.2.0_Model_Documentation/modelDocumentation/">OSC 1.2官方XML文档</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.asam.net/index.php?eID=dumpFile&t=f&f=3768&token=66f6524fbfcdb16cfb89aae7b6ad6c82cfc2c7f2">OpenDREIVE 1.6官方中文文档</a><span id="more"></span></li>
+<li><a target="_blank" rel="noopener" href="https://www.asam.net/index.php?eID=dumpFile&t=f&f=3768&token=66f6524fbfcdb16cfb89aae7b6ad6c82cfc2c7f2">OpenDREIVE 1.6官方中文文档</a></li>
 </ul>
+<span id="more"></span>
 <hr>
-<h1 id="OCS场景基本概念-方案"><a href="#OCS场景基本概念-方案" class="headerlink" title="OCS场景基本概念/方案"></a>OCS场景基本概念/<em>方案</em></h1><p>场景的基础概念是“谁，在哪里，做什么”，即<strong>实体</strong>在<strong>路网</strong>上根据<strong>故事板</strong>定义的一组指令进行<strong>交互</strong>。</p>
+<h2 id="OSC场景基本概念-方案"><a href="#OSC场景基本概念-方案" class="headerlink" title="OSC场景基本概念/方案"></a>OSC场景基本概念/<em>方案</em></h2><p>场景的基础概念是“谁，在哪里，做什么”，即<strong>实体</strong>在<strong>路网</strong>上根据<strong>故事板</strong>定义的一组指令进行<strong>交互</strong>。</p>
 <p>场景定义的五个基本概念（Concept/<em>方案</em>）是：</p>
 <blockquote>
 <ul>
@@ -263,7 +267,8 @@
 <li>另有两个内容：<strong>ParameterDeclaration参数声明</strong>和<strong>Catalog目录</strong>，将在将来用到时提及。</li>
 </ul>
 </blockquote>
-<h1 id="场景构成"><a href="#场景构成" class="headerlink" title="场景构成"></a>场景构成</h1><p>OSC通过StoryBoard描述整个场景的完整内容，它有下述构成：</p>
+<hr>
+<h2 id="场景构成"><a href="#场景构成" class="headerlink" title="场景构成"></a>场景构成</h2><p>OSC通过StoryBoard描述整个场景的完整内容，它有下述构成：</p>
 <blockquote>
 <ul>
 <li><strong>Story</strong>：故事，即最高层次的场景描述单位；至少1个。<ul>
@@ -290,7 +295,9 @@
 </ul>
 </blockquote>
 <p>以上的所有内容都被称为<strong>StoryBoardElement</strong>（故事板元素/<em>场景剧本要素</em>）。</p>
-<h1 id="故事板元素状态及其状态机"><a href="#故事板元素状态及其状态机" class="headerlink" title="故事板元素状态及其状态机"></a>故事板元素状态及其状态机</h1><p>StoryBoardElement拥有<strong>3</strong>种状态，即为StoryBoardElementState（故事板元素状态）：</p>
+<p><img src="/image%5C2023-12-05-%E5%91%A8%E4%BA%8C-9-09-47OSC%E7%AC%94%E8%AE%B0%5CStoryBoard.png" alt="StoryBoard"></p>
+<hr>
+<h2 id="故事板元素状态及其状态机"><a href="#故事板元素状态及其状态机" class="headerlink" title="故事板元素状态及其状态机"></a>故事板元素状态及其状态机</h2><p>StoryBoardElement拥有<strong>3</strong>种状态，即为StoryBoardElementState（故事板元素状态）：</p>
 <ul>
 <li><strong>StandBy</strong>（standByState）：待机状态</li>
 <li><strong>Running</strong>（runningState）：运行状态<ul>
@@ -315,7 +322,9 @@
 </li>
 <li><strong>Skip</strong>：跳过</li>
 </ul>
-<h1 id="Entity简介"><a href="#Entity简介" class="headerlink" title="Entity简介"></a>Entity简介</h1><p>Entity有两类：</p>
+<p><img src="/image%5C2023-12-05-%E5%91%A8%E4%BA%8C-9-09-47OSC%E7%AC%94%E8%AE%B0%5CState.svg" alt="State"></p>
+<hr>
+<h2 id="Entity简介"><a href="#Entity简介" class="headerlink" title="Entity简介"></a>Entity简介</h2><p>Entity有两类：</p>
 <ul>
 <li>车辆行人等（根据类型不同拥有不同的Property属性）</li>
 <li>其他物体（与OpenDRIVE中的对象类相同）</li>
@@ -326,16 +335,17 @@
 <li>某一单个Entity实例</li>
 <li>被称为<strong>EntitySelection</strong>的一组Entity</li>
 </ul>
-<h2 id="EntitySelection被选实体"><a href="#EntitySelection被选实体" class="headerlink" title="EntitySelection被选实体"></a>EntitySelection被选实体</h2><p>EntitySelection是将场景中已经存在的若干Entity进行快速分组。</p>
+<h3 id="EntitySelection被选实体"><a href="#EntitySelection被选实体" class="headerlink" title="EntitySelection被选实体"></a>EntitySelection被选实体</h3><p>EntitySelection是将场景中已经存在的若干Entity进行快速分组。</p>
 <p>这样分组，是为了能一同在其他地方被引用（例如批量生成Entity实例，并执行相同的动作）。</p>
-<h1 id="Trigger触发器与Condition条件"><a href="#Trigger触发器与Condition条件" class="headerlink" title="Trigger触发器与Condition条件"></a>Trigger触发器与Condition条件</h1><p>在Act以及Event中，都需要使用这两种主要的Trigger（触发器）来控制流程的启停：<strong>StartTrigger</strong>和<strong>StopTrigger</strong>。<br>StartTrigger将故事板元素从standByState切换到runningState；而StopTrigger将其从其他状态（待机或运行）切换到completeState。</p>
+<hr>
+<h2 id="Trigger触发器与Condition条件"><a href="#Trigger触发器与Condition条件" class="headerlink" title="Trigger触发器与Condition条件"></a>Trigger触发器与Condition条件</h2><p>在Act以及Event中，都需要使用这两种主要的Trigger（触发器）来控制流程的启停：<strong>StartTrigger</strong>和<strong>StopTrigger</strong>。<br>StartTrigger将故事板元素从standByState切换到runningState；而StopTrigger将其从其他状态（待机或运行）切换到completeState。</p>
 <p>一个Trigger的结果是一个T/F值，这是由它所含有的<strong>Condition</strong>（条件）以逻辑运算共同决定的。</p>
 <p>为此，OSC将Condition的逻辑运算设计成这样：</p>
 <ol>
 <li>①若干Condition关联成为一个<strong>ConditionGroup</strong>（条件组）；ConditionGroup的结果为所有Condition结果之<strong>和/AND</strong>。</li>
 <li>②若干ConditionGroup一同放入一个Trigger中；Trigger的结果为所有ConditionGroup结果之<strong>或/OR</strong>。</li>
 </ol>
-<h2 id="有关StartTrigger"><a href="#有关StartTrigger" class="headerlink" title="有关StartTrigger"></a>有关StartTrigger</h2><p>拥有StartTrigger的故事板元素：</p>
+<h3 id="有关StartTrigger"><a href="#有关StartTrigger" class="headerlink" title="有关StartTrigger"></a>有关StartTrigger</h3><p>拥有StartTrigger的故事板元素：</p>
 <ul>
 <li>Act</li>
 <li>Event</li>
@@ -343,13 +353,13 @@
 <p>没有StartTrigger的故事板元素，例如ManeuverGroup和Maneuver，它们会继承父级的StartTrigger，也就是从Act中继承；具体表现也就是当Act启动后，其底下的ManeuverGroup都会自动启动。</p>
 <p>但是，如果拥有自己的StartTrigger，那它们的启动就要满足它们自己的Condition；而如果它们的父级Act不在runningState（运行状态），则不能启动，这是不言自明的。</p>
 <p>此外，Story也不需要startTrigger，毕竟在仿真启动时它就自然被启动了。</p>
-<h2 id="有关StopTrigger"><a href="#有关StopTrigger" class="headerlink" title="有关StopTrigger"></a>有关StopTrigger</h2><p>拥有StopTrigger的故事板元素：</p>
+<h3 id="有关StopTrigger"><a href="#有关StopTrigger" class="headerlink" title="有关StopTrigger"></a>有关StopTrigger</h3><p>拥有StopTrigger的故事板元素：</p>
 <ul>
 <li>Story</li>
 <li>Act</li>
 </ul>
 <p>同StartTrigger，其他故事板元素会继承父级的StopTrigger；但有所不同的是，一旦父级故事板元素停止了（进入completeState），无论自己有没有StartTrigger，它底下的所有故事板元素同样都要立刻停止。</p>
-<h2 id="Condition简介"><a href="#Condition简介" class="headerlink" title="Condition简介"></a>Condition简介</h2><p>Condition有3个属性：</p>
+<h3 id="Condition简介"><a href="#Condition简介" class="headerlink" title="Condition简介"></a>Condition简介</h3><p>Condition有3个属性：</p>
 <ul>
 <li>name：标识名</li>
 <li>delay：延迟，从触发conditionEdge到返回True结果之间的时间差</li>
@@ -370,9 +380,10 @@
 </li>
 <li>byValueCondition：与数据有关的条件，即该逻辑表达式和非实体的数据，比如信号灯信息等有关</li>
 </ul>
-<h1 id="操作、事件与动作"><a href="#操作、事件与动作" class="headerlink" title="操作、事件与动作"></a>操作、事件与动作</h1><p>正如上文所述，ManeuverGroup主要包含Actors和Maneuver这两部分。前者决定哪些Entity会被影响，而后者描述具体是什么Action影响（以及是怎么被触发Event的）。</p>
+<hr>
+<h2 id="操作、事件与动作"><a href="#操作、事件与动作" class="headerlink" title="操作、事件与动作"></a>操作、事件与动作</h2><p>正如上文所述，ManeuverGroup主要包含Actors和Maneuver这两部分。前者决定哪些Entity会被影响，而后者描述具体是什么Action影响（以及是怎么被触发Event的）。</p>
 <p>特别的，Actors元素拥有一个属性selectTriggeringEntities（选择触发实体）。当其为真时，之前提到的byEntityCondition的triggerringEntities中的所有Entity，都会在Condition为真时被加入到Actors中。</p>
-<h2 id="Action动作"><a href="#Action动作" class="headerlink" title="Action动作"></a>Action动作</h2><p>对于Action有以下<strong>3</strong>种分类，各自的下层元素具体可见官方文档：</p>
+<h3 id="Action动作"><a href="#Action动作" class="headerlink" title="Action动作"></a>Action动作</h3><p>对于Action有以下<strong>3</strong>种分类，各自的下层元素具体可见官方文档：</p>
 <ul>
 <li>PrivateAction：专属动作，必须被分配给Entity实例，一般用于描述车辆运动。</li>
 <li>GloabalAction：全局动作，用于修改场景内容，包括改变环境、增删Entity等。</li>
@@ -393,8 +404,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/OpenSCENARIO/" rel="tag"># OpenSCENARIO</a>
               <a href="/tags/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6/" rel="tag"># 自动驾驶</a>
+              <a href="/tags/OpenSCENARIO/" rel="tag"># OpenSCENARIO</a>
               <a href="/tags/XML/" rel="tag"># XML</a>
           </div>
 
@@ -407,7 +418,10 @@
     <a href="/2023/07/30/2023-07-30-%E5%91%A8%E6%97%A5-20-55-01MC/" rel="prev" title="Minecraft养老服务器构想">
       <i class="fa fa-chevron-left"></i> Minecraft养老服务器构想
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2023/12/06/2023-12-06-%E5%91%A8%E4%B8%89-18-17-22%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E7%AC%94%E8%AE%B0/" rel="next" title="ADAS概述笔记">
+      ADAS概述笔记 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -467,7 +481,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#OpenScenario%E7%AC%94%E8%AE%B0"><span class="nav-number">1.</span> <span class="nav-text">OpenScenario笔记</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#OCS%E5%9C%BA%E6%99%AF%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5-%E6%96%B9%E6%A1%88"><span class="nav-number">2.</span> <span class="nav-text">OCS场景基本概念&#x2F;方案</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%BA%E6%99%AF%E6%9E%84%E6%88%90"><span class="nav-number">3.</span> <span class="nav-text">场景构成</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%85%E4%BA%8B%E6%9D%BF%E5%85%83%E7%B4%A0%E7%8A%B6%E6%80%81%E5%8F%8A%E5%85%B6%E7%8A%B6%E6%80%81%E6%9C%BA"><span class="nav-number">4.</span> <span class="nav-text">故事板元素状态及其状态机</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Entity%E7%AE%80%E4%BB%8B"><span class="nav-number">5.</span> <span class="nav-text">Entity简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#EntitySelection%E8%A2%AB%E9%80%89%E5%AE%9E%E4%BD%93"><span class="nav-number">5.1.</span> <span class="nav-text">EntitySelection被选实体</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Trigger%E8%A7%A6%E5%8F%91%E5%99%A8%E4%B8%8ECondition%E6%9D%A1%E4%BB%B6"><span class="nav-number">6.</span> <span class="nav-text">Trigger触发器与Condition条件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%89%E5%85%B3StartTrigger"><span class="nav-number">6.1.</span> <span class="nav-text">有关StartTrigger</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%89%E5%85%B3StopTrigger"><span class="nav-number">6.2.</span> <span class="nav-text">有关StopTrigger</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Condition%E7%AE%80%E4%BB%8B"><span class="nav-number">6.3.</span> <span class="nav-text">Condition简介</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E3%80%81%E4%BA%8B%E4%BB%B6%E4%B8%8E%E5%8A%A8%E4%BD%9C"><span class="nav-number">7.</span> <span class="nav-text">操作、事件与动作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Action%E5%8A%A8%E4%BD%9C"><span class="nav-number">7.1.</span> <span class="nav-text">Action动作</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#OpenScenario1-0%E7%AC%94%E8%AE%B0"><span class="nav-number">1.</span> <span class="nav-text">OpenScenario1.0笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#OSC%E5%9C%BA%E6%99%AF%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5-%E6%96%B9%E6%A1%88"><span class="nav-number">1.1.</span> <span class="nav-text">OSC场景基本概念&#x2F;方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%BA%E6%99%AF%E6%9E%84%E6%88%90"><span class="nav-number">1.2.</span> <span class="nav-text">场景构成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%85%E4%BA%8B%E6%9D%BF%E5%85%83%E7%B4%A0%E7%8A%B6%E6%80%81%E5%8F%8A%E5%85%B6%E7%8A%B6%E6%80%81%E6%9C%BA"><span class="nav-number">1.3.</span> <span class="nav-text">故事板元素状态及其状态机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Entity%E7%AE%80%E4%BB%8B"><span class="nav-number">1.4.</span> <span class="nav-text">Entity简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#EntitySelection%E8%A2%AB%E9%80%89%E5%AE%9E%E4%BD%93"><span class="nav-number">1.4.1.</span> <span class="nav-text">EntitySelection被选实体</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Trigger%E8%A7%A6%E5%8F%91%E5%99%A8%E4%B8%8ECondition%E6%9D%A1%E4%BB%B6"><span class="nav-number">1.5.</span> <span class="nav-text">Trigger触发器与Condition条件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%89%E5%85%B3StartTrigger"><span class="nav-number">1.5.1.</span> <span class="nav-text">有关StartTrigger</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%89%E5%85%B3StopTrigger"><span class="nav-number">1.5.2.</span> <span class="nav-text">有关StopTrigger</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Condition%E7%AE%80%E4%BB%8B"><span class="nav-number">1.5.3.</span> <span class="nav-text">Condition简介</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E3%80%81%E4%BA%8B%E4%BB%B6%E4%B8%8E%E5%8A%A8%E4%BD%9C"><span class="nav-number">1.6.</span> <span class="nav-text">操作、事件与动作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Action%E5%8A%A8%E4%BD%9C"><span class="nav-number">1.6.1.</span> <span class="nav-text">Action动作</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -482,7 +496,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">57</span>
+          <span class="site-state-item-count">59</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -494,7 +508,7 @@
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">72</span>
+        <span class="site-state-item-count">74</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -505,23 +519,10 @@
       </span>
   </div>
   <div class="cc-license motion-element" itemprop="license">
-    <a href="https://creativecommons.org/licenses/by-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-sa.svg" alt="Creative Commons"></a>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 
-  <div class="links-of-blogroll motion-element">
-    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
-      友情链接
-    </div>
-    <ul class="links-of-blogroll-list">
-        <li class="links-of-blogroll-item">
-          <a href="https://bitzhangmo.github.io/" title="https:&#x2F;&#x2F;bitzhangmo.github.io" rel="noopener" target="_blank">zhangMo Blog</a>
-        </li>
-        <li class="links-of-blogroll-item">
-          <a href="https://dygistdeity.github.io/" title="https:&#x2F;&#x2F;dygistdeity.github.io&#x2F;" rel="noopener" target="_blank">Faust's Lesparadisartificiels</a>
-        </li>
-    </ul>
-  </div>
 
       </div>
 
@@ -551,12 +552,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">185k</span>
+    <span title="站点总字数">187k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:48</span>
+    <span title="站点阅读时长">2:50</span>
 </div>
 
         
