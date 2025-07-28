@@ -22,7 +22,7 @@
 
   <meta name="description" content="OpenScenario1.0为了实现自动驾驶场景设计的标准化，德国自动化及测量系统标准协会（ASAM）推出了OpenX系列标准。 例如OpenDrive标准用于描述场景静态信息的路网，OpenCRG描述路面信息，而OpenSCENARIO则是用来描述动态场景的。 这里会对学习到的OpenSCENARIO 1.0（下称OSC）相关内容进行记录。那之后ASAM也发布了OSC的1.1和1.2版，相关笔">
 <meta property="og:type" content="article">
-<meta property="og:title" content="OpenSCENARIO笔记">
+<meta property="og:title" content="OpenSCENARIO XML笔记">
 <meta property="og:url" content="https://seclusong.xyz/2023/12/05/2023-12-05-%E5%91%A8%E4%BA%8C-9-09-47OSC%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="SecluSong">
 <meta property="og:description" content="OpenScenario1.0为了实现自动驾驶场景设计的标准化，德国自动化及测量系统标准协会（ASAM）推出了OpenX系列标准。 例如OpenDrive标准用于描述场景静态信息的路网，OpenCRG描述路面信息，而OpenSCENARIO则是用来描述动态场景的。 这里会对学习到的OpenSCENARIO 1.0（下称OSC）相关内容进行记录。那之后ASAM也发布了OSC的1.1和1.2版，相关笔">
@@ -33,6 +33,7 @@
 <meta property="article:modified_time" content="2023-12-05T01:09:49.000Z">
 <meta property="article:author" content="顺风幽SecluSong">
 <meta property="article:tag" content="自动驾驶">
+<meta property="article:tag" content="标准">
 <meta property="article:tag" content="OpenSCENARIO">
 <meta property="article:tag" content="XML">
 <meta name="twitter:card" content="summary">
@@ -51,7 +52,7 @@
   };
 </script>
 
-  <title>OpenSCENARIO笔记 | SecluSong</title>
+  <title>OpenSCENARIO XML笔记 | SecluSong</title>
   
 
 
@@ -176,7 +177,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          OpenSCENARIO笔记
+          OpenSCENARIO XML笔记
         </h1>
 
         <div class="post-meta">
@@ -199,7 +200,7 @@
             </span>
 
           
-            <span id="/2023/12/05/2023-12-05-%E5%91%A8%E4%BA%8C-9-09-47OSC%E7%AC%94%E8%AE%B0/" class="post-meta-item leancloud_visitors" data-flag-title="OpenSCENARIO笔记" title="阅读次数">
+            <span id="/2023/12/05/2023-12-05-%E5%91%A8%E4%BA%8C-9-09-47OSC%E7%AC%94%E8%AE%B0/" class="post-meta-item leancloud_visitors" data-flag-title="OpenSCENARIO XML笔记" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -225,14 +226,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>4.9k</span>
+              <span>5k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
+              <span>5 分钟</span>
             </span>
 
         </div>
@@ -255,7 +256,10 @@
 <li><a target="_blank" rel="noopener" href="https://www.asam.net/static_downloads/ASAM_OpenSCENARIO_V1.2.0_Model_Documentation/modelDocumentation/">OSC 1.2官方XML文档</a></li>
 <li><a target="_blank" rel="noopener" href="https://www.asam.net/index.php?eID=dumpFile&t=f&f=3768&token=66f6524fbfcdb16cfb89aae7b6ad6c82cfc2c7f2">OpenDREIVE 1.6官方中文文档</a></li>
 </ul>
-<span id="more"></span>
+<p>更新：</p>
+<ul>
+<li>自最近的一次更新后，OSC1.x系列被更名为OSC XML系列，以和<a href>OSC DSL系列</a>（即原OSC2.x）作区分。<span id="more"></span></li>
+</ul>
 <hr>
 <h2 id="OSC场景基本概念-方案"><a href="#OSC场景基本概念-方案" class="headerlink" title="OSC场景基本概念/方案"></a>OSC场景基本概念/<em>方案</em></h2><p>场景的基础概念是“谁，在哪里，做什么”，即<strong>实体</strong>在<strong>路网</strong>上根据<strong>故事板</strong>定义的一组指令进行<strong>交互</strong>。</p>
 <p>场景定义的五个基本概念（Concept/<em>方案</em>）是：</p>
@@ -455,6 +459,7 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6/" rel="tag"># 自动驾驶</a>
+              <a href="/tags/%E6%A0%87%E5%87%86/" rel="tag"># 标准</a>
               <a href="/tags/OpenSCENARIO/" rel="tag"># OpenSCENARIO</a>
               <a href="/tags/XML/" rel="tag"># XML</a>
           </div>
@@ -469,8 +474,8 @@
       <i class="fa fa-chevron-left"></i> Minecraft养老服务器构想
     </a></div>
       <div class="post-nav-item">
-    <a href="/2023/12/06/2023-12-06-%E5%91%A8%E4%B8%89-18-17-22%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E7%AC%94%E8%AE%B0/" rel="next" title="ADAS概述笔记">
-      ADAS概述笔记 <i class="fa fa-chevron-right"></i>
+    <a href="/2023/12/11/2023-12-11-%E5%91%A8%E4%B8%80T102446_R157/" rel="next" title="R157的OSC场景搭建相关笔记">
+      R157的OSC场景搭建相关笔记 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -546,7 +551,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">60</span>
+          <span class="site-state-item-count">61</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -573,6 +578,22 @@
   </div>
 
 
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://bitzhangmo.github.io/" title="https:&#x2F;&#x2F;bitzhangmo.github.io" rel="noopener" target="_blank">zhangMo Blog</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://dygistdeity.github.io/" title="https:&#x2F;&#x2F;dygistdeity.github.io&#x2F;" rel="noopener" target="_blank">Faust's Lesparadisartificiels</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://timemachinet.github.io/" title="https:&#x2F;&#x2F;timemachinet.github.io&#x2F;" rel="noopener" target="_blank">yukimi</a>
+        </li>
+    </ul>
+  </div>
 
       </div>
 
@@ -593,7 +614,7 @@
 <div class="copyright">
   
   &copy; 2018 – 
-  <span itemprop="copyrightYear">2024</span>
+  <span itemprop="copyrightYear">2025</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -602,12 +623,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">192k</span>
+    <span title="站点总字数">193k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:54</span>
+    <span title="站点阅读时长">2:55</span>
 </div>
 
         
