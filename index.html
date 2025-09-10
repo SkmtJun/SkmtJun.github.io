@@ -154,6 +154,252 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://seclusong.xyz/2023/04/22/2023-04-22-%E5%91%A8%E5%85%AD-15-31-20StDf/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dice.jpg">
+      <meta itemprop="name" content="顺风幽SecluSong">
+      <meta itemprop="description" content="顺风幽的个人站点">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SecluSong">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/04/22/2023-04-22-%E5%91%A8%E5%85%AD-15-31-20StDf/" class="post-title-link" itemprop="url">Stable Diffusion入门笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-04-22 15:31:21" itemprop="dateCreated datePublished" datetime="2023-04-22T15:31:21+08:00">2023-04-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-09-10 12:20:21" itemprop="dateModified" datetime="2025-09-10T12:20:21+08:00">2025-09-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/AI/StableDiffusion/" itemprop="url" rel="index"><span itemprop="name">StableDiffusion</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2023/04/22/2023-04-22-%E5%91%A8%E5%85%AD-15-31-20StDf/" class="post-meta-item leancloud_visitors" data-flag-title="Stable Diffusion入门笔记" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2023/04/22/2023-04-22-%E5%91%A8%E5%85%AD-15-31-20StDf/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2023/04/22/2023-04-22-%E5%91%A8%E5%85%AD-15-31-20StDf/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>158</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Stable-Diffusion入门笔记"><a href="#Stable-Diffusion入门笔记" class="headerlink" title="Stable Diffusion入门笔记"></a>Stable Diffusion入门笔记</h1><p>在喂饭教程和懒人包满地都是的情况下，这篇笔记仅仅只是作为搭建过程的记录，以便将来做类似操作时参考。</p>
+<p>更新备注：在25年似乎一切都有了大变样，T2I相关生态已经非常成熟了，这篇就先拉到前排出来提醒自己更新，内容也会偏向技术原理而非实用应用。</p>
+<p>目录：</p>
+<ul>
+<li>环境搭建准备</li>
+<li>结构介绍</li>
+<li>懒人包推荐及其他</li></ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/04/22/2023-04-22-%E5%91%A8%E5%85%AD-15-31-20StDf/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://seclusong.xyz/2025/09/10/2025-09-10-%E5%91%A8%E4%B8%89-121648_%E5%91%A8%E6%95%B4%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dice.jpg">
+      <meta itemprop="name" content="顺风幽SecluSong">
+      <meta itemprop="description" content="顺风幽的个人站点">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SecluSong">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/09/10/2025-09-10-%E5%91%A8%E4%B8%89-121648_%E5%91%A8%E6%95%B4%E7%90%86/" class="post-title-link" itemprop="url">【二五的鸽 Vol.01】九月第2周 九月的再生产</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-09-10 12:16:51" itemprop="dateCreated datePublished" datetime="2025-09-10T12:16:51+08:00">2025-09-10</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2025/09/10/2025-09-10-%E5%91%A8%E4%B8%89-121648_%E5%91%A8%E6%95%B4%E7%90%86/" class="post-meta-item leancloud_visitors" data-flag-title="【二五的鸽 Vol.01】九月第2周 九月的再生产" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2025/09/10/2025-09-10-%E5%91%A8%E4%B8%89-121648_%E5%91%A8%E6%95%B4%E7%90%86/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2025/09/10/2025-09-10-%E5%91%A8%E4%B8%89-121648_%E5%91%A8%E6%95%B4%E7%90%86/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>5.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="久违的成功学"><a href="#久违的成功学" class="headerlink" title="久违的成功学"></a>久违的成功学</h1><p><em>Vol.25.1 九月的再生产</em></p>
+<p>在发生了各种各样的事情之后，总算是再次开始写Blog了。</p>
+<p>真的是，存在主义危机总是时常发生，终于有一个还算是好用的通解了——如果有机会就细聊一下吧。</p>
+<p>本期导读：</p>
+<ul>
+<li>《系统之美》的二手笔记</li>
+<li>自制力管理方法：链式时延协议和递归稳态迭代协议</li>
+<li>谈谈近况</li></ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2025/09/10/2025-09-10-%E5%91%A8%E4%B8%89-121648_%E5%91%A8%E6%95%B4%E7%90%86/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://seclusong.xyz/2024/03/29/2024-03-29-%E5%91%A8%E4%BA%94-135821_OSCDSL%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -217,7 +463,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>961</span>
+              <span>993</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -243,7 +489,7 @@
 <p>因为目前仅有几篇来自CASAM的介绍文章，大部分术语译名都由我自己决定。</p>
 <p>参考：</p>
 <ul>
-<li><a href>OSCDSL2.1官方文档</a></li></ul>
+<li><a target="_blank" rel="noopener" href="https://usepastel.com/link/o9d9m0k4/#/standards/ASAM_OpenSCENARIO/ASAM_OpenSCENARIO_DSL/latest/index.html">OSCDSL2.1官方文档</a></li></ul>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2024/03/29/2024-03-29-%E5%91%A8%E4%BA%94-135821_OSCDSL%E7%AC%94%E8%AE%B0/#more" rel="contents">
@@ -270,7 +516,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://seclusong.xyz/2024/01/19/2024-01-19-%E5%91%A8%E4%BA%94T105516_%E5%91%A8%E6%95%B4%E7%90%86/">
+    <link itemprop="mainEntityOfPage" href="https://seclusong.xyz/2024/01/19/archived/2024-01-19-%E5%91%A8%E4%BA%94T105516_%E5%91%A8%E6%95%B4%E7%90%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/dice.jpg">
@@ -284,7 +530,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2024/01/19/2024-01-19-%E5%91%A8%E4%BA%94T105516_%E5%91%A8%E6%95%B4%E7%90%86/" class="post-title-link" itemprop="url">2024/01/19 周五T105516_</a>
+            <a href="/2024/01/19/archived/2024-01-19-%E5%91%A8%E4%BA%94T105516_%E5%91%A8%E6%95%B4%E7%90%86/" class="post-title-link" itemprop="url">2024/01/19 周五T105516_</a>
         </h2>
 
         <div class="post-meta">
@@ -298,7 +544,7 @@
             </span>
 
           
-            <span id="/2024/01/19/2024-01-19-%E5%91%A8%E4%BA%94T105516_%E5%91%A8%E6%95%B4%E7%90%86/" class="post-meta-item leancloud_visitors" data-flag-title="2024/01/19 周五T105516_" title="阅读次数">
+            <span id="/2024/01/19/archived/2024-01-19-%E5%91%A8%E4%BA%94T105516_%E5%91%A8%E6%95%B4%E7%90%86/" class="post-meta-item leancloud_visitors" data-flag-title="2024/01/19 周五T105516_" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -313,8 +559,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2024/01/19/2024-01-19-%E5%91%A8%E4%BA%94T105516_%E5%91%A8%E6%95%B4%E7%90%86/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/01/19/2024-01-19-%E5%91%A8%E4%BA%94T105516_%E5%91%A8%E6%95%B4%E7%90%86/" itemprop="commentCount"></span>
+    <a title="valine" href="/2024/01/19/archived/2024-01-19-%E5%91%A8%E4%BA%94T105516_%E5%91%A8%E6%95%B4%E7%90%86/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/01/19/archived/2024-01-19-%E5%91%A8%E4%BA%94T105516_%E5%91%A8%E6%95%B4%E7%90%86/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -349,7 +595,7 @@
 <h2 id="本期导读："><a href="#本期导读：" class="headerlink" title="本期导读："></a>本期导读：</h2>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2024/01/19/2024-01-19-%E5%91%A8%E4%BA%94T105516_%E5%91%A8%E6%95%B4%E7%90%86/#more" rel="contents">
+              <a class="btn" href="/2024/01/19/archived/2024-01-19-%E5%91%A8%E4%BA%94T105516_%E5%91%A8%E6%95%B4%E7%90%86/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -957,128 +1203,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://seclusong.xyz/2023/04/22/2023-04-22-%E5%91%A8%E5%85%AD-15-31-20StDf/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/dice.jpg">
-      <meta itemprop="name" content="顺风幽SecluSong">
-      <meta itemprop="description" content="顺风幽的个人站点">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SecluSong">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/04/22/2023-04-22-%E5%91%A8%E5%85%AD-15-31-20StDf/" class="post-title-link" itemprop="url">Stable Diffusion入门笔记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-04-22 15:31:21" itemprop="dateCreated datePublished" datetime="2023-04-22T15:31:21+08:00">2023-04-22</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%AC%94%E8%AE%B0/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%AC%94%E8%AE%B0/AI/StableDiffusion/" itemprop="url" rel="index"><span itemprop="name">StableDiffusion</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2023/04/22/2023-04-22-%E5%91%A8%E5%85%AD-15-31-20StDf/" class="post-meta-item leancloud_visitors" data-flag-title="Stable Diffusion入门笔记" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2023/04/22/2023-04-22-%E5%91%A8%E5%85%AD-15-31-20StDf/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2023/04/22/2023-04-22-%E5%91%A8%E5%85%AD-15-31-20StDf/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>89</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Stable-Diffusion入门笔记"><a href="#Stable-Diffusion入门笔记" class="headerlink" title="Stable Diffusion入门笔记"></a>Stable Diffusion入门笔记</h1><p>在喂饭教程和懒人包满地都是的情况下，这篇笔记仅仅只是作为搭建过程的记录，以便将来做类似操作时参考。</p>
-<p>目录：</p>
-<ul>
-<li>环境搭建准备</li>
-<li>结构介绍</li>
-<li>懒人包推荐及其他</li></ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2023/04/22/2023-04-22-%E5%91%A8%E5%85%AD-15-31-20StDf/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://seclusong.xyz/2023/04/22/2023-04-22-%E5%91%A8%E5%85%AD-14-36-16AI%E6%B1%87%E6%80%BB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1189,117 +1313,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://seclusong.xyz/2018/04/05/Blog%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/dice.jpg">
-      <meta itemprop="name" content="顺风幽SecluSong">
-      <meta itemprop="description" content="顺风幽的个人站点">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SecluSong">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/04/05/Blog%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">Blog搭建相关笔记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2018-04-05 18:53:10" itemprop="dateCreated datePublished" datetime="2018-04-05T18:53:10+08:00">2018-04-05</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-04-22 00:34:10" itemprop="dateModified" datetime="2023-04-22T00:34:10+08:00">2023-04-22</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2018/04/05/Blog%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/" class="post-meta-item leancloud_visitors" data-flag-title="Blog搭建相关笔记" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2018/04/05/Blog%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2018/04/05/Blog%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>82</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>原本写着博客调教计划，现在改成相关笔记了。</p>
-<p>因为我差点把整个项目文件丢了，要是要重新搭，感觉人要没了。</p>
-<p>为了应对这种可能的悲剧，我决定把搭建这个博客的相关内容记录下来。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1370,7 +1383,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">61</span>
+          <span class="site-state-item-count">62</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1382,7 +1395,7 @@
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">74</span>
+        <span class="site-state-item-count">75</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1442,12 +1455,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">193k</span>
+    <span title="站点总字数">198k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:55</span>
+    <span title="站点阅读时长">3:01</span>
 </div>
 
         

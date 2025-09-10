@@ -6,7 +6,7 @@
   <link href="https://seclusong.xyz/atom.xml" rel="self"/>
   
   <link href="https://seclusong.xyz/"/>
-  <updated>2024-03-29T05:58:23.000Z</updated>
+  <updated>2025-09-10T04:16:51.000Z</updated>
   <id>https://seclusong.xyz/</id>
   
   <author>
@@ -17,13 +17,41 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>【二五的鸽 Vol.01】九月第2周 九月的再生产</title>
+    <link href="https://seclusong.xyz/2025/09/10/2025-09-10-%E5%91%A8%E4%B8%89-121648_%E5%91%A8%E6%95%B4%E7%90%86/"/>
+    <id>https://seclusong.xyz/2025/09/10/2025-09-10-%E5%91%A8%E4%B8%89-121648_%E5%91%A8%E6%95%B4%E7%90%86/</id>
+    <published>2025-09-10T04:16:51.000Z</published>
+    <updated>2025-09-10T04:16:51.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="久违的成功学"><a href="#久违的成功学" class="headerlink" title="久违的成功学"></a>久违的成功学</h1><p><em>Vol.25.1 九月的再生产</em></p><p>在发生了各种各样的事情之后，总算是再次开始写Blog了。</p><p>真的是，存在主义危机总是时常发生，终于有一个还算是好用的通解了——如果有机会就细聊一下吧。</p><p>本期导读：</p><ul><li>《系统之美》的二手笔记</li><li>自制力管理方法：链式时延协议和递归稳态迭代协议</li><li>谈谈近况<span id="more"></span></li></ul><hr><h2 id="《系统之美》的二手笔记"><a href="#《系统之美》的二手笔记" class="headerlink" title="《系统之美》的二手笔记"></a>《系统之美》的二手笔记</h2><p>说是二手，是因为我也很久没有看书了，很多都是别人制作的解读或者读书音频，从中汲取一点二手💩……</p><p>总而言之，这个笔记是对一个带读视频（还是ai总结读稿的）的略微摘录。</p><h3 id="系统论"><a href="#系统论" class="headerlink" title="系统论"></a>系统论</h3><p>这个词在不同的领域学科或许有着不同的含义，而不过我之前有幸上过两节选修课，对里面的不少概念还算是熟悉——</p><p>总的来说，这本书科普的就是<strong>一般系统论（General Systems Theory, GST）</strong>和<strong>系统动力学（System Dynamics）</strong>。</p><p>这一学科希望通过寻找一些范式和通用规则来研究现存的各类系统的共性，并借此解决实际问题。</p><p>如果你对高中生物中的<strong>正负反馈循环</strong>还有印象，我可以告诉你，这正是系统动力学中的非常重要的两个概念。</p><p>那么接下来进入正题——</p><h3 id="系统的组成"><a href="#系统的组成" class="headerlink" title="系统的组成"></a>系统的组成</h3><p>系统论认为系统都由以下三项组成：</p><ul><li><strong>要素</strong>：系统内的<strong>实在事物</strong><ul><li>比如一棵树的树叶、根系与枝干。</li></ul></li><li><strong>连接方式</strong>：要素之间的<strong>相互作用</strong>的形式<ul><li>比如树叶是如何长在枝干上的，根系是如何为植物提供水份和微量元素的，光合作用的养分是如何为整体供能的。</li></ul></li><li><strong>功能目标</strong>：系统想要<strong>做到的事情</strong>或是<strong>成为的状态</strong><ul><li>比如树作为生物，其最终目的是为了生长与繁衍。</li></ul></li></ul><p>很多时候，人们分析系统却只关注要素，而忽视了这些要素间的连接方式，以及最终服务的目标。</p><p>所以，如何分析、改造乃至从零搭建一个系统，就是系统论希望研究的。</p><p>然后，就进入了系统动力学的领域——</p><h3 id="反馈回路：调节回路和增强回路"><a href="#反馈回路：调节回路和增强回路" class="headerlink" title="反馈回路：调节回路和增强回路"></a>反馈回路：调节回路和增强回路</h3><p>在讲两个回路之前，还有两个概念需要引入，尽管它们并不复杂——</p><ul><li>存量：系统中已有的某些要素的含量<ul><li>静态，直观</li></ul></li><li>流量：存量的变化量<ul><li>动态，隐藏</li><li>包含流入量和流出量两个子项</li></ul></li></ul><p>而后，就是两个很重要的基本概念，乃至工具——</p><ul><li>调节回路：也称平衡回路，负反馈回路<ul><li>意味着存量和流量间呈负相关的关系——当存量过大时，流出量会大于流入量，使存量减少；反之亦然。</li><li>作用是让系统保持稳定，抵抗变化，努力维持在一个特定状态。</li><li>它的好处在于能让一些走在既定的轨道上，而坏处就是外力一旦想改变这个状态，就会异常困难。</li></ul></li><li>增强回路：也称正反馈回路<ul><li>意味着存量和流量间呈正相关的关系——随着存量增大，其流入量也会更加大于流出量，致使存量更快地增加；反之亦然。</li><li>作用是强化系统的某个要素，呈现爆炸的指数性质的增长。</li><li>它是双刃剑，大名鼎鼎的良性循环和恶性循环，都是增强回路。</li></ul></li></ul><p>这就是系统动力学最重要的工具，目标就是让人正确地分析出系统中的存量流量，以及与之相关的调节回路与增强回路，或者说就是——</p><p>正负反馈循环。</p><h3 id="系统的三大特征"><a href="#系统的三大特征" class="headerlink" title="系统的三大特征"></a>系统的三大特征</h3><ul><li>适应性：拥有复杂多样的调节回路的系统会拥有更强大的适应性，来回归它原本的状态。</li><li>自组织：拥有自由宽松的条件和充足复杂的要素的系统会自发地进化与变革。</li><li>层次性：系统内部会形成子系统来应对复杂情况；子系统内部联系紧密，互相之间却相对松散。</li></ul><p>这些特征无一不在提示人们要增强系统的生命力，就需要保持其要素丰富，减少控制力。</p><p>到目前为止，书都是在介绍如何从零去构建一个系统，而接下来就进入了更现实的领域，如何理解一个现实的系统——</p><h3 id="理解障碍"><a href="#理解障碍" class="headerlink" title="理解障碍"></a>理解障碍</h3><ul><li>1.缘木求鱼<ul><li>对于系统的理解，作者认为分为三层：事件层、模式层、结构层，而人们往往只关注前面这些较浅的层级。</li><li>停留在事件层，人们只关注单一事件发生的原因和影响；比如自己工作的业务额下降。</li><li>在模式层，少数人就能意识到无数单一事件后的共性，也就是模式；比如整个公司的业务额都在某个周期中涨跌。</li><li>而到了结构层，只有最敏锐的人能洞悉其中的关键，模式反复发生的原因；比如是怎样的经营策略和市场战略让公司的业务额发生了变化。</li></ul></li><li>2.线性幻觉<ul><li>人们总是认为系统中的要素总是线性相关，一旦有流量投入和要素改变，那么对应的要素就应该立刻改变。</li><li>但事实是，几乎所有的系统都是非线性的，很多投入和变化，都要经过很久才会被察觉。</li></ul></li><li>3.边界模糊<ul><li>就像上面所说的那么多“在xx的条件下”，类似的前提即是系统的边界。</li><li>但这个边界是很难被认知而后划定的，别无他法，只有警觉与试错。</li></ul></li></ul><h3 id="系统陷阱"><a href="#系统陷阱" class="headerlink" title="系统陷阱"></a>系统陷阱</h3><ul><li>1.政策阻力<ul><li>即前文提及的，单一简单的办法，会被系统强大的众多的调节回路阻碍；就像试图改善堵车的政策性举措，会被房地产、居民诉求等原因阻止而不能顺利推行。</li></ul></li><li>2.公地悲剧<ul><li>如果没有适当且强力的调节回路，众多增强回路会爆发并毁灭整个系统；就像被过度放牧的公共牧场。</li></ul></li><li>3.目标侵蚀<ul><li>随着系统逐渐发展，系统的功能目标会逐渐被存量影响，向某个方向偏移，直到某个时刻突然崩塌，这是一种潜在的恶性循环；品牌为了短期盈利偷工减料就是一个典型的例子，等到品牌口碑完全崩溃的时候，一切已为时已晚。</li></ul></li></ul><p>综上可知，一个系统很可能是难以认知，脆弱而不可控的，所以，需要一些切实可行的方法去处理那些潜在或已经显现的问题——</p><h3 id="杠杆点"><a href="#杠杆点" class="headerlink" title="杠杆点"></a>杠杆点</h3><p>就像存在调节回路一样，很多操作的收效甚微，而增强调节——正反馈循环的存在告诉我们，有一些关键的改变，可以扭转恶性循环或者触发良性循环，类似的这种我们便称之为杠杆点。</p><p>作者将杠杆点从弱到强排序：</p><ul><li>数字：在系统的数字上做文章</li><li>缓冲器：用增大存量来应对系统波动</li><li>修改路径：修改要素流动的路径</li><li>延迟：缩短改变发生的延迟</li><li>调节回路：强化调节回路的强度</li><li>信息流：将信息细节公之于众（用于在大量人参与的系统）</li><li>规则：增加约束条件（增加新的调节回路）</li><li>自组织：为系统的自由度赋能（本质和信息流相同）</li><li>系统目标：修改并确立系统的功能目标</li><li>改变范式：范式是人们心中共同的价值观，改变范式，就像Windows和苹果改变了终端的形态</li></ul><h3 id="评价"><a href="#评价" class="headerlink" title="评价"></a>评价</h3><p>只能说，完全交给AI而放弃自己去读书这件事是一件风险很大的事情，在整理的过程中我就注意到了前后不一致等问题——所以我决定不贴出原视频链接，而在以后找机会自己重读一遍这本书（如果它真有那个价值的话）。</p><p>虽然大部分内容很零碎、泛泛而谈、缺少应用条件和背景，其点明了基本工具这点依然有其价值。</p><p>在我学习过的课程里，就说到当路径单一的时候，扭转关键节点就可以让恶性循环转变为良性循环——虽然这几乎是一种鸡汤或者迷信，但与我而言就是有价值的——不如说所有鸡汤对我都有价值（笑）。</p><p>说到模式，我对“3”极其敏感——当然不是说真的数字3，而是说，如果一个事情反复发生，我就会立刻感知到并着手分析和处理——事不过三，大概对我来说是一种近乎强迫症的行事准则吧！</p><h2 id="自制力管理方法：链式时延协议和递归稳态迭代协议"><a href="#自制力管理方法：链式时延协议和递归稳态迭代协议" class="headerlink" title="自制力管理方法：链式时延协议和递归稳态迭代协议"></a>自制力管理方法：链式时延协议和递归稳态迭代协议</h2><p>出处：<a href="https://www.zhihu.com/question/19888447/answer/1930799480401293785">如何提高自制力？ - edmond的回答 - 知乎</a></p><p>被秣佬推荐的一篇雄文，虽然我目前并不是非常需要对抗我的自制力匮乏，但其方法论很有意义且值得一记。</p><p>本篇不记录其中的原理分析，只做“如何做”的备忘。</p><h3 id="链式时延协议（Chained-Time-Delay-Protocol-CTDP）"><a href="#链式时延协议（Chained-Time-Delay-Protocol-CTDP）" class="headerlink" title="链式时延协议（Chained Time-Delay Protocol, CTDP）"></a>链式时延协议（Chained Time-Delay Protocol, CTDP）</h3><h4 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h4><ul><li><strong>神圣座位</strong>原理：<ul><li>规定一个“神圣座位”，它可以是需要坐上去的座位，可以是开始计时的番茄钟，也可以是一杯手磨手冲；</li><li>当你启动（坐上、开始）它之后，你就必须“专注地”做一个小时规定好的一件事——然后为你的计数+1；</li><li>如果你一旦没能在这期间<strong>“专注”</strong>，不仅这一次，你需要将这个神圣座位的计数直接清零。</li></ul></li><li><strong>下必为例</strong>原理：<ul><li>如果你无法确定如何算作专注，使用这一原则，即，只要任何中断被认为不算做“玷污神圣座位”，那么那之后所有类似的中断都必须不算。</li></ul></li><li><strong>线性时延</strong>原理：<ul><li>为神圣座位设定一个启动信号，一旦触发，15分钟内必须执行。</li></ul></li></ul><h4 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h4><blockquote><p>CTDP是一种基于三个核心原理（神圣座位原理、下必为例原理、线性时延原理）构造的行为约束策略。具体来说，它要求你构建两条平行的任务链（主链和辅助链），并且严格按照以下步骤进行：<br><strong>Main Chain 主链（任务链）</strong>：</p><ol><li><strong>首先，指定一个具体的事物作为标志，作为“神圣座位”</strong>（事实上，神圣座位只是一个比喻，它可以是任何事物，一张特定的椅子、一支特别的笔、一顶帽子，甚至是发给你特定微信小号的一条消息都可以）；</li><li>一旦你触发了这个标志，你就必须以“最好的状态”完成一个明确的专注任务；</li><li>每当你成功完成一次专注任务，就可以在主链中记录一个节点：第一次成功为 #1，第二次成功为 #2，第三次为 #3，依此类推；</li><li>如果在任何一次任务中途，你似乎做出了与“最好的状态”不符的行为，必须在下列两个选项中选择其一（“下必为例”原则）：</li><li>判定整个主任务链立即失败，清空所有当前已累积的节点记录，下一次只能从 #1 重新开始；</li><li>判定允许当前行为，但从此以后，该行为在后续任务中也必须永久允许，不得再视作违规；</li></ol><p><strong>Auxilary Chain 辅助链（预约链）</strong>：</p><ol><li><strong>定义一个简单的预约信号，比如打一个响指、打开一个闹钟，表示15分钟后将开始主任务</strong>；</li><li>一旦你触发这个预约信号，在接下来的15分钟内，你必须去触发那个神圣座位对应的标志，开始一个主链任务；</li><li>如果在预约触发后，你没有在15分钟内触发那个标志，那么同样适用“下必为例”原则：</li><li>要么彻底清空预约链的纪录，承认预约链失败；</li><li>要么允许当前的情况，但从此以后预约链将彻底失去所有对该情况的约束力；</li></ol></blockquote><h3 id="递归稳态迭代协议（Recursive-Stabilization-Iteration-Protocol-RSIP）"><a href="#递归稳态迭代协议（Recursive-Stabilization-Iteration-Protocol-RSIP）" class="headerlink" title="递归稳态迭代协议（Recursive Stabilization Iteration Protocol, RSIP）"></a>递归稳态迭代协议（Recursive Stabilization Iteration Protocol, RSIP）</h3><h4 id="局限性"><a href="#局限性" class="headerlink" title="局限性"></a>局限性</h4><ol><li>尺度受限问题：CTDP天然只能影响局部行为，无法撬动这些行为背后的长期因素。</li><li>稳态回落问题：即便我们短暂改变了生活状态，系统也会自发回落到原有的稳定模式中。</li><li>约束力耗散问题：任何偏离稳态的尝试，都是在消耗资源（比如意志力）去维持一个亚稳态，而这必然无法长久。</li></ol><ul><li>几乎所有自控手段，都不具备长期地，整体地，一蹴而就地改变整个稳态的力量。</li><li>在资源有限的前提下，所有试图脱离当前基态的努力，几乎都面临同一个命运——短暂成功后迅速回落，无法实现真正意义上的稳态跃迁。</li></ul><h4 id="转机"><a href="#转机" class="headerlink" title="转机"></a>转机</h4><blockquote><p>对任何一个看似无法逃脱的“不可逃逸区”，我们都必然可以回溯到某一个节点——在这个节点上，两个选项之间的倾向差距足够小，进入了自由意志的有效干预范围，让我们有能力真正避免进入最终那个负面的死局。</p><p>也就是说，每一个看似强大的，大尺度的负面稳态，都可以映射到一个弱小的，小尺度的有效干预节点上！</p><p>而这个节点，才是“不可逃逸区”的真正边界所在，也是小尺度的意志，得以反抗大尺度不利因素，唯一的机会。</p></blockquote><blockquote><p>我们生活中所面临的负面状态的种类，其实是极其有限，且高度重复的；而对任意一种负面状态，我们又总能通过回溯，将其映射为一个有效的干预节点。<br>那么，倘若我们对它精准地施加约束，就可以实现“四两拨千斤”的效果，防患于未然，从一开始就避免进入那些负面状态。这个约束，就是这个局面的局部最优解。<br>既然负面状态本身是可重复的，那么针对这些状态的“局部最优解”自然也同样是可重复的！</p></blockquote><h4 id="原理-1"><a href="#原理-1" class="headerlink" title="原理"></a>原理</h4><ul><li>递归回溯算法（Recursive Backtracking Algorithm）<ul><li>尝试 → 失败 → 撤回 → 换路径 → 继续尝试，直到成功。就像在下棋时，通过不断地悔棋来确保找到一条必胜之路一样。</li></ul></li></ul><p>通过将局部最优解集成到定式树中，进行递归回溯探索，累积起来，就能将小尺度的自由意志，放大到足以影响全局的地步。</p><h4 id="协议-1"><a href="#协议-1" class="headerlink" title="协议"></a>协议</h4><ul><li>针对生活中的各种负面状态，设计了一系列对应的定式，比如：<ul><li>保证回家一定洗澡的定式 (A)；</li><li>保证不带手机上沙发的定式 (B)；</li><li>保证晚上不刷小红书的定式 (C)；</li><li>保证吃完饭尽快洗碗的定式 (D)……</li></ul></li><li>定式的添加规则：<ul><li>如果当天成功做到了某个定式的要求，可以将它作为子节点加入到定式树中，但是每天最多添加一个。</li><li>例如，我发现H定式和已有的F定式是高度相关的，那么我可以将H定式作为F的子节点加入； 如果发现E定式看起来像是全新的一个领域，我也可以直接建立一个新的分支。</li></ul></li><li>定式的删除规则：以“堆栈结构”来管理，一旦删除某个定式，就同时删除它的所有子节点。<ul><li>例如，定式C有一次执行失败了，这就说明C定式以及后续的F,H组合并不稳定，那就大大方方地将其删除，同时删除其后续的F，H定式。（当然，未来还可以重新尝试将C定式再次加入树的末尾）</li></ul></li></ul><p>强化升级：例如，一个叫“作息储备计划”的可进阶国策，则可以安排在早睡早起的国策下面，将手机宵禁/起床时间逐级提前——如果某一天成功做到了22:45/7:45，就记录为“强化+1”；又有一天做到了22:40/7:40，又可以升级为“强化+2”。这种可升级的国策可以通过储备冗余，把它的基础节点保护起来。因为就算哪一次遇到事情不得不晚睡了，也大可以将其释放，退回到+0的状态，而你习惯的作息节奏不至于突然崩掉（从而导致它的子节点也难以维持）。</p><h3 id="评价-1"><a href="#评价-1" class="headerlink" title="评价"></a>评价</h3><p>就像上文所说，我确实不是特别需要自控力管理的一个人（不是说我就多J，只是说我依赖能量爆发能做很多事情），但我也能看出这个方法其中蕴含的潜力——RSIP对关键节点的探索，与之前的杠杆点的系统论思路不谋而合，让我想起把这两者合起来做了整理。</p><h2 id="谈谈近况"><a href="#谈谈近况" class="headerlink" title="谈谈近况"></a>谈谈近况</h2><p>最勤快更新博客的那阵子，我似乎是把这儿当成了某种抒发自我的社交媒体——后来的一些情况变化，让我有了别的宣泄口而放弃了这里，进而也就放弃了做周整理乃至别的什么。</p><p>那我现在为什么又要捡起来了呢？其实直到刚刚我才想起来这个问题，现在想想，大概是再次变得吝啬了吧？比起实际的宣泄口，怀念起了这样敝帚自珍的地方——属于自己的藏宝库，会有一天被哪个有心人发现吗？</p><p>虽然发生了很多不好说的事情，甚至经历了一些存在主义危机，不过学习了拉康，对哲学和精神分析有了些许涉猎，总算是看清楚了自己想要走的路，并踏出了该踏出的几步。</p><p>做个小骑士，拼尽全力活下去吧！</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;久违的成功学&quot;&gt;&lt;a href=&quot;#久违的成功学&quot; class=&quot;headerlink&quot; title=&quot;久违的成功学&quot;&gt;&lt;/a&gt;久违的成功学&lt;/h1&gt;&lt;p&gt;&lt;em&gt;Vol.25.1 九月的再生产&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;在发生了各种各样的事情之后，总算是再次开始写Blog了。&lt;/p&gt;
+&lt;p&gt;真的是，存在主义危机总是时常发生，终于有一个还算是好用的通解了——如果有机会就细聊一下吧。&lt;/p&gt;
+&lt;p&gt;本期导读：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;《系统之美》的二手笔记&lt;/li&gt;
+&lt;li&gt;自制力管理方法：链式时延协议和递归稳态迭代协议&lt;/li&gt;
+&lt;li&gt;谈谈近况&lt;/li&gt;&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://seclusong.xyz/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="系统论" scheme="https://seclusong.xyz/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>OpenSCENARIO DSL笔记</title>
     <link href="https://seclusong.xyz/2024/03/29/2024-03-29-%E5%91%A8%E4%BA%94-135821_OSCDSL%E7%AC%94%E8%AE%B0/"/>
     <id>https://seclusong.xyz/2024/03/29/2024-03-29-%E5%91%A8%E4%BA%94-135821_OSCDSL%E7%AC%94%E8%AE%B0/</id>
     <published>2024-03-29T05:58:23.000Z</published>
     <updated>2024-03-29T05:58:23.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="OpenSCENARIO-DSL-←-OpenSCENARIO-2-x"><a href="#OpenSCENARIO-DSL-←-OpenSCENARIO-2-x" class="headerlink" title="OpenSCENARIO DSL ← OpenSCENARIO 2.x"></a>OpenSCENARIO DSL ← OpenSCENARIO 2.x</h1><p>ASAM对OSC2.0的推出，主要是为了更精准地聚焦于需要的仿真场景，而把其他的部分模糊、泛化，以此克服1.x系列使用xml描述的不必要的繁琐。</p><p>而最近的一次会议之后，大家意识到旧的1.x因为符合大家的习惯依然有着巨大的需求，而2.0也需要完善、发展与普及。</p><p>因此OSC 1.x系列被更名为OSC XML系列，而OSC 2.x系列被更名为OSC DSL系列。</p><p>这篇笔记，主要将针对OSCDSL的设计思想和语法做一个简单的记录。</p><p>因为目前仅有几篇来自CASAM的介绍文章，大部分术语译名都由我自己决定。</p><p>参考：</p><ul><li><a href>OSCDSL2.1官方文档</a><span id="more"></span></li></ul><hr><h1 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h1><p>取自文档的介绍（Introduction）一节。</p><h2 id="理念"><a href="#理念" class="headerlink" title="理念"></a>理念</h2><p>OSCDSL以下列理念设计：</p><ul><li>领域特定语言（DSL，domain-specific language）。顾名思义，它是一种编程语言，但仅在特定领域使用，语法也仅包含这相关的内容。</li><li>高度抽象描述（high-level abstract descriptions）。就像前文所述，它可以聚焦于特定的场景特点，而完成相对抽象的场景描述。</li><li>编程语言（programming language）。为了能被集成进实际的项目或软件中，它被设计成编程语言的样子，以便调用等逻辑处理。</li><li>声明式（declarative language）。它会声明什么该发生，而不是怎么发生。并借助约束条件来完成这点。</li><li>基于约束条件（constraint-based language）。通过对参数设定值或者范围，它得以定义场景。</li><li>面向切片语言（AOP，aspect-oriented programming language）。修改特定的内容不会影响整个场景，因此很适合下述目的：<ul><li>修改整个或部分行为。</li><li>修改所有或部分实例的行为。</li><li>修改行为以适应特定测试目的。</li></ul></li></ul><h2 id="导读"><a href="#导读" class="headerlink" title="导读"></a>导读</h2><p>不同章节包含的内容不同，本篇笔记重点会对“标准”相关的内容做记录。</p><ul><li>1.Scope</li><li>2.</li><li>3.Terms and definitions</li><li>4.Abbreviations</li><li>5. </li><li>6.Conceptual overview</li><li>7.Language reference manual</li><li>8.Domain model reference</li><li>9.User guide</li></ul><p>此外，OSCDSL也支持包括外部函数调用等扩展功能，会在后续提到。</p><h2 id="术语和定义"><a href="#术语和定义" class="headerlink" title="术语和定义"></a>术语和定义</h2>]]></content>
+    <content type="html"><![CDATA[<h1 id="OpenSCENARIO-DSL-←-OpenSCENARIO-2-x"><a href="#OpenSCENARIO-DSL-←-OpenSCENARIO-2-x" class="headerlink" title="OpenSCENARIO DSL ← OpenSCENARIO 2.x"></a>OpenSCENARIO DSL ← OpenSCENARIO 2.x</h1><p>ASAM对OSC2.0的推出，主要是为了更精准地聚焦于需要的仿真场景，而把其他的部分模糊、泛化，以此克服1.x系列使用xml描述的不必要的繁琐。</p><p>而最近的一次会议之后，大家意识到旧的1.x因为符合大家的习惯依然有着巨大的需求，而2.0也需要完善、发展与普及。</p><p>因此OSC 1.x系列被更名为OSC XML系列，而OSC 2.x系列被更名为OSC DSL系列。</p><p>这篇笔记，主要将针对OSCDSL的设计思想和语法做一个简单的记录。</p><p>因为目前仅有几篇来自CASAM的介绍文章，大部分术语译名都由我自己决定。</p><p>参考：</p><ul><li><a href="https://usepastel.com/link/o9d9m0k4/#/standards/ASAM_OpenSCENARIO/ASAM_OpenSCENARIO_DSL/latest/index.html">OSCDSL2.1官方文档</a><span id="more"></span></li></ul><hr><h1 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h1><p>取自文档的介绍（Introduction）一节。</p><h2 id="理念"><a href="#理念" class="headerlink" title="理念"></a>理念</h2><p>OSCDSL以下列理念设计：</p><ul><li>领域特定语言（DSL，domain-specific language）。顾名思义，它是一种编程语言，但仅在特定领域使用，语法也仅包含这相关的内容。</li><li>高度抽象描述（high-level abstract descriptions）。就像前文所述，它可以聚焦于特定的场景特点，而完成相对抽象的场景描述。</li><li>编程语言（programming language）。为了能被集成进实际的项目或软件中，它被设计成编程语言的样子，以便调用等逻辑处理。</li><li>声明式（declarative language）。它会声明什么该发生，而不是怎么发生。并借助约束条件来完成这点。</li><li>基于约束条件（constraint-based language）。通过对参数设定值或者范围，它得以定义场景。</li><li>面向切片语言（AOP，aspect-oriented programming language）。修改特定的内容不会影响整个场景，因此很适合下述目的：<ul><li>修改整个或部分行为。</li><li>修改所有或部分实例的行为。</li><li>修改行为以适应特定测试目的。</li></ul></li></ul><h2 id="导读"><a href="#导读" class="headerlink" title="导读"></a>导读</h2><p>不同章节包含的内容不同，本篇笔记重点会对“标准”相关的内容做记录。</p><ul><li>1.Scope</li><li>2.</li><li>3.Terms and definitions</li><li>4.Abbreviations</li><li>5. </li><li>6.Conceptual overview</li><li>7.Language reference manual</li><li>8.Domain model reference</li><li>9.User guide</li></ul><p>此外，OSCDSL也支持包括外部函数调用等扩展功能，会在后续提到。</p><h2 id="术语和定义"><a href="#术语和定义" class="headerlink" title="术语和定义"></a>术语和定义</h2><p>（备注于25.09.10：因为工作领域的变动，暂时不会继续更新）</p>]]></content>
     
     
     <summary type="html">&lt;h1 id=&quot;OpenSCENARIO-DSL-←-OpenSCENARIO-2-x&quot;&gt;&lt;a href=&quot;#OpenSCENARIO-DSL-←-OpenSCENARIO-2-x&quot; class=&quot;headerlink&quot; title=&quot;OpenSCENARIO DSL ← OpenSCENARIO 2.x&quot;&gt;&lt;/a&gt;OpenSCENARIO DSL ← OpenSCENARIO 2.x&lt;/h1&gt;&lt;p&gt;ASAM对OSC2.0的推出，主要是为了更精准地聚焦于需要的仿真场景，而把其他的部分模糊、泛化，以此克服1.x系列使用xml描述的不必要的繁琐。&lt;/p&gt;
@@ -33,7 +61,7 @@
 &lt;p&gt;因为目前仅有几篇来自CASAM的介绍文章，大部分术语译名都由我自己决定。&lt;/p&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href&gt;OSCDSL2.1官方文档&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary>
+&lt;li&gt;&lt;a href=&quot;https://usepastel.com/link/o9d9m0k4/#/standards/ASAM_OpenSCENARIO/ASAM_OpenSCENARIO_DSL/latest/index.html&quot;&gt;OSCDSL2.1官方文档&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary>
     
     
     
@@ -52,8 +80,8 @@
   
   <entry>
     <title>2024/01/19 周五T105516_</title>
-    <link href="https://seclusong.xyz/2024/01/19/2024-01-19-%E5%91%A8%E4%BA%94T105516_%E5%91%A8%E6%95%B4%E7%90%86/"/>
-    <id>https://seclusong.xyz/2024/01/19/2024-01-19-%E5%91%A8%E4%BA%94T105516_%E5%91%A8%E6%95%B4%E7%90%86/</id>
+    <link href="https://seclusong.xyz/2024/01/19/archived/2024-01-19-%E5%91%A8%E4%BA%94T105516_%E5%91%A8%E6%95%B4%E7%90%86/"/>
+    <id>https://seclusong.xyz/2024/01/19/archived/2024-01-19-%E5%91%A8%E4%BA%94T105516_%E5%91%A8%E6%95%B4%E7%90%86/</id>
     <published>2024-01-19T02:55:19.000Z</published>
     <updated>2024-01-19T02:55:19.000Z</updated>
     
@@ -201,12 +229,13 @@
     <link href="https://seclusong.xyz/2023/04/22/2023-04-22-%E5%91%A8%E5%85%AD-15-31-20StDf/"/>
     <id>https://seclusong.xyz/2023/04/22/2023-04-22-%E5%91%A8%E5%85%AD-15-31-20StDf/</id>
     <published>2023-04-22T07:31:21.000Z</published>
-    <updated>2023-04-22T07:31:21.000Z</updated>
+    <updated>2025-09-10T04:20:21.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Stable-Diffusion入门笔记"><a href="#Stable-Diffusion入门笔记" class="headerlink" title="Stable Diffusion入门笔记"></a>Stable Diffusion入门笔记</h1><p>在喂饭教程和懒人包满地都是的情况下，这篇笔记仅仅只是作为搭建过程的记录，以便将来做类似操作时参考。</p><p>目录：</p><ul><li>环境搭建准备</li><li>结构介绍</li><li>懒人包推荐及其他<span id="more"></span></li></ul><hr>]]></content>
+    <content type="html"><![CDATA[<h1 id="Stable-Diffusion入门笔记"><a href="#Stable-Diffusion入门笔记" class="headerlink" title="Stable Diffusion入门笔记"></a>Stable Diffusion入门笔记</h1><p>在喂饭教程和懒人包满地都是的情况下，这篇笔记仅仅只是作为搭建过程的记录，以便将来做类似操作时参考。</p><p>更新备注：在25年似乎一切都有了大变样，T2I相关生态已经非常成熟了，这篇就先拉到前排出来提醒自己更新，内容也会偏向技术原理而非实用应用。</p><p>目录：</p><ul><li>环境搭建准备</li><li>结构介绍</li><li>懒人包推荐及其他<span id="more"></span></li></ul><hr>]]></content>
     
     
     <summary type="html">&lt;h1 id=&quot;Stable-Diffusion入门笔记&quot;&gt;&lt;a href=&quot;#Stable-Diffusion入门笔记&quot; class=&quot;headerlink&quot; title=&quot;Stable Diffusion入门笔记&quot;&gt;&lt;/a&gt;Stable Diffusion入门笔记&lt;/h1&gt;&lt;p&gt;在喂饭教程和懒人包满地都是的情况下，这篇笔记仅仅只是作为搭建过程的记录，以便将来做类似操作时参考。&lt;/p&gt;
+&lt;p&gt;更新备注：在25年似乎一切都有了大变样，T2I相关生态已经非常成熟了，这篇就先拉到前排出来提醒自己更新，内容也会偏向技术原理而非实用应用。&lt;/p&gt;
 &lt;p&gt;目录：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;环境搭建准备&lt;/li&gt;
@@ -570,39 +599,6 @@
     <category term="网络" scheme="https://seclusong.xyz/tags/%E7%BD%91%E7%BB%9C/"/>
     
     <category term="FTP" scheme="https://seclusong.xyz/tags/FTP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基于DND5E核心规则的数值杂谈</title>
-    <link href="https://seclusong.xyz/2021/02/24/2021-02-24-%E5%91%A8%E4%B8%89-16-29-06%E5%88%86%E6%9E%90/"/>
-    <id>https://seclusong.xyz/2021/02/24/2021-02-24-%E5%91%A8%E4%B8%89-16-29-06%E5%88%86%E6%9E%90/</id>
-    <published>2021-02-24T08:29:08.000Z</published>
-    <updated>2021-02-24T08:29:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="只是杂谈而已"><a href="#只是杂谈而已" class="headerlink" title="只是杂谈而已"></a>只是杂谈而已</h1><p><em>基于DND5E核心规则的数值杂谈</em></p><p>外面构思的时候想了几个开场，但是都迅速忘记了，于是直接进入正题。<br>算不上什么分析，基本只是纸上谈兵（因为我只跑过低级团嘛，等等，跑团本来不就是纸上谈兵吗？），因为只是把玩家手册和城主指南中写出来的东西抄了一遍的程度罢了。再加上会有很多个人好恶的废话在，所以只能算得上是杂谈。</p><p>没有目录，反正左边能看见文章结构嘛。</p><span id="more"></span><h2 id="线性成长"><a href="#线性成长" class="headerlink" title="线性成长"></a>线性成长</h2><p>首先以前就做过一次<a href="https://skmtjun.github.io/2018/04/10/RPG%E6%B8%B8%E6%88%8F%E8%A7%92%E8%89%B2%E6%88%90%E9%95%BF/">RPG角色等级成长数值分析</a>，其实只是把网上人家的说法抄了一遍罢了。</p><p>这是DND5E的角色等级和经验值表。</p><table><thead><tr><th>等级</th><th>总经验</th><th>差值</th><th>等级</th><th>所需经验</th><th>差值</th></tr></thead><tbody><tr><td>1</td><td>0</td><td>0</td><td>11</td><td>85,000</td><td>21,000</td></tr><tr><td>2</td><td>300</td><td>300</td><td>12</td><td>100,000</td><td>15,000</td></tr><tr><td>3</td><td>900</td><td>600</td><td>13</td><td>120,000</td><td>20,000</td></tr><tr><td>4</td><td>2,700</td><td>1,800</td><td>14</td><td>140,000</td><td>20,000</td></tr><tr><td>5</td><td>6,500</td><td>3,800</td><td>15</td><td>165,000</td><td>25,000</td></tr><tr><td>6</td><td>14,000</td><td>7,500</td><td>16</td><td>195,000</td><td>30,000</td></tr><tr><td>7</td><td>23,000</td><td>9,000</td><td>17</td><td>225,000</td><td>30,000</td></tr><tr><td>8</td><td>34,000</td><td>11,000</td><td>18</td><td>265,000</td><td>40,000</td></tr><tr><td>9</td><td>48,000</td><td>14,000</td><td>19</td><td>305,000</td><td>40,000</td></tr><tr><td>10</td><td>64,000</td><td>16,000</td><td>20</td><td>355,000</td><td>50,000</td></tr></tbody></table><p>可以看出其实5E的经验数值设计并没有严格按照某个公式来计算。如果说前面还有点某个次方的增长的味道在，12级往后就直接简单粗暴了（笑）。</p><p>这并不是说这个数值设计就不上心，设计师如此设计必然有他的用意在，需要和敌人的挑战等级及对应的经验值比对着来看。但那是另一套有关难度设计的数值，我们可以留到那部分再说。</p><p>直接给结论的话，就是<strong>DND的战斗升级体验基本是线性的</strong>，即花费相同的时间和精力，角色会以近似的时间间隔获得成长。这基本也是线性模组设计的基准：让每个章节的战斗回数都差不太多，一次三四小时的聚会刚好结束一章够升1级（这也方便主持人直接使用里程碑式等级推进作为替代）。</p><h3 id="战斗力的成长"><a href="#战斗力的成长" class="headerlink" title="战斗力的成长"></a>战斗力的成长</h3><p>首先需要普及一个通用公式，即<strong>生命值*每秒伤害（回合制就是每回合伤害DPT）=战斗力</strong>。哪方战斗力高就能获得胜利。这是最基础的公式，不考虑其他因素和多方混战等情况。<br>我们也从<strong>生命值</strong>和<strong>每回合伤害</strong>两方面来看。</p><p><strong>生命值</strong>。简单来说，角色的生命值计算方式就是等级*（职业生命骰+其他加值），是随着等级线性提升的。</p><p>当然实际生命值肯定不止这点，战斗中利用能力、法术和道具回血的手段也会随着游戏推进逐渐增加。</p><p><strong>DPT</strong>。每回合伤害的成长更加曲折一点。从思路来看，角色等级在5、11和17级，每次进入一个新的划分时会有一个较大的提升，基本都是一个骰子变成两个，两个变成三个。</p><p>能看出的是，5E的角色成长是在线性成长的基础上，在某些等级有较大提升，以此形成类似阶梯状的成长曲线。</p><p><strong>————普及到此为止，下面开始大量使用术语黑话————</strong></p><p>战士和圣爹这样的菜刀职业在划分点上有着明确的成长提升，而施法者会获得质变水平的新环位和戏法的增伤。（这么一看什么职业是输出下水道就很明显了。)</p><p>在第一个阶段，角色职业还在建立自己的风格，但大家都菜。5级角色开始变强，设计开始分化，但数值的思路上是同步的。</p><p>偏物理的职业这里以11级为例：</p><ul><li>圣爹在11级时平a算上额外攻击会多2个d8。</li><li>战士是再多打一次，增加的骰子大小看武器。</li><li>游侠会拥有多重攻击特性。</li><li>贼稳定地增加偷袭的骰子数，11级虽然没有大提升，但像法系一样每两级一次提升。</li><li>武僧的11级给了子职，但武艺骰子从d6变成了d8。</li><li>蛮子比较特别，给了一个强力的续航特性。</li></ul><p>法系11级除了戏法提升，获得了6环法术，从DMG来看标准伤害又提升了两个d10。法系不同之处在于，每2级就会有新环阶（标准伤害骰会多1至2个d10），同时环位也一直在持续增加。5E在游戏流程中大多都是短期爆发战斗，法系有限的环位姑且也可以直接拿来计算DPT。这么来看法系的DPT是远高于其他职业的，但作为代价他们有更少的生命骰（牧师诗人王洛克德鲁伊：？明明d6生命骰的才是少数吧，不如问问为什么贼和武僧只有d8）。</p><p>在不讨论细节的情况下，我们能注意到基本确实是在这些时点提升了数值。虽然实际情况不同职业的特性让他们在某些时点有更明显的提升，但大多数时候各职业都是以这个思路进行设计的。</p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>不说“角色全程都在成长”这种废话，我们能看出法系以稳定且大量的数据成长着，两级一次的环位提升和新的法术表；其他职业的提升虽然不一定有法系那样频繁或强力，也有各自的关键时点，特别是5、11和17级。</p><h2 id="特性分布"><a href="#特性分布" class="headerlink" title="特性分布"></a>特性分布</h2><p>有了数值设计的基本思路，进一步的就是职业特性的设计。</p><p>5E的职业特性基本是固定的套路，各种职业有近一半的等级位置是类似的内容。</p><p>这里列举一些我总结的职业特性分布规律（我也可以写一份每级特性的类型归类，但是我懒）：</p><ul><li>法术位提升；全施法者在奇数等级(半施法者和1/3施法者类似）。</li><li>职业骰提升：奇数等级或每4级的奇数等级。</li><li>4、8、12、16、19：属性值提升（战士多2个、贼多1个）。</li><li>对数值影响较小的特性：偶数等级。</li><li>对数值影响较大的特性：奇数等级。</li><li>较大的平a输出提升：5、11、17级。</li><li>法系子职特性：多在偶数等级。</li><li>战系子职特性：多在3、7、15级，另有一个会在11、17或20级的位置。</li></ul><p>20级大招特性一般都是噱头，玩不到的（笑）。</p><h3 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h3><p>总的来说，思路上基本以属性值提升和法术位提升为基本，再在适当的位置填充子职特性，最后在剩下的位置加入通用特性。特别地，法术位提升的位置也可以稍微增加对数值无关痛痒的通用特性以增加职业特色。<br>要注意的是，5、11和17级这三个位置对战斗力的数值提升要有明显体现。</p><h2 id="其他碎碎念"><a href="#其他碎碎念" class="headerlink" title="其他碎碎念"></a>其他碎碎念</h2><p>前半段是科普向，后半段又变成圈外不明觉厉圈内嗤之以鼻的内容，结果标题里的杂谈根本看不见啊！</p><p>有点感冒，而且基本没打草稿想到什么写什么，结果写成了这个样子，想发微博的这也不敢发了。</p><p>前段时间写私设扩展，感觉摸到了一点5E设计师的原则和思路，就想总结一下。但实际开写的时候发现不准备大纲果然还是要命。<br><em>杂谈吧，就当杂谈了。</em></p><p>其他一些有趣的点还没有提到，比如：</p><ul><li>用各只有一次的三项资源限制每回合的输出数值，三项资源各有适用的方面及原则。</li><li>核心规则中大量长休一次的特性和扩展规则中变得逐渐可以多次使用的特性形成的对比。</li><li>核心规则中保守的子职设计和扩展规则中条条加战斗力的子职设计的对比</li><li>虽然DMG上没有明确说，也能观察出种族特性设计的一些模板原则（背景的设计建议倒是写的挺明白）。</li><li>武器和护甲数值的规律。</li></ul><p>正好刷到了知乎上别人问3R和5E战力的比对，3R那真的是人均毁天灭地，5E可以说是束手束脚到不敢相信是同一个系列（4E：啊？）。<br>说到4E ，果园4E讨论区最后一个帖子是19年12月的（悲）。<br>5E对数据的约束强了很多，果然还是不希望它和3R一样一回合算那么半天吧，而且说实话3R那强度已经无法想象了。</p><p>能看得出来，核心规则中对各类检定往往是用优势劣势来做干涉的，可能这也是为了方便只投骰子。不过后面的扩展开始有点变成算数游戏的味道，对此我也不好作评价。我只是在担心，我将来要如何知道+1+3+5的区别呢。</p><p>玩完博德3目前的内容也有很多想吐槽的，下篇就聊聊这个。</p><p>感觉这次内容以后会拆分开重新整理好好写一次，这次就当是做一些笔记引子吧！</p>]]></content>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;只是杂谈而已&quot;&gt;&lt;a href=&quot;#只是杂谈而已&quot; class=&quot;headerlink&quot; title=&quot;只是杂谈而已&quot;&gt;&lt;/a&gt;只是杂谈而已&lt;/h1&gt;&lt;p&gt;&lt;em&gt;基于DND5E核心规则的数值杂谈&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;外面构思的时候想了几个开场，但是都迅速忘记了，于是直接进入正题。&lt;br&gt;算不上什么分析，基本只是纸上谈兵（因为我只跑过低级团嘛，等等，跑团本来不就是纸上谈兵吗？），因为只是把玩家手册和城主指南中写出来的东西抄了一遍的程度罢了。再加上会有很多个人好恶的废话在，所以只能算得上是杂谈。&lt;/p&gt;
-&lt;p&gt;没有目录，反正左边能看见文章结构嘛。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="分析" scheme="https://seclusong.xyz/categories/%E5%88%86%E6%9E%90/"/>
-    
-    <category term="游戏" scheme="https://seclusong.xyz/categories/%E5%88%86%E6%9E%90/%E6%B8%B8%E6%88%8F/"/>
-    
-    <category term="桌游" scheme="https://seclusong.xyz/categories/%E5%88%86%E6%9E%90/%E6%B8%B8%E6%88%8F/%E6%A1%8C%E6%B8%B8/"/>
-    
-    
-    <category term="游戏设计" scheme="https://seclusong.xyz/tags/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="杂谈" scheme="https://seclusong.xyz/tags/%E6%9D%82%E8%B0%88/"/>
-    
-    <category term="TRPG" scheme="https://seclusong.xyz/tags/TRPG/"/>
-    
-    <category term="数值设计" scheme="https://seclusong.xyz/tags/%E6%95%B0%E5%80%BC%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
