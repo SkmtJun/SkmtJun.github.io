@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icon180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icon16.png">
+  <link rel="mask-icon" href="/images/icon.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"seclusong.xyz","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="规则的影响和启发以《克苏鲁的呼唤》为例的TRPG规则分析 以前写的水货。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="以《克苏鲁的呼唤》为例的TRPG规则分析">
+<meta property="og:url" content="https://seclusong.xyz/2018/09/22/COC%E8%A7%84%E5%88%99%E5%88%86%E6%9E%90/index.html">
+<meta property="og:site_name" content="SecluSong">
+<meta property="og:description" content="规则的影响和启发以《克苏鲁的呼唤》为例的TRPG规则分析 以前写的水货。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://seclusong.xyz/image/COC%E8%A7%84%E5%88%99%E5%88%86%E6%9E%90/%E5%B1%9E%E6%80%A7%E8%A1%A8.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/COC%E8%A7%84%E5%88%99%E5%88%86%E6%9E%90/02.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/COC%E8%A7%84%E5%88%99%E5%88%86%E6%9E%90/03.jpg">
+<meta property="article:published_time" content="2018-09-22T14:57:36.000Z">
+<meta property="article:modified_time" content="2019-08-05T14:57:36.000Z">
+<meta property="article:author" content="顺风幽SecluSong">
+<meta property="article:tag" content="分析">
+<meta property="article:tag" content="游戏策划">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://seclusong.xyz/image/COC%E8%A7%84%E5%88%99%E5%88%86%E6%9E%90/%E5%B1%9E%E6%80%A7%E8%A1%A8.jpg">
+
+<link rel="canonical" href="https://seclusong.xyz/2018/09/22/COC%E8%A7%84%E5%88%99%E5%88%86%E6%9E%90/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>以《克苏鲁的呼唤》为例的TRPG规则分析 | SecluSong</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="SecluSong" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">SecluSong</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">幽歌</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">21</span></a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://seclusong.xyz/2018/09/22/COC%E8%A7%84%E5%88%99%E5%88%86%E6%9E%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dice.jpg">
+      <meta itemprop="name" content="顺风幽SecluSong">
+      <meta itemprop="description" content="顺风幽的个人站点">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SecluSong">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          以《克苏鲁的呼唤》为例的TRPG规则分析
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-09-22 22:57:36" itemprop="dateCreated datePublished" datetime="2018-09-22T22:57:36+08:00">2018-09-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-05 22:57:36" itemprop="dateModified" datetime="2019-08-05T22:57:36+08:00">2019-08-05</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%88%86%E6%9E%90/" itemprop="url" rel="index"><span itemprop="name">分析</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%88%86%E6%9E%90/%E6%B8%B8%E6%88%8F/" itemprop="url" rel="index"><span itemprop="name">游戏</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%88%86%E6%9E%90/%E6%B8%B8%E6%88%8F/%E6%A1%8C%E6%B8%B8/" itemprop="url" rel="index"><span itemprop="name">桌游</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2018/09/22/COC%E8%A7%84%E5%88%99%E5%88%86%E6%9E%90/" class="post-meta-item leancloud_visitors" data-flag-title="以《克苏鲁的呼唤》为例的TRPG规则分析" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2018/09/22/COC%E8%A7%84%E5%88%99%E5%88%86%E6%9E%90/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2018/09/22/COC%E8%A7%84%E5%88%99%E5%88%86%E6%9E%90/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="规则的影响和启发"><a href="#规则的影响和启发" class="headerlink" title="规则的影响和启发"></a>规则的影响和启发</h1><p><em>以《克苏鲁的呼唤》为例的TRPG规则分析</em></p>
+<p>以前写的水货。</p>
+<span id="more"></span>
+<h2 id="桌游、TRPG及其他"><a href="#桌游、TRPG及其他" class="headerlink" title="桌游、TRPG及其他"></a>桌游、TRPG及其他</h2><p>在电子游戏还未兴起的年代，各类桌游作为主流娱乐方式的替代品，活跃在年轻一代的桌子上。而桌上角色扮演游戏（Tabletop Role-playing Game即TRPG）作为其中一个分支，直接成为了日后电子游戏中RPG大类的前身。</p>
+<p>游玩TRPG，需要多名玩家坐在桌子前，手持用来解释一切的规则书和代表角色资料的各类卡片表单。一名玩家担任主持人，负责整个游戏世界的运转和各个玩家的协调沟通。剩下多名玩家则需要认真扮演好自己的角色，利用资料卡片上的内容推进故事进行。</p>
+<p>游戏的主要推进方式有两种——玩家和主持人交流推进故事、和出现矛盾时使用骰子决定事件结果。这些设计理念也被后来的电子游戏们吸收并加以利用。</p>
+<h2 id="邪神之召唤"><a href="#邪神之召唤" class="headerlink" title="邪神之召唤"></a>邪神之召唤</h2><p>克苏鲁的呼唤（Call of Cthulhu即COC）是在如今仍然活跃在玩家们视线中的一款TRPG。其出名之处在于前几年由日本带起的Replay风潮——即视频制作者将自己游玩的记录制作成动画视频并配以演出，上传至视频网站供其他人观看。</p>
+<p>COC的世界观和规则设定来源于著名的<strong>克苏鲁神话体系</strong>，关于克苏鲁神话这里并不多做介绍，只在这里简单提一句——玩家控制的人类们是弱小无能的种族，只能用最孱弱的肉体凡胎去对抗那些强大的怪物和邪恶的神祇，还有那无穷无尽而未知的恐惧。</p>
+<p>所以在基于这点的设定上，相比其他角色扮演类游戏所强调的角色属性和能力的成长，COC玩家们的角色<strong>几乎没有成长的可能</strong>。</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img src="/image/COC%E8%A7%84%E5%88%99%E5%88%86%E6%9E%90/%E5%B1%9E%E6%80%A7%E8%A1%A8.jpg" alt="属性表"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">这些属性往往在游戏一开始就被确定下来，而在随后的过程里几乎不会增加（甚至会因为一些事件而减少）。</td>
+</tr>
+<tr>
+<td align="center">但是并不代表玩家就没有办法去推进游戏、去对抗邪恶以拯救这个濒临破灭的世界。</td>
+</tr>
+</tbody></table>
+<h2 id="无知无能的人类——规则：属性和能力"><a href="#无知无能的人类——规则：属性和能力" class="headerlink" title="无知无能的人类——规则：属性和能力"></a>无知无能的人类——规则：属性和能力</h2><p>在COC的规则中，一个角色拥有包括上文配图所包含的<strong>属性</strong>、自由分配的<strong>技能</strong>、和据此计算出的<strong>资源</strong>（生命值、魔法值、理智值、金钱等）。</p>
+<p>属性代表了角色的各项身体素质，一般分散在15到90之间 ——这代表了一个正常人类的身体素质的上限和下限。而这样设计的数值也有其巧妙之处，这将在后文提到。</p>
+<p>技能代表了角色对各类技术的熟练程度，小到躲开一次拳击，大到驾驶航天飞机。其数值分布在1-99之间，代表了角色对这项技能使用的成功概率。</p>
+<table>
+<thead>
+<tr>
+<th align="center"><img src="/image/COC%E8%A7%84%E5%88%99%E5%88%86%E6%9E%90/02.jpg" alt="属性表"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">这些就是一个玩家角色用于推进故事最主要的能力。</td>
+</tr>
+<tr>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">生命值一类的消耗类属性很直观，不用过多解释。</td>
+</tr>
+</tbody></table>
+<h2 id="向骰子女神祈祷吧——规则：掷骰"><a href="#向骰子女神祈祷吧——规则：掷骰" class="headerlink" title="向骰子女神祈祷吧——规则：掷骰"></a>向骰子女神祈祷吧——规则：掷骰</h2><p>“向骰子女神祈祷吧。”是我游玩时常说的一句话。因为COC的游戏的推进，除了玩家的决策，更多依靠的是骰子的结果。</p>
+<h3 id="D100体系"><a href="#D100体系" class="headerlink" title="D100体系"></a>D100体系</h3><p>我们往往将产生一个1到100的随机数来决定结果的TRPG称为D100体系，相对的还有《龙与地下城》一类的D20体系。D20体系可以投掷一个二十面骰，但我们不可能找的出一百面骰，所以是用两个十面骰分别代表十位和个位来决定结果。</p>
+<p><img src="/image/COC%E8%A7%84%E5%88%99%E5%88%86%E6%9E%90/03.jpg" alt="属性表"></p>
+<p>在D20体系中，一个事件会有一个难度值，而玩家只要能骰出高于难度的数值的结果，就算成功通过事件。有些时候难度值会非常高甚至超过20，就需要角色在这方面拥有一定的能力值以获得奖励值。</p>
+<p>比如一个锁的难度是21，角色得到的奖励值是8，那么他只要在一个二十面骰的结果中得到超过13的数值就可以成功打开那个锁。</p>
+<p>而D100体系是相反的。所有的属性值和技能值都被当作一个从0开始累加的数据，越高那么这项能力就越强。而掷骰需要玩家骰出小于等于那项数值的结果，越小效果越好。基于这种数值设计衍生出了更丰富的规则——如果骰出1点2点这种极端小的数字，事件将会得到更好的结果；反之如果到了99点100点，则会让事态进一步恶化。</p>
+<p>比如角色想要观察一下面前院子里的人们，使用了“侦察”技能，技能值为50。如果玩家骰出了40点，是个成功的结果，则角色成功在人群里发现了那个小偷；如果是2点，大成功，则角色成功发现那个小偷就在自己身边不远处，可以轻松地抓住他；如果是70点，失败了，则角色没能发现那个小偷；如果不幸是99点，一个大失败，则角色过于专注，没有发现那个小偷不知道什么时候已经把自己的钱包摸走了。</p>
+<h3 id="其他随机骰"><a href="#其他随机骰" class="headerlink" title="其他随机骰"></a>其他随机骰</h3><p>除了判定成功与否，有些时候一些未知的结果也需要靠掷骰来判断。一名人类的生命值往往是10点左右，而一把使用马格南弹的大威力手枪会造成5到19点伤害，写作1D10+1D6+3，即骰一个十面骰和一个六面骰并将结果相加后再加三。这决定了被射击的对手有没有机会从持枪人的手中逃离——如果吃满了19点伤害，那个不幸的人可能已经被打爆了头；如果只是造成了5点伤害，那就是这一枪击穿了侧腹或是撕裂了大腿，虽然保住了性命，但不抓紧时间治疗依然会失血过多而亡。</p>
+<h2 id="现实的无情"><a href="#现实的无情" class="headerlink" title="现实的无情"></a>现实的无情</h2><p>是的，这些规则无情而严格，每一部分都在讲述着玩家扮演着的人类是多么弱小而无助的存在。但这也是这个游戏核心思想的体现——用能力数据的匮乏去逼迫玩家在情报和策略上获得更多的优势，以此来对抗强大的敌人。</p>
+<h3 id="人无完人——影响：低属性"><a href="#人无完人——影响：低属性" class="headerlink" title="人无完人——影响：低属性"></a>人无完人——影响：低属性</h3><p>大家在平常的生活中也总有擅长不擅长的事情，较低的属性技能其实可以让玩家更好地扮演起这个角色。另一方面，作为游戏中社交的一部分，玩家团队需要合作以对抗敌人，那么技能各有长短的角色们便可以达成互补。</p>
+<h3 id="智者千虑——影响：随机结果"><a href="#智者千虑——影响：随机结果" class="headerlink" title="智者千虑——影响：随机结果"></a>智者千虑——影响：随机结果</h3><p>世事难料，哪怕是世界上最pro的专家，也会在某个时刻在自己的专业领域失误——99点技能值却骰出100。这点让玩家更加谨慎地做出决策，尽力避开需要冒险的情形。而真正需要冒险的时候，这样仿佛俄罗斯轮盘一样的机制也会让人更加心跳加速。</p>
+<h3 id="无情的现实——影响：低成长"><a href="#无情的现实——影响：低成长" class="headerlink" title="无情的现实——影响：低成长"></a>无情的现实——影响：低成长</h3><p>在COC的游戏中角色是很难成长的，至少属性是这样的。这点也很现实，毕竟大家在生活中锻炼个一两天也不会变成肌肉猛男。但成长也是存在的，在漫长的游戏时间中角色的属性和技能也会有所成长；而在游戏过程中角色也可以获得情报以得知敌人的弱点，或者拿到更有用的工具。</p>
+<h2 id="不太RPG的RPG"><a href="#不太RPG的RPG" class="headerlink" title="不太RPG的RPG"></a>不太RPG的RPG</h2><p>众所周知，传统RPG游戏往往伴随着大量数据、主人公的升级成长、更加强大的敌人。而我十分中意COC这些种种反应现实而不够传统的设计。而这点其实也给了RPG类新的思路——不再拘泥于不断膨胀的数据，而利用游戏的推进以丰富玩法。不过，这样可能就不再是RPG，而是捡装备的吃鸡、积累情报的解谜、又或者是其他游戏了（笑）。</p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>《克苏鲁的呼唤第七版规则书》出版：混沌元素 翻译：苹果园</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%88%86%E6%9E%90/" rel="tag"># 分析</a>
+              <a href="/tags/%E6%B8%B8%E6%88%8F%E7%AD%96%E5%88%92/" rel="tag"># 游戏策划</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2018/07/25/2019-11-25-14-28-06%E5%B0%8F%E8%AF%B4/" rel="prev" title="【短篇】旅行者">
+      <i class="fa fa-chevron-left"></i> 【短篇】旅行者
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/07/25/2019-07-25-17-14-22%E5%86%99%E4%BD%9C/" rel="next" title="故事写作的基本原则：LOCK和三幕两门">
+      故事写作的基本原则：LOCK和三幕两门 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A7%84%E5%88%99%E7%9A%84%E5%BD%B1%E5%93%8D%E5%92%8C%E5%90%AF%E5%8F%91"><span class="nav-number">1.</span> <span class="nav-text">规则的影响和启发</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A1%8C%E6%B8%B8%E3%80%81TRPG%E5%8F%8A%E5%85%B6%E4%BB%96"><span class="nav-number">1.1.</span> <span class="nav-text">桌游、TRPG及其他</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%82%AA%E7%A5%9E%E4%B9%8B%E5%8F%AC%E5%94%A4"><span class="nav-number">1.2.</span> <span class="nav-text">邪神之召唤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%A0%E7%9F%A5%E6%97%A0%E8%83%BD%E7%9A%84%E4%BA%BA%E7%B1%BB%E2%80%94%E2%80%94%E8%A7%84%E5%88%99%EF%BC%9A%E5%B1%9E%E6%80%A7%E5%92%8C%E8%83%BD%E5%8A%9B"><span class="nav-number">1.3.</span> <span class="nav-text">无知无能的人类——规则：属性和能力</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%91%E9%AA%B0%E5%AD%90%E5%A5%B3%E7%A5%9E%E7%A5%88%E7%A5%B7%E5%90%A7%E2%80%94%E2%80%94%E8%A7%84%E5%88%99%EF%BC%9A%E6%8E%B7%E9%AA%B0"><span class="nav-number">1.4.</span> <span class="nav-text">向骰子女神祈祷吧——规则：掷骰</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#D100%E4%BD%93%E7%B3%BB"><span class="nav-number">1.4.1.</span> <span class="nav-text">D100体系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E9%9A%8F%E6%9C%BA%E9%AA%B0"><span class="nav-number">1.4.2.</span> <span class="nav-text">其他随机骰</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%B0%E5%AE%9E%E7%9A%84%E6%97%A0%E6%83%85"><span class="nav-number">1.5.</span> <span class="nav-text">现实的无情</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%BA%E6%97%A0%E5%AE%8C%E4%BA%BA%E2%80%94%E2%80%94%E5%BD%B1%E5%93%8D%EF%BC%9A%E4%BD%8E%E5%B1%9E%E6%80%A7"><span class="nav-number">1.5.1.</span> <span class="nav-text">人无完人——影响：低属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%99%BA%E8%80%85%E5%8D%83%E8%99%91%E2%80%94%E2%80%94%E5%BD%B1%E5%93%8D%EF%BC%9A%E9%9A%8F%E6%9C%BA%E7%BB%93%E6%9E%9C"><span class="nav-number">1.5.2.</span> <span class="nav-text">智者千虑——影响：随机结果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A0%E6%83%85%E7%9A%84%E7%8E%B0%E5%AE%9E%E2%80%94%E2%80%94%E5%BD%B1%E5%93%8D%EF%BC%9A%E4%BD%8E%E6%88%90%E9%95%BF"><span class="nav-number">1.5.3.</span> <span class="nav-text">无情的现实——影响：低成长</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8D%E5%A4%AARPG%E7%9A%84RPG"><span class="nav-number">1.6.</span> <span class="nav-text">不太RPG的RPG</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-number">1.7.</span> <span class="nav-text">参考资料</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="顺风幽SecluSong"
+      src="/images/dice.jpg">
+  <p class="site-author-name" itemprop="name">顺风幽SecluSong</p>
+  <div class="site-description" itemprop="description">顺风幽的个人站点</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">61</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">75</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://bitzhangmo.github.io/" title="https:&#x2F;&#x2F;bitzhangmo.github.io" rel="noopener" target="_blank">zhangMo Blog</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://dygistdeity.github.io/" title="https:&#x2F;&#x2F;dygistdeity.github.io&#x2F;" rel="noopener" target="_blank">Faust's Lesparadisartificiels</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://timemachinet.github.io/" title="https:&#x2F;&#x2F;timemachinet.github.io&#x2F;" rel="noopener" target="_blank">yukimi</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SecluSong</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">198k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">3:01</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'OyOUtQYgTzwTixHyqgErsfjc-MdYXbMMI',
+      appKey     : '7OesyXI9qckpKl8JCMKPtT69',
+      placeholder: "随便说点什么呗？",
+      avatar     : 'retro',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : 'https://oyoutqyg.api.lncldglobal.com'
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icon180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icon16.png">
+  <link rel="mask-icon" href="/images/icon.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"seclusong.xyz","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="游戏沉浸感分析：Bethesda的花园基于《上古卷轴5：天际》的开放世界设计分析-看图说话、捡垃圾和沉浸感设计 曾经泛泛地测评过一次滚5，那时候自以为已经很熟悉这个游戏了，实则不然。之前面试被问到关于开放世界的沉浸感设计，我竟然只能谈些废话。 之后我困扰了很久，我奉为经典的这部作品到底拥有什么样的魔力，能如此吸引我直至今日。 就在这两天，不敢说恍然大悟，但我似乎突然窥视到了其中的一二。 我把它命名">
+<meta property="og:type" content="article">
+<meta property="og:title" content="游戏沉浸感分析：Bethesda的花园">
+<meta property="og:url" content="https://seclusong.xyz/2019/08/05/2019-08-05-12-29-50%E5%88%86%E6%9E%90/index.html">
+<meta property="og:site_name" content="SecluSong">
+<meta property="og:description" content="游戏沉浸感分析：Bethesda的花园基于《上古卷轴5：天际》的开放世界设计分析-看图说话、捡垃圾和沉浸感设计 曾经泛泛地测评过一次滚5，那时候自以为已经很熟悉这个游戏了，实则不然。之前面试被问到关于开放世界的沉浸感设计，我竟然只能谈些废话。 之后我困扰了很久，我奉为经典的这部作品到底拥有什么样的魔力，能如此吸引我直至今日。 就在这两天，不敢说恍然大悟，但我似乎突然窥视到了其中的一二。 我把它命名">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-08-05T04:29:53.000Z">
+<meta property="article:modified_time" content="2019-08-05T04:29:53.000Z">
+<meta property="article:author" content="顺风幽SecluSong">
+<meta property="article:tag" content="游戏设计">
+<meta property="article:tag" content="沉浸感">
+<meta property="article:tag" content="游戏案例分析">
+<meta property="article:tag" content="开放世界">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://seclusong.xyz/2019/08/05/2019-08-05-12-29-50%E5%88%86%E6%9E%90/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>游戏沉浸感分析：Bethesda的花园 | SecluSong</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="SecluSong" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">SecluSong</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">幽歌</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">21</span></a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://seclusong.xyz/2019/08/05/2019-08-05-12-29-50%E5%88%86%E6%9E%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dice.jpg">
+      <meta itemprop="name" content="顺风幽SecluSong">
+      <meta itemprop="description" content="顺风幽的个人站点">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SecluSong">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          游戏沉浸感分析：Bethesda的花园
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-08-05 12:29:53" itemprop="dateCreated datePublished" datetime="2019-08-05T12:29:53+08:00">2019-08-05</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%88%86%E6%9E%90/" itemprop="url" rel="index"><span itemprop="name">分析</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%88%86%E6%9E%90/%E6%B8%B8%E6%88%8F/" itemprop="url" rel="index"><span itemprop="name">游戏</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2019/08/05/2019-08-05-12-29-50%E5%88%86%E6%9E%90/" class="post-meta-item leancloud_visitors" data-flag-title="游戏沉浸感分析：Bethesda的花园" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2019/08/05/2019-08-05-12-29-50%E5%88%86%E6%9E%90/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/05/2019-08-05-12-29-50%E5%88%86%E6%9E%90/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.5k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="游戏沉浸感分析：Bethesda的花园"><a href="#游戏沉浸感分析：Bethesda的花园" class="headerlink" title="游戏沉浸感分析：Bethesda的花园"></a>游戏沉浸感分析：Bethesda的花园</h1><p><em>基于《上古卷轴5：天际》的开放世界设计分析-看图说话、捡垃圾和沉浸感设计</em></p>
+<p>曾经泛泛地<a target="_blank" rel="noopener" href="https://skmtjun.github.io/2018/04/20/%E5%A4%A9%E9%99%85%E6%B5%8B%E8%AF%84/">测评过一次滚5</a>，那时候自以为已经很熟悉这个游戏了，实则不然。之前面试被问到关于开放世界的沉浸感设计，我竟然只能谈些废话。</p>
+<p>之后我困扰了很久，我奉为经典的这部作品到底拥有什么样的魔力，能如此吸引我直至今日。</p>
+<p>就在这两天，不敢说恍然大悟，但我似乎突然窥视到了其中的一二。</p>
+<p>我把它命名为，<strong>Bethesda的花园</strong>（<strong>Bethesda’s garden</strong>）。</p>
+<span id="more"></span>
+<h2 id="童年时代楼下的小公园"><a href="#童年时代楼下的小公园" class="headerlink" title="童年时代楼下的小公园"></a>童年时代楼下的小公园</h2><p>不知道各位幼时有没有这种经历：牵着爸爸妈妈的手，走在路上好奇地观察这个世界；再长大一点，父母放开了你的手，你在公园里跑来跑去，在草堆沙地里滚爬。然后，你会发现这样或者那样新奇的东西，并把这些东西抓来给父母看，问他们这是什么。我相信大部分人应该有过类似的体验。就算没有，读幼儿看图识物的画册其实也是同理。画册上的画像和文字，代替了那些你没有机会看到的事物。</p>
+<p>我家的小区里就有这样一个小公园。石子路环绕着整个公园，有一个占据了1/3面积的池塘，其他地方则覆盖着草地。池塘里是大片的荷花，夏季盛开满池，我曾为了摘莲蓬掉进过水中。公园里草地里散布着松树、灌木、长椅和狗屎，冬季用擦炮炸屎也是我当年的主要娱乐活动之一。</p>
+<p>我在这个公园里认识了蚱蜢、松树、不知名的杂草、石桌和石凳、健身器材（甩腿、转手和用来爬的）、蝌蚪和蛤蟆、荷花（有粉白两种）、石子路和鹅卵石、狗屎、狗、鸡、菜粉蝶、菜青虫、自行车和若干其他，以及它们的名字和用途。</p>
+<p>这是幼儿认识世界的方式：你看到/感知到一个东西，有人告诉你这是什么。大量地重复这个过程，你就逐渐认识并熟悉了这个世界。</p>
+<p>我相信这个习惯你会保留到现在。</p>
+<p>想象一下，给你一个机会让你去附近一座新开的公园散步，让你沿着步道悠然前行。你会发现有一些你熟悉的行道树和观赏植物，草丛里传来了无法分辨的虫鸣，远处飞过的是你至今仍未知道的蝴蝶的名字（你自己给它起了个名字叫“大花蝶”）。你也许不会像小时候那样对什么都好奇，但你会在脑内不断复习这些事物的名字，权当消遣。如果有机会，你也会顺手拍下那只蝴蝶放到社交网络上，问问大家这究竟是什么。再走两步，你会遇到一对正在吵架的年轻情侣。他们越吵越厉害，你开始纠结是上前插手比较好还是赶快远远避开（你会想如果在游戏里这肯定是支线入口了）。</p>
+<p>早些日子我还比对过巫师3和滚5，认为巫师3的战斗系统放进滚5里是个优秀的改进。现在想来这个结论十分草率，说到底巫师3是一个第三人称的动作游戏，滚5则是fps/tps，这很难比较。</p>
+<p>为什么提起这个？上古卷轴5的游戏主界面里有一个很重要的存在，<strong>准心</strong>。</p>
+<p><strong>这个准心就是我们的目光焦点，它所指向的就是我们思考的第一顺位对象。</strong>在游戏里，你指向什么物体，那个东西的名字就会展示在旁边，同时配有可以交互的动作名。</p>
+<p>这正模拟了我们对于这个世界的认知方式。看着一个东西，想想它的名字和用途。不认识？想不起来了？没有关系，有游戏UI（爸爸妈妈）告诉你。游戏之中这样的物体对象到处都是，<strong>多到泛滥，但绝不会乱</strong>。因为你的准心一次只能指向一个物体，正如我们（一般人）一次只能盯着一个东西一样。</p>
+<p>这是一瓶蜂蜜酒，那是一把剑，这是一丛红花，那是一只萤火虫，这是一个伐木桩，那是一个工作台，这是一扇通往铁匠铺的门，那是一座熔炉，这是一枚一枚一枚一枚一枚一枚金币，那是一个开锁器，这是一个人的尸体，那是一个宝箱。</p>
+<p>如果说用准心瞄准来显示信息只是各个游戏都会有的基础设计，那滚五用这个设计（和多到泛滥的信息）给了我美好的体验。它没有因为抽离和不现实破坏我的沉浸感，反而是我游玩最主要的前进动力。</p>
+<p>看向一个东西，想起它是什么，看向一个东西，想起它是什么。它在不断地提醒我，告诉我我正置身这个世界中。我是这个世界的居民，我在这里生活。因为我和其他任何人一样，在这里用最初的方式认识了这个世界，并且不断复习。</p>
+<h2 id="这是我的宝库"><a href="#这是我的宝库" class="headerlink" title="这是我的宝库"></a>这是我的宝库</h2><p>我没玩过《辐射4》。</p>
+<p>是，我没捡过垃圾，所以也不知道捡垃圾有多有趣。</p>
+<p>但是我热爱在滚5里翻垃圾。</p>
+<p>继续回到童年时代，我下面要说的事情可能只是我自己的乐趣了。</p>
+<p>我从小就被家里人嘲笑。他们嘲笑我的裤子口袋又大又深（这是我要求他们给我买的），里面永远都是满满当当的各种垃圾。我可以凭记忆列举一些：手指大小的空塑料小罐，快用完的打火机，金属十字架，折叠小刀，游戏王卡组（ZZ出品）、暂时存放其中的活物（有容器）以及季节性的物品（擦炮、水枪、玻璃珠）。我很冤啊，其实大多数都是实用工具啊。</p>
+<p>你能看出来，我从小就有这样的收集癖。</p>
+<p>我走路低着头，随时准备发现闪光的东西，然后把它擦干净装进口袋。所以我对乌鸦很有好感，它们总是和我做着同样的事情（而且还很聪明）。我曾经在小区里找到过各种金属小玩意儿，并成功为我的蚕找到了一棵正在抽芽的桑树。这是谁遗落在这里的装饰品呢？那些卡片又是哪家的倒霉孩子被家里人扔了宝物呢？这棵桑树是谁种在这里的呢？（很遗憾，等几年后我再回到那里时，那棵树已经被砍了。）</p>
+<p>这就是我的寻宝冒险：<strong>向未知进发，在垃圾深处找到拥有意义的宝物。</strong></p>
+<p>滚5用它的关卡和地图设计让我再次获得了这样的体验。</p>
+<p>大家都知道要在关卡结尾摆上宝箱奖励通关的玩家，但这也太普通了。我知道，我要前进到这里打败那个强敌拿到这个宝藏。但这不是寻宝，这甚至算不上冒险，只是例行公事罢了。（我并没有否认这些基本设计的重要性，这些优秀的地下城关卡也是滚5成功的重要支柱。）</p>
+<p>我会在穿越沼泽的时候发现一个炼金术士的尸体，在他尸体旁掉落了几个稀有的蘑菇，而这些蘑菇正好可以在这里采到；我会在城堡的顶楼找到一把弓和很多箭，旁边摆着一瓶蜂蜜酒和一块盘子里的面包，以及一本提升弓箭技能的书。类似的细节还有很多。柜子里的一瓶治疗药剂显得毫无价值，但它要是被塞在一堆卷心菜之中，就显得神秘了许多。</p>
+<p>滚5里还有更多毫无价值的垃圾物品，它们都不值得一捡（这不同于辐射4）。但它们被设计师摆在这里，就被赋予了特殊意义。只要被上文提到的准心瞄到一下，它们的意义就已经最大化了。<strong>略过它们，寻找设计师藏在它们之中的那些稍微有些价值的东西，正是我寻宝冒险的乐趣所在。</strong></p>
+<p>我的背包里面塞满了类似的，似乎有用，还有点价值，但直到通关都不会用到的东西。大到拥有特殊模型的剧情武器，小到一块雪狐皮（白狐啊白狐！你舍得卖吗？）。我心里其实清楚这只是随机刷出的动物而已，但我还是舍不得。</p>
+<p>没事，我的口袋很大（无限大，游戏机制通过负重限制你的携带数），我还可以通过附魔让我的负重翻倍，实在不行我还可以控制台修改负重嘛！这实在是太爽了，我当年为了把那些东西带在身上，不知道受了家里人多少嘲笑。现在我拥有了一个可以塞这么多东西的宝库，这真的很爽。你说真实性？真实性有什么用，能实现我童年的梦想吗？</p>
+<h2 id="幼时的梦中花园"><a href="#幼时的梦中花园" class="headerlink" title="幼时的梦中花园"></a>幼时的梦中花园</h2><p>以前的时候我会说，上古卷轴5的成功在于它展现了一个真实的幻想世界。现在我要说“狗屁！这根本不真实好吧！你见过几分钟就天黑跑几步就逛完没几个房子的整座城市吗？”</p>
+<p>但这正是滚5的成功之处，正是<strong>Bethesda的花园</strong>的成功之处。</p>
+<p>滚5最初开始这个游戏，你是被绑住的囚犯，除了跑跳什么也做不了。你从龙口嘴下逃生，双手得到解放的那一刻开始，这个游戏（几乎）全部的功能就已经展现在你面前了。</p>
+<p>你就像一个几岁的孩子，头一次来到房子外面的世界。你所拥有的只是你的肢体和大脑（还有你可以揣很多东西裤子口袋）。你可以跑、跳，看一看这是什么。你可以捡起你感兴趣的东西，带走它。你可以走两步来到花园的另一边，再进行一番微观的探险。</p>
+<p>我觉得，大概这就是我认可的开放世界沙盒。滚5做不到Minecraft那种程度的沙盒，但它依然尽它的可能，把这个巨大的“花园”事无巨细地堆砌在我们面前。天际，其实不怎么大，当你按下M键的时候你可以直接看到它的全貌。你探索过的地点都被标注好了，但你也不知道那些未标注的区域还有多少你没有探索过的地方。</p>
+<p>我把这样的设计命名为<strong>花园游戏</strong>，这里是天际，欢迎来到Bethesda’s Garden。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>有一千个读者，就有一千个哈姆雷特。这篇文章与其说是分析，不如说是对我长久迷思的一个解答。</p>
+<p>老滚5的成功还有很多很多原因：优秀的支线和地下城设计，整体地图的布局，代代沉淀下来的世界观设定等等等等。最重要的是，这些部分组合在一起形成的组合效应。这篇文章只挑选了触及我的游玩欲望核心的玩法设计来做了简单分析，希望你能因此有所收获。</p>
+<h3 id="幼儿的视角"><a href="#幼儿的视角" class="headerlink" title="幼儿的视角"></a>幼儿的视角</h3><p>以前看过一篇文章说到，想要理解幼儿的想法，就要像幼儿一样去看这个世界：第一步，先蹲下来。</p>
+<p>孩子们是会玩的，他们玩的不一定比你们大人差。试着去用他们的方式理解这个世界，可能可以为我们设计游戏提供新思路。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1/" rel="tag"># 游戏设计</a>
+              <a href="/tags/%E6%B2%89%E6%B5%B8%E6%84%9F/" rel="tag"># 沉浸感</a>
+              <a href="/tags/%E6%B8%B8%E6%88%8F%E6%A1%88%E4%BE%8B%E5%88%86%E6%9E%90/" rel="tag"># 游戏案例分析</a>
+              <a href="/tags/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/" rel="tag"># 开放世界</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/08/04/2019-08-04-21-11-51%E5%88%86%E4%BA%AB/" rel="prev" title="个人常用的开源和免费软件分享【持续更新】">
+      <i class="fa fa-chevron-left"></i> 个人常用的开源和免费软件分享【持续更新】
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/08/13/2019-08-13-16-37-54%E5%B0%8F%E8%AF%B4/" rel="next" title="小说两篇">
+      小说两篇 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B8%B8%E6%88%8F%E6%B2%89%E6%B5%B8%E6%84%9F%E5%88%86%E6%9E%90%EF%BC%9ABethesda%E7%9A%84%E8%8A%B1%E5%9B%AD"><span class="nav-number">1.</span> <span class="nav-text">游戏沉浸感分析：Bethesda的花园</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AB%A5%E5%B9%B4%E6%97%B6%E4%BB%A3%E6%A5%BC%E4%B8%8B%E7%9A%84%E5%B0%8F%E5%85%AC%E5%9B%AD"><span class="nav-number">1.1.</span> <span class="nav-text">童年时代楼下的小公园</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%99%E6%98%AF%E6%88%91%E7%9A%84%E5%AE%9D%E5%BA%93"><span class="nav-number">1.2.</span> <span class="nav-text">这是我的宝库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B9%BC%E6%97%B6%E7%9A%84%E6%A2%A6%E4%B8%AD%E8%8A%B1%E5%9B%AD"><span class="nav-number">1.3.</span> <span class="nav-text">幼时的梦中花园</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E8%AF%AD"><span class="nav-number">1.4.</span> <span class="nav-text">结语</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B9%BC%E5%84%BF%E7%9A%84%E8%A7%86%E8%A7%92"><span class="nav-number">1.4.1.</span> <span class="nav-text">幼儿的视角</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="顺风幽SecluSong"
+      src="/images/dice.jpg">
+  <p class="site-author-name" itemprop="name">顺风幽SecluSong</p>
+  <div class="site-description" itemprop="description">顺风幽的个人站点</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">61</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">75</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://bitzhangmo.github.io/" title="https:&#x2F;&#x2F;bitzhangmo.github.io" rel="noopener" target="_blank">zhangMo Blog</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://dygistdeity.github.io/" title="https:&#x2F;&#x2F;dygistdeity.github.io&#x2F;" rel="noopener" target="_blank">Faust's Lesparadisartificiels</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://timemachinet.github.io/" title="https:&#x2F;&#x2F;timemachinet.github.io&#x2F;" rel="noopener" target="_blank">yukimi</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SecluSong</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">198k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">3:01</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'OyOUtQYgTzwTixHyqgErsfjc-MdYXbMMI',
+      appKey     : '7OesyXI9qckpKl8JCMKPtT69',
+      placeholder: "随便说点什么呗？",
+      avatar     : 'retro',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : 'https://oyoutqyg.api.lncldglobal.com'
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

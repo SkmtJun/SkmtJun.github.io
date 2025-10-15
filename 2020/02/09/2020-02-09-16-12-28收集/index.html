@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icon180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icon16.png">
+  <link rel="mask-icon" href="/images/icon.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"seclusong.xyz","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="vol.4 两种随机性和动作游戏的设计技巧本期导视：  一点点笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【鸽的顺的有的没的】vol-4">
+<meta property="og:url" content="https://seclusong.xyz/2020/02/09/2020-02-09-16-12-28%E6%94%B6%E9%9B%86/index.html">
+<meta property="og:site_name" content="SecluSong">
+<meta property="og:description" content="vol.4 两种随机性和动作游戏的设计技巧本期导视：  一点点笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-09T08:12:31.000Z">
+<meta property="article:modified_time" content="2020-02-10T09:29:31.000Z">
+<meta property="article:author" content="顺风幽SecluSong">
+<meta property="article:tag" content="游戏设计">
+<meta property="article:tag" content="随机性">
+<meta property="article:tag" content="打击感">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://seclusong.xyz/2020/02/09/2020-02-09-16-12-28%E6%94%B6%E9%9B%86/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>【鸽的顺的有的没的】vol-4 | SecluSong</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="SecluSong" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">SecluSong</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">幽歌</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">21</span></a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://seclusong.xyz/2020/02/09/2020-02-09-16-12-28%E6%94%B6%E9%9B%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dice.jpg">
+      <meta itemprop="name" content="顺风幽SecluSong">
+      <meta itemprop="description" content="顺风幽的个人站点">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SecluSong">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          【鸽的顺的有的没的】vol-4
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-09 16:12:31" itemprop="dateCreated datePublished" datetime="2020-02-09T16:12:31+08:00">2020-02-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-10 17:29:31" itemprop="dateModified" datetime="2020-02-10T17:29:31+08:00">2020-02-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2020/02/09/2020-02-09-16-12-28%E6%94%B6%E9%9B%86/" class="post-meta-item leancloud_visitors" data-flag-title="【鸽的顺的有的没的】vol-4" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/02/09/2020-02-09-16-12-28%E6%94%B6%E9%9B%86/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/02/09/2020-02-09-16-12-28%E6%94%B6%E9%9B%86/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.5k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="vol-4-两种随机性和动作游戏的设计技巧"><a href="#vol-4-两种随机性和动作游戏的设计技巧" class="headerlink" title="vol.4 两种随机性和动作游戏的设计技巧"></a>vol.4 两种随机性和动作游戏的设计技巧</h1><p>本期导视：</p>
+<ul>
+<li>一点点笔记</li>
+</ul>
+<span id="more"></span>
+<hr>
+<h2 id="两种随机性——事前随机和事后随机"><a href="#两种随机性——事前随机和事后随机" class="headerlink" title="两种随机性——事前随机和事后随机"></a>两种随机性——事前随机和事后随机</h2><p>内容来自近期<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av87609318">《游戏制作工具箱》</a>，依然感谢卡姐的翻译。</p>
+<p>一些设计者们把随机性分为两类：</p>
+<ul>
+<li><strong>事前随机/输入随机</strong>。指随机产生的结果发生在玩家开始行动之前，玩家们需要对此进行分析决策。RL游戏是这一随机类型的典型应用。</li>
+<li><strong>事后随机/输出随机</strong>。指随机产生的结果发生在玩家做下决策之后。随机战利品、抽卡等设计是典型应用。<ul>
+<li><em>当然，根据实际情况也可以认为其是事前随机——只不过是对于下一次决策来说。</em></li>
+</ul>
+</li>
+</ul>
+<h3 id="事前随机带来的问题"><a href="#事前随机带来的问题" class="headerlink" title="事前随机带来的问题"></a>事前随机带来的问题</h3><p>多数人认为带来策略性的事前随机总要好过让人恼怒的事后随机，因为后者让你努力思考出的策略全部白费。但事实上糟糕的事前随机也会带来一些问题。</p>
+<ul>
+<li><strong>刷开局/刷初始</strong>。既然随机的结果有好有坏，那能刷出好的开始就可以让游戏变得容易许多。抽卡类游戏为此催生出了新的产业“卖初始号”；而就算是在RL游戏中，玩家们也会怀疑这局的顺风顺水是因为自己的运气还是实力。<ul>
+<li><strong>解决方案</strong>：各类方法去限制最初的随机结果；用下一局的奖励引诱玩家完成这一局。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>难以预测的未来</strong>。频率过高的随机结果会严重限制玩家们指定策略的可能。现行的策略还没有应用多久，就被新出现的随机结果打断了，这无疑很恼人。视频里使用了“信息视界”这个概念。<ul>
+<li><strong>解决方案</strong>：降低频率，但提升强度，“尖峰式信息流”。</li>
+</ul>
+</li>
+</ul>
+<h3 id="事后随机未必不堪"><a href="#事后随机未必不堪" class="headerlink" title="事后随机未必不堪"></a>事后随机未必不堪</h3><ul>
+<li>随机结果是为了模拟真实。人无完人，游戏中的角色总会失误的嘛。</li>
+<li>随机结果逼迫玩家去考虑风险管理，准备失败的预案。</li>
+</ul>
+<p>为此有了一些改善事后随机的设计。</p>
+<ul>
+<li>将二元的随机结果变得更平滑，将一次判定决定的结果改为由多次判定综合决定。</li>
+<li>玩家们可能无法接受真正的随机结果，所以需要暗改概率。将90%改成99%，或保证33%在两次失败后必定成功（保底机制）；使用骰子、硬币这样的客观实体也可以有效改善体验，令人信服。</li>
+<li>只让事后随机为玩家带来意外之喜。</li>
+</ul>
+<h3 id="其他一些"><a href="#其他一些" class="headerlink" title="其他一些"></a>其他一些</h3><p>视频的开头分析了一下随机本身的好与坏，同时也提到了<strong>分析瘫痪</strong>和<strong>信息视界</strong>这样的词。</p>
+<ul>
+<li>分析瘫痪，指分析过多导致难以决策。</li>
+<li>信息视界，指玩家从现在到已知信息边界的距离。通俗来讲就是，玩家能确定多少情报来制定策略。限制这一视界的要素有四大项。<ul>
+<li>指数级复杂度。想象一下国际象棋的预测。</li>
+<li>执行不确定性。虽然玩家明白要如何打，实际上却会手残。</li>
+<li>隐藏信息。战争迷雾之类的。</li>
+<li>随机性。大家都知道的。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="让动作游戏更爽快的技巧"><a href="#让动作游戏更爽快的技巧" class="headerlink" title="让动作游戏更爽快的技巧"></a>让动作游戏更爽快的技巧</h2><p>来自谜之声16年做的一个<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av5199528">交互游戏实况</a>。</p>
+<ul>
+<li><strong>基本动画和音效</strong>。为你的角色和怪物设计基础的移动动画和各类音效。</li>
+<li>降低敌人HP。让敌人可以被很快地杀死。</li>
+<li>增加玩家角色的攻击频率。</li>
+<li>更多的敌人。减少血量但增加数量，有效提升了爽快感（割草）。</li>
+<li>把子弹变大。</li>
+<li>增加枪口焰的动画。</li>
+<li>加快子弹运动速度。</li>
+<li>去除准确度。让子弹稍微偏离准头。</li>
+<li><strong>增加击中特效</strong>。子弹/攻击击中敌人或障碍时产生动画和音效。</li>
+<li>增加敌人的受伤动画。</li>
+<li>攻击对敌人造成击退。</li>
+<li><strong>演出残留</strong>。加上敌人死亡的动画，留下敌人的尸体。</li>
+<li>镜头插值移动。指镜头跟随角色时有延迟效果。（弹幕：烂游戏的一大特征就是这个值过大，渐变效果稀烂）</li>
+<li>镜头偏移。不将角色放在镜头最中央，让角色面前的空间更大。</li>
+<li><strong>摄像头震动</strong>。</li>
+<li><strong>角色后坐力击退</strong>。</li>
+<li><strong>僵直/暂停/Sleep</strong>。让某个时点（击中或杀死敌人）暂停几十毫秒。</li>
+<li>让枪的动画和角色错开，形成延迟。在移动中。</li>
+<li>让枪在射击时有一个后坐力的位移动画。</li>
+<li>连续射击/攻击时不会改变角色面向。</li>
+<li>更多演出残留。留下枪械弹壳。</li>
+<li>在音效中加入低频音。</li>
+<li>更多子弹。</li>
+<li>随机爆炸，在敌人死亡时产生。</li>
+<li>敌人更快。</li>
+<li>也更多……</li>
+<li>更快的攻击频率，和配合射击的摄像头震动。</li>
+<li>更大的爆炸。</li>
+<li>更多的演出残留物。</li>
+<li><strong>意义</strong>。让玩家的爽快拥有意义。</li>
+</ul>
+<p>稍微选了几项自己觉得通用的设计标了加粗。</p>
+<p>重点就是这些：<br>音效。动画。镜头。时间。玩法。</p>
+<hr>
+<p>本来还想聊聊近况的，算啦，祝大家身体健康啦。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1/" rel="tag"># 游戏设计</a>
+              <a href="/tags/%E9%9A%8F%E6%9C%BA%E6%80%A7/" rel="tag"># 随机性</a>
+              <a href="/tags/%E6%89%93%E5%87%BB%E6%84%9F/" rel="tag"># 打击感</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/09/05/2019-09-05-11-08-34%E4%BA%BA%E8%AE%BE/" rel="prev" title="【人设】一对幼驯染：白与黑【未完】">
+      <i class="fa fa-chevron-left"></i> 【人设】一对幼驯染：白与黑【未完】
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/01/2020-02-22-11-45-01%E5%91%A8%E6%95%B4%E7%90%86/" rel="next" title="【一周的鸽 vol.5】三月第1周">
+      【一周的鸽 vol.5】三月第1周 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vol-4-%E4%B8%A4%E7%A7%8D%E9%9A%8F%E6%9C%BA%E6%80%A7%E5%92%8C%E5%8A%A8%E4%BD%9C%E6%B8%B8%E6%88%8F%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%8A%80%E5%B7%A7"><span class="nav-number">1.</span> <span class="nav-text">vol.4 两种随机性和动作游戏的设计技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%A4%E7%A7%8D%E9%9A%8F%E6%9C%BA%E6%80%A7%E2%80%94%E2%80%94%E4%BA%8B%E5%89%8D%E9%9A%8F%E6%9C%BA%E5%92%8C%E4%BA%8B%E5%90%8E%E9%9A%8F%E6%9C%BA"><span class="nav-number">1.1.</span> <span class="nav-text">两种随机性——事前随机和事后随机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8B%E5%89%8D%E9%9A%8F%E6%9C%BA%E5%B8%A6%E6%9D%A5%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">1.1.1.</span> <span class="nav-text">事前随机带来的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8B%E5%90%8E%E9%9A%8F%E6%9C%BA%E6%9C%AA%E5%BF%85%E4%B8%8D%E5%A0%AA"><span class="nav-number">1.1.2.</span> <span class="nav-text">事后随机未必不堪</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E4%B8%80%E4%BA%9B"><span class="nav-number">1.1.3.</span> <span class="nav-text">其他一些</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A9%E5%8A%A8%E4%BD%9C%E6%B8%B8%E6%88%8F%E6%9B%B4%E7%88%BD%E5%BF%AB%E7%9A%84%E6%8A%80%E5%B7%A7"><span class="nav-number">1.2.</span> <span class="nav-text">让动作游戏更爽快的技巧</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="顺风幽SecluSong"
+      src="/images/dice.jpg">
+  <p class="site-author-name" itemprop="name">顺风幽SecluSong</p>
+  <div class="site-description" itemprop="description">顺风幽的个人站点</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">61</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">75</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://bitzhangmo.github.io/" title="https:&#x2F;&#x2F;bitzhangmo.github.io" rel="noopener" target="_blank">zhangMo Blog</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://dygistdeity.github.io/" title="https:&#x2F;&#x2F;dygistdeity.github.io&#x2F;" rel="noopener" target="_blank">Faust's Lesparadisartificiels</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://timemachinet.github.io/" title="https:&#x2F;&#x2F;timemachinet.github.io&#x2F;" rel="noopener" target="_blank">yukimi</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SecluSong</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">198k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">3:01</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'OyOUtQYgTzwTixHyqgErsfjc-MdYXbMMI',
+      appKey     : '7OesyXI9qckpKl8JCMKPtT69',
+      placeholder: "随便说点什么呗？",
+      avatar     : 'retro',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : 'https://oyoutqyg.api.lncldglobal.com'
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

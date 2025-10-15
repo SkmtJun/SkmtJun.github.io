@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icon180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icon16.png">
+  <link rel="mask-icon" href="/images/icon.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"seclusong.xyz","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="The Devision - User Interface style guide这份PPT截图出自reddit分享，推测是育碧内部流出资料，分辨率很低而且内容不全。但依然很有价值，似乎没有看到相关的翻译，我就先斗胆简单翻译一下，可以对照网址配图来看。网址：https:&#x2F;&#x2F;imgur.com&#x2F;gallery&#x2F;Y2HV1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《全境封锁——用户界面样式指南》翻译笔记">
+<meta property="og:url" content="https://seclusong.xyz/2021/04/20/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="SecluSong">
+<meta property="og:description" content="The Devision - User Interface style guide这份PPT截图出自reddit分享，推测是育碧内部流出资料，分辨率很低而且内容不全。但依然很有价值，似乎没有看到相关的翻译，我就先斗胆简单翻译一下，可以对照网址配图来看。网址：https:&#x2F;&#x2F;imgur.com&#x2F;gallery&#x2F;Y2HV1">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/1.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/2.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/3.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/33.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/4.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/5.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/6.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/7.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/8.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/9.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/10.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/11.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/12.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/13.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/14.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/15.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/16.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/17.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/177.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/18.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/19.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/199.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/20.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/21.jpg">
+<meta property="og:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/22.jpg">
+<meta property="article:published_time" content="2021-04-20T15:41:23.000Z">
+<meta property="article:modified_time" content="2021-04-21T15:40:50.000Z">
+<meta property="article:author" content="顺风幽SecluSong">
+<meta property="article:tag" content="字体">
+<meta property="article:tag" content="平面设计">
+<meta property="article:tag" content="UI">
+<meta property="article:tag" content="UX">
+<meta property="article:tag" content="翻译">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://seclusong.xyz/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/1.jpg">
+
+<link rel="canonical" href="https://seclusong.xyz/2021/04/20/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>《全境封锁——用户界面样式指南》翻译笔记 | SecluSong</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="SecluSong" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">SecluSong</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">幽歌</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">21</span></a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://seclusong.xyz/2021/04/20/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dice.jpg">
+      <meta itemprop="name" content="顺风幽SecluSong">
+      <meta itemprop="description" content="顺风幽的个人站点">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SecluSong">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          《全境封锁——用户界面样式指南》翻译笔记
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-20 23:41:23" itemprop="dateCreated datePublished" datetime="2021-04-20T23:41:23+08:00">2021-04-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-21 23:40:50" itemprop="dateModified" datetime="2021-04-21T23:40:50+08:00">2021-04-21</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2021/04/20/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/" class="post-meta-item leancloud_visitors" data-flag-title="《全境封锁——用户界面样式指南》翻译笔记" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2021/04/20/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/04/20/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>5.2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="The-Devision-User-Interface-style-guide"><a href="#The-Devision-User-Interface-style-guide" class="headerlink" title="The Devision - User Interface style guide"></a>The Devision - User Interface style guide</h1><p>这份PPT截图出自reddit分享，推测是育碧内部流出资料，分辨率很低而且内容不全。但依然很有价值，似乎没有看到相关的翻译，我就先斗胆简单翻译一下，可以对照网址配图来看。<br>网址：<a target="_blank" rel="noopener" href="https://imgur.com/gallery/Y2HV1">https://imgur.com/gallery/Y2HV1</a></p>
+<span id="more"></span>
+<hr>
+<h2 id="0-目录"><a href="#0-目录" class="headerlink" title="0. 目录"></a>0. 目录</h2><p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/1.jpg" alt="1"></p>
+<p>《全境封锁》是一款<strong>开放世界</strong>、<strong>在线</strong>、<strong>合作</strong>的<strong>角色扮演射击游戏</strong>，注重玩家在游戏世界中的沉浸感。</p>
+<p>这份指南会帮助你理解《全境封锁》UI的艺术风格和全局视觉。本指南包含了如何设计优秀三维空间UI的典型案例，确保UI在提供迷人视觉体验的同时，能有效传达信息。</p>
+<p>我们建议你在开始UI开发工作前熟悉这份指南。</p>
+<ul>
+<li>1.核心支柱</li>
+<li>2.定义UI</li>
+<li>3.定义Tech</li>
+<li>4.定义样式/风格</li>
+<li>5.视觉要素</li>
+<li>6.颜色和不透明度</li>
+<li>7.文本和可读性</li>
+<li>8.图标风格</li>
+<li>9.着色器</li>
+<li>10.摄像机</li>
+<li>11.运动和动画</li>
+<li>菜单系统</li>
+</ul>
+<hr>
+<h2 id="1-核心支柱"><a href="#1-核心支柱" class="headerlink" title="1. 核心支柱"></a>1. 核心支柱</h2><p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/2.jpg" alt="2"></p>
+<h3 id="朴素"><a href="#朴素" class="headerlink" title="朴素"></a>朴素</h3><p>UI应该尽可能地小、清晰且不占屏幕。移除所有不必要的装饰元素并强调单一明晰的焦点，可以让UI方案更好理解（注：见<strong>视觉要素</strong>部分）。简单的几何图形和干净的线条可以让小型图标和符号更清晰好认（注：见<strong>图标风格</strong>部分）。可以的话就别用文本，这会让UI更具空间感，也更直观。</p>
+<h3 id="直观易懂"><a href="#直观易懂" class="headerlink" title="直观易懂"></a>直观易懂</h3><p>玩家通过UI来定位、阅读和处理重要信息时，应该毫不费劲（注：见<strong>可读性标准</strong>部分）。哪怕有一定距离，在任何光照条件下，相关重要信息都应该能随时查看并清楚辨别。</p>
+<h3 id="功能性"><a href="#功能性" class="headerlink" title="功能性"></a>功能性</h3><p>每个UI元素都应该明确服务于它的设计目的。举个例子，一个地图的首要目的就是为玩家指路。如果这个地图没能做到这点，那么这些UI元素也就是失败的。</p>
+<h3 id="一致性"><a href="#一致性" class="headerlink" title="一致性"></a>一致性</h3><p>不同UI元素间的引导和交互应该基于输入、美术和反馈来达成统一（注：见<strong>动画</strong>部分）。尽管系统很可能又大又复杂还没被摸清楚，UI也应该让可能存在的交互最少，并保证这些交互方案都是相同的，来让玩家感觉像在家里一样舒适。</p>
+<hr>
+<p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/3.jpg" alt="3"></p>
+<h3 id="Diagetic"><a href="#Diagetic" class="headerlink" title="Diagetic"></a>Diagetic</h3><p>（译者注：这个词指游戏中附着在游戏世界中场景或物品上的UI信息）</p>
+<p>UI能最大程度发挥作用的地方也就是游戏世界本身了。这会让玩家在游戏中保持好奇心，无缝融合游戏体验中的所有UI。UI元素应该表现地像是被玩家角色意识到并与之进行了互动一般。UI不仅要传递关键信息，还要作为视觉效果来优化体验，并为游戏叙事提示现状。</p>
+<blockquote>
+<p>“我们在《全境封锁》中创造的独特且难忘的游戏体验，最终是为了创造沉浸感。”</p>
+</blockquote>
+<h3 id="沉浸感"><a href="#沉浸感" class="headerlink" title="沉浸感"></a>沉浸感</h3><p>阻止对当前场景外的认知会让沉浸感最大化。遵循核心支柱设计、将UI整合进游戏世界、开发出直观而合理的设计，这最终会创造出令人沉浸的游戏体验。</p>
+<hr>
+<h2 id="2-定义UI"><a href="#2-定义UI" class="headerlink" title="2. 定义UI"></a>2. 定义UI</h2><p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/33.jpg" alt="33"></p>
+<h3 id="2-1-（Diagetic）游戏内用户界面"><a href="#2-1-（Diagetic）游戏内用户界面" class="headerlink" title="2.1 （Diagetic）游戏内用户界面"></a>2.1 （Diagetic）游戏内用户界面</h3><blockquote>
+<p><strong>Meta用户界面</strong><br>《全境封锁》尽力减少meta UI，或者说看起来像是显示在类似传统HUD的二维平板上的UI。meta UI也包括屏幕特效、伤害指示和屏幕外标记。<br><strong>空间用户界面</strong><br>空间UI是那些以三维形式存在于游戏世界中的UI，例如按钮图标、帮助提示和玩家状态。这些UI元素虽然以三维形式存在，但和游戏叙事无关，只是提醒玩家还在“游戏”中。</p>
+</blockquote>
+<h4 id="游戏内UI"><a href="#游戏内UI" class="headerlink" title="游戏内UI"></a>游戏内UI</h4><p>《全境封锁》的UI的设计目的是要开发出一个完善的、与玩家息息相关的游戏内用户界面体验。游戏内界面会为讲述故事提示现状，也能确实地呆在那里以保证玩家沉浸在虚拟世界中。</p>
+<blockquote>
+<p>这份指南通过把UI设定成<strong>The Division Shades</strong>操作系统的一部分，来鼓励设计师把所有UI都设计进游戏内。</p>
+</blockquote>
+<hr>
+<p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/4.jpg" alt="4"></p>
+<h3 id="2-2-立体思考"><a href="#2-2-立体思考" class="headerlink" title="2.2 立体思考"></a>2.2 立体思考</h3><p><strong>传统UI设计依赖于二维出身的平面设计原则。作用在三维空间中意味着要利用z轴来强化二维层面的认知。</strong></p>
+<p><strong>将z轴吸收</strong><br>适当使用z轴有助于理解和聚焦内容。立体设计的另一个优势是它可以和一个空间以及其中的物体产生交互，因此降低了在游戏世界中把信息串联起来的难度。</p>
+<p><strong>确保可读性</strong><br>如果过量使用或是在z轴上移动了太多元素，会降低可读性并破坏网格。避免重叠透明物体造成的不必要的紊乱。不过当可读性没那么重要时，可以用堆叠表现出列表和堆积的感觉。</p>
+<hr>
+<h2 id="3-定义Tech"><a href="#3-定义Tech" class="headerlink" title="3. 定义Tech"></a>3. 定义Tech</h2><p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/5.jpg" alt="5"></p>
+<h3 id="3-1-这个OS是什么"><a href="#3-1-这个OS是什么" class="headerlink" title="3.1 这个OS是什么"></a>3.1 这个OS是什么</h3><p><strong>Shade Tech的操作系统旨在作为用户的可靠伙伴，关注用户的周遭环境和人身安全。</strong><br>（注-Shades：指国土战略局（SHD）的秘密特工们。他们的任务是调查发生在黑色星期五后的暴动。）</p>
+<blockquote>
+<p>The MysTech OS可以不断地与周遭环境互动并收集信息，展现对外部世界的无缝整合。<br>操作系统会即时向环境附加视觉信息，以帮助用户认知环境并与之交互，从而增强现实。</p>
+</blockquote>
+<p>（注-Mys：瑞典语名词。非正式用语，意指“cosiness舒适、care照料、comfort舒服”。）</p>
+<blockquote>
+<p><strong>Logo</strong><br>点和线是最基础的视觉元素，反映了数据的二进制特征。</p>
+</blockquote>
+<blockquote>
+<p><strong>标语</strong><br>该操作系统会增强用户的现实来帮助其理解当前环境并与之交互。</p>
+</blockquote>
+<hr>
+<p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/6.jpg" alt="6"></p>
+<h3 id="3-2-这个OS在哪里"><a href="#3-2-这个OS在哪里" class="headerlink" title="3.2 这个OS在哪里"></a>3.2 这个OS在哪里</h3><h4 id="The-Shade装置"><a href="#The-Shade装置" class="headerlink" title="The Shade装置"></a>The Shade装置</h4><p>The Division特工们配备了一系列装备以做好应对各种场合的准备。连接着OS的<strong>腕表和肩环</strong>可以启动他们周围环境里的points和links。</p>
+<h4 id="虹膜显示"><a href="#虹膜显示" class="headerlink" title="虹膜显示"></a>虹膜显示</h4><p>Shade特工们配备的视网膜显示技术可以让UI可视化。通过这种视觉增强手段，特工会看到用户界面被正确地投射出来并融合进环境中。</p>
+<hr>
+<h2 id="4-定义风格"><a href="#4-定义风格" class="headerlink" title="4. 定义风格"></a>4. 定义风格</h2><p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/7.jpg" alt="7"></p>
+<h3 id="4-1-程序生成设计"><a href="#4-1-程序生成设计" class="headerlink" title="4.1 程序生成设计"></a>4.1 程序生成设计</h3><ul>
+<li>精确</li>
+<li>无机</li>
+<li>立体</li>
+<li>灵活</li>
+</ul>
+<p><strong>程序生成设计</strong>会展现数据信息的可视化效果。为了让软件更快地运行且便于调整，编程的标准操作需要简化，并使用生成系统来让更复杂的系统可视化。</p>
+<blockquote>
+<p>一段计算机程序是如何让一片区域或一个对象可视化的？</p>
+</blockquote>
+<p>设计方案应该精确、基于简单图形并以立体呈现：用线和点来构建场景与指示方向。<br>尽管OS基于场景信息生成的图案飞来飞去/忙作一团，处理过的风格样式也要看着很简单。这同样要求风格样式有更多的灵活性：在任何场景或光照中，设计都应该可行。</p>
+<hr>
+<p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/8.jpg" alt="8"></p>
+<h3 id="4-2-行为信息图"><a href="#4-2-行为信息图" class="headerlink" title="4.2 行为信息图"></a>4.2 行为信息图</h3><ul>
+<li>明亮通透</li>
+<li>行为</li>
+<li>精准</li>
+<li>基础</li>
+</ul>
+<p><strong>工程原理图</strong>通常会使用线条来表示行为和动作范围。比起描绘体积形状，OS的风格样式应该更基础一些——描绘动作位移。结果就是，要用明亮而通透的原理图来描绘行为。</p>
+<blockquote>
+<p>如何用行为信息图的OS风格样式来可视化一个机械臂？</p>
+</blockquote>
+<p>这个精准而机械化的样式结合了一位艺术家的精心设计。他创造出明确的层级并为此添加了权重，还对透明度做了区分。最后产生的“信息图”应该迅速明确地展现角色的重要信息，还不能在视觉上遮挡环境。</p>
+<hr>
+<p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/9.jpg" alt="9"></p>
+<h3 id="4-3-有瑕疵的软件"><a href="#4-3-有瑕疵的软件" class="headerlink" title="4.3 有瑕疵的软件"></a>4.3 有瑕疵的软件</h3><ul>
+<li>短暂故障</li>
+<li>连续</li>
+<li>瑕疵</li>
+</ul>
+<p>MYSTECH OS是以未完成的状态被紧急投入使用，来应对曼哈顿发生的事件的。<br>尽管OS应该不能描绘出复杂有机的图形，但作为替代它能用几何体和线条拟合出来。它能留意到位移并推断出方向，但它在视觉上做不到完美。</p>
+<blockquote>
+<p>“《全境封锁》里的世界已经撕裂了，而且正因如此，技术本身也未能幸免遇难。”</p>
+</blockquote>
+<p><strong>序列动画</strong>应该表现得像是在加载信息，而不是立刻跳出来。这种短暂的“故障”应该在UI出现和消失时发生，而且the tech也应该偶尔失灵或者像是被干扰一样。见Darpa Shader</p>
+<p><strong>色彩偏移</strong>是一种应用于屏幕上的视觉效果，在整体上创造出一种在镜头界面中的故障感。</p>
+<h2 id="5-视觉要素"><a href="#5-视觉要素" class="headerlink" title="5. 视觉要素"></a>5. 视觉要素</h2><hr>
+<p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/10.jpg" alt="10"></p>
+<h3 id="5-1-点、线条和图形"><a href="#5-1-点、线条和图形" class="headerlink" title="5.1 点、线条和图形"></a>5.1 点、线条和图形</h3><ul>
+<li>绘制明亮通透的图形</li>
+<li>强化导航路径</li>
+<li>用动画引导视线</li>
+</ul>
+<p>点和线可以绘制场景和物体且不至于杂乱。它们能连接开始点和结束点来强化导航路径，也能通过序列动画引导视线。</p>
+<p>为此，点和线会统治MysTech OS的视觉语言。这同样也反应了数据的二进制特征，和作为游戏UI构建基础的节点系统。</p>
+<hr>
+<p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/11.jpg" alt="11"></p>
+<blockquote>
+<p><strong>一个点</strong>定义了一个地点、一个物体或是一个瞬间。它也是携带着数值或信息的“节点”，代表了开始或结束。</p>
+</blockquote>
+<p>（注——提示：点应该永远面向摄像机。）</p>
+<hr>
+<p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/12.jpg" alt="12"></p>
+<blockquote>
+<p><strong>一条线</strong>定义了一段位移、一处空间或一段距离。它也代表了传输、动作和方向，是点与点之间的连结。</p>
+</blockquote>
+<p>（注——提示：所有的线条都要通过不透明化来融入游戏世界。）</p>
+<hr>
+<h2 id="6-颜色"><a href="#6-颜色" class="headerlink" title="6. 颜色"></a>6. 颜色</h2><p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/13.jpg" alt="13"></p>
+<h3 id="6-1-暖色VS冷色：主题色"><a href="#6-1-暖色VS冷色：主题色" class="headerlink" title="6.1 暖色VS冷色：主题色"></a>6.1 暖色VS冷色：主题色</h3><blockquote>
+<p>“The Shades特工们代表了温暖和希望，以对抗故事背景中冷酷和荒芜的曼哈顿。”</p>
+</blockquote>
+<p>正值大雪的冬季，曼哈顿的视觉环境被冰冷所占据。特工们代表了温暖和希望，体现了这点的正是这个充满生机的橙色圆环。</p>
+<p><strong>主题色</strong>——橙色和白色。<br>橙色和白色是UI主体部分的主题色。白色代表中立，而橙色代表高亮，保守场合也被用于制造焦点。</p>
+<blockquote>
+<p>全境封锁橙——RGB：255/127/0<br>温暖/希望/被选中/高亮</p>
+</blockquote>
+<blockquote>
+<p>暖白——RGB：244/255/255<br>默认UI/中立</p>
+</blockquote>
+<hr>
+<p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/14.jpg" alt="14"></p>
+<h3 id="6-2-次要色"><a href="#6-2-次要色" class="headerlink" title="6.2 次要色"></a>6.2 次要色</h3><blockquote>
+<p>“当保守地被用到的时候，次要色可以提示现状并把注意力转向特定元素或动作。”</p>
+</blockquote>
+<p><strong>次要色</strong>——演出色<br>次要色应该能通过正面或负面的强调方式提示现状并传达信息。</p>
+<p>次要色同样也会应用在生命值条上来区分敌我。当与玩家角色有关的动作——经验获取或现状交互——发生时，橙色会被大量使用。<br>（译者吐槽：红色和橙色很接近导致我在游戏中经常看错，搞得自己紧张兮兮。）</p>
+<blockquote>
+<p>敌对红——RGB:255/48/0<br>负面</p>
+</blockquote>
+<blockquote>
+<p>健康绿——RGB:140/200/60<br>正面</p>
+</blockquote>
+<blockquote>
+<p>盟友蓝绿——RGB:71/230/220</p>
+</blockquote>
+<hr>
+<h2 id="7-文本和可读性"><a href="#7-文本和可读性" class="headerlink" title="7. 文本和可读性"></a>7. 文本和可读性</h2><p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/15.jpg" alt="15"></p>
+<h3 id="7-1-立体文本"><a href="#7-1-立体文本" class="headerlink" title="7.1 立体文本"></a>7.1 立体文本</h3><p>作为应用在三维空间中的二维文本，面对移动中的摄像机，挑战集中在了确保可读性上。</p>
+<ul>
+<li>特定角度的文本是不好读的</li>
+<li>文本大小会随距离改变</li>
+<li>背景的颜色和数值的不同</li>
+</ul>
+<p>下面的部分会作为指南，通过展示Borda系字体每种粗细和大小的最佳使用方式，和使用z轴加强可读性，来保证文本在理想距离下依然可读。</p>
+<p>(注——强制：重要的信息应该能被轻易接触而且总是可读。)</p>
+<hr>
+<p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/16.jpg" alt="16"></p>
+<blockquote>
+<p>Borda Light<br>细字形，只在非常大时有用。<br>在游戏世界中缩放会造成困难。</p>
+</blockquote>
+<blockquote>
+<p>Borda Regular<br>轻字形，在大标题处有用。</p>
+</blockquote>
+<blockquote>
+<p>Borda Medium<br>用途最多的字形，适合用在游戏世界中的缩放文本。<br>名字和伤害数字。</p>
+</blockquote>
+<blockquote>
+<p>Borda Heavy<br>Borda Medium的加粗版本，适合对文本进行强调。可以被缩放到很小而且依然可读。适合重要的数字，例如HUD的弹药数或是重击伤害数字。</p>
+</blockquote>
+<blockquote>
+<p>和摄像机的角度不能超过<strong>35°</strong></p>
+</blockquote>
+<p>(注——提示：有关字形粗细的设计理念，是要保证不同大小的字形的整体粗细保持在一个相近范围里。细的字体更大而粗的字体更小，就能让粗细保证接近。)</p>
+<p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/17.jpg" alt="17"></p>
+<h3 id="7-2-图层和后期处理"><a href="#7-2-图层和后期处理" class="headerlink" title="7.2 图层和后期处理"></a>7.2 图层和后期处理</h3><p><strong>z轴不仅要用来强化可读性，还要把注意力引导至重要信息上。</strong></p>
+<p><strong>1+2+3 文本图层的突破效果</strong><br>复合文本应该由三层组成，每层为一个目的服务。最终结合的效果应该能强化可读性，并有一种3D投影的感觉。</p>
+<p><strong>1 主要文本图层</strong><br>向前投影<br>白色/某种颜色（.88不透明度）</p>
+<p>颜色由当前状况决定。（例如，伤害数字、混合区域、正面和负面数值）</p>
+<p><strong>2 阴影文本图层</strong><br>位于文本稍后<br>昏黑（.33不透明度）</p>
+<p>这个图层通过像是在光照背景中投下阴影一样来强化可读性。这个图层应该一直存在。</p>
+<p><strong>3 幽灵文本图层</strong><br>很后面<br>昏白（.11不透明度）<br><strong>模糊底衬</strong><br>通过和背景的强对比来强化可读性。应该被用在重要信息上。（按钮交互、任务重点）</p>
+<ul>
+<li><strong>染色底衬</strong><ul>
+<li>黑色（.33不透明度）<br>让文本在光亮环境中可见。</li>
+<li>某种颜色（.66不透明度）<br>短暂出现以吸引注意力。（获得经验值、交互）</li>
+</ul>
+</li>
+</ul>
+<p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/177.jpg" alt="177"></p>
+<hr>
+<h2 id="8-着色器和视觉效果"><a href="#8-着色器和视觉效果" class="headerlink" title="8. 着色器和视觉效果"></a>8. 着色器和视觉效果</h2><p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/18.jpg" alt="18"></p>
+<p>着色器能提供重要的视觉效果，通过和世界和游戏内物体交互，更深层次地优化UI效果。（例如，边缘几何结构、高亮强调、屏幕效果）</p>
+<blockquote>
+<p>《全境封锁》的UI是对传统信息图形和视觉效果的一种独特混合。</p>
+</blockquote>
+<p>对原始信息图形（通过UI表现的关键游戏演出信息）和视觉效果（通过着色器）的均匀混合能很好地将视觉冲击感融合进游戏世界。</p>
+<p><strong>风格样式</strong><br>着色器应该尽可能地接近UI美术风格，遵循上文提到的视觉元素和风格样式指导（立体、明亮通透、最小化、灵活、即时）。</p>
+<p><strong>故障</strong><br>瞬时故障是着色器的一种强有力的风格元素。因为这些系统如此复杂，OS的瑕疵会更显而易见，故障发生也应该偶尔出现。</p>
+<p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/19.jpg" alt="19"></p>
+<hr>
+<h2 id="9-图标风格"><a href="#9-图标风格" class="headerlink" title="9. 图标风格"></a>9. 图标风格</h2><p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/199.jpg" alt="199"></p>
+<p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/20.jpg" alt="20"></p>
+<h3 id="9-1-创作图标"><a href="#9-1-创作图标" class="headerlink" title="9.1 创作图标"></a>9.1 创作图标</h3><ul>
+<li>纯白色</li>
+<li>风格化的简化</li>
+<li>没有梯度</li>
+<li>5%的屏幕占比且依然可读</li>
+</ul>
+<p>使用图标是《全境封锁》减少游戏世界、HUD和菜单中的文本数量的重要手段。标志应该清晰易懂，在小尺寸下依然易读。</p>
+<p>设计清晰图标的标准案例应该保证小尺寸下的实线不会太细，而整个标志应该看着像一块固态平板。</p>
+<hr>
+<h2 id="10-摄像机"><a href="#10-摄像机" class="headerlink" title="10. 摄像机"></a>10. 摄像机</h2><p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/21.jpg" alt="21"></p>
+<h3 id="10-1-角色即王"><a href="#10-1-角色即王" class="headerlink" title="10.1 角色即王"></a>10.1 角色即王</h3><p><strong>玩家是一个隐形的观众，偷偷看着角色和他的UI。这些信息能被摄像机收录，但它们其实总是和角色相关联，并一直朝向着角色。</strong></p>
+<h4 id="固定UI"><a href="#固定UI" class="headerlink" title="固定UI"></a>固定UI</h4><p>这种UI以一种<strong>软连接</strong>的方式被固定在摄像机上，但被设计成会朝向角色。这种UI可以保证重要信息被固定在屏幕上一直可读，特别是在需要引导的时候。<br><strong>相关摄像机</strong><br>HUD<br>大地图<br>主菜单<br>物品栏<br>战利品栏</p>
+<h4 id="游戏世界UI"><a href="#游戏世界UI" class="headerlink" title="游戏世界UI"></a>游戏世界UI</h4><p>这种UI以一种<strong>硬连接</strong>的方式固定在游戏世界的某个地点（骨架、物体）上，但一直朝向摄像机来保证可读性。这种UI会随着碰撞、动画和瞄准在屏幕上移动。这种UI也应该根据角色采取掩护的位置进行镜像翻转。<br><strong>相关摄像机</strong><br>1 默认摄像机<br>2 瞄准视角<br>3 室内默认摄像机<br>4 室内瞄准视角<br>5 低掩体左右<br>6 低掩体瞄准左右<br>7 低掩体边缘左右<br>8 低掩体边缘瞄准左右<br>9 高掩体左右<br>10 高掩体边缘左右<br>11 高掩体边缘瞄准左右<br>12 死亡和倒下</p>
+<p><img src="/image/2021-04-20-%E5%91%A8%E4%BA%8C-23-40-58UI%E7%AC%94%E8%AE%B0/22.jpg" alt="22"></p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>这份文档毕竟只是流出资料，很遗憾还有很多tips被遮挡无法翻译，最后两章的内容也缺失了。</p>
+<p>不过无论如何，这个指南依然非常有价值，值得慢慢研究。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%AD%97%E4%BD%93/" rel="tag"># 字体</a>
+              <a href="/tags/%E5%B9%B3%E9%9D%A2%E8%AE%BE%E8%AE%A1/" rel="tag"># 平面设计</a>
+              <a href="/tags/UI/" rel="tag"># UI</a>
+              <a href="/tags/UX/" rel="tag"># UX</a>
+              <a href="/tags/%E7%BF%BB%E8%AF%91/" rel="tag"># 翻译</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/04/14/2021-04-14-%E5%91%A8%E4%B8%89-22-41-44%E5%91%A8%E6%95%B4%E7%90%86/" rel="prev" title="【一周的鸽 vol.11】四月第3周">
+      <i class="fa fa-chevron-left"></i> 【一周的鸽 vol.11】四月第3周
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/05/09/2021-05-09-%E5%91%A8%E6%97%A5-20-10-28%E5%91%A8%E6%95%B4%E7%90%86/" rel="next" title="【一周的鸽 vol.12】五月第2周">
+      【一周的鸽 vol.12】五月第2周 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#The-Devision-User-Interface-style-guide"><span class="nav-number">1.</span> <span class="nav-text">The Devision - User Interface style guide</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0-%E7%9B%AE%E5%BD%95"><span class="nav-number">1.1.</span> <span class="nav-text">0. 目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%A0%B8%E5%BF%83%E6%94%AF%E6%9F%B1"><span class="nav-number">1.2.</span> <span class="nav-text">1. 核心支柱</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%B4%E7%B4%A0"><span class="nav-number">1.2.1.</span> <span class="nav-text">朴素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%B4%E8%A7%82%E6%98%93%E6%87%82"><span class="nav-number">1.2.2.</span> <span class="nav-text">直观易懂</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8A%9F%E8%83%BD%E6%80%A7"><span class="nav-number">1.2.3.</span> <span class="nav-text">功能性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E8%87%B4%E6%80%A7"><span class="nav-number">1.2.4.</span> <span class="nav-text">一致性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Diagetic"><span class="nav-number">1.2.5.</span> <span class="nav-text">Diagetic</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B2%89%E6%B5%B8%E6%84%9F"><span class="nav-number">1.2.6.</span> <span class="nav-text">沉浸感</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%AE%9A%E4%B9%89UI"><span class="nav-number">1.3.</span> <span class="nav-text">2. 定义UI</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%EF%BC%88Diagetic%EF%BC%89%E6%B8%B8%E6%88%8F%E5%86%85%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2"><span class="nav-number">1.3.1.</span> <span class="nav-text">2.1 （Diagetic）游戏内用户界面</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B8%B8%E6%88%8F%E5%86%85UI"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">游戏内UI</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E7%AB%8B%E4%BD%93%E6%80%9D%E8%80%83"><span class="nav-number">1.3.2.</span> <span class="nav-text">2.2 立体思考</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%AE%9A%E4%B9%89Tech"><span class="nav-number">1.4.</span> <span class="nav-text">3. 定义Tech</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E8%BF%99%E4%B8%AAOS%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">1.4.1.</span> <span class="nav-text">3.1 这个OS是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E8%BF%99%E4%B8%AAOS%E5%9C%A8%E5%93%AA%E9%87%8C"><span class="nav-number">1.4.2.</span> <span class="nav-text">3.2 这个OS在哪里</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#The-Shade%E8%A3%85%E7%BD%AE"><span class="nav-number">1.4.2.1.</span> <span class="nav-text">The Shade装置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%99%B9%E8%86%9C%E6%98%BE%E7%A4%BA"><span class="nav-number">1.4.2.2.</span> <span class="nav-text">虹膜显示</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%AE%9A%E4%B9%89%E9%A3%8E%E6%A0%BC"><span class="nav-number">1.5.</span> <span class="nav-text">4. 定义风格</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-%E7%A8%8B%E5%BA%8F%E7%94%9F%E6%88%90%E8%AE%BE%E8%AE%A1"><span class="nav-number">1.5.1.</span> <span class="nav-text">4.1 程序生成设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-%E8%A1%8C%E4%B8%BA%E4%BF%A1%E6%81%AF%E5%9B%BE"><span class="nav-number">1.5.2.</span> <span class="nav-text">4.2 行为信息图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-%E6%9C%89%E7%91%95%E7%96%B5%E7%9A%84%E8%BD%AF%E4%BB%B6"><span class="nav-number">1.5.3.</span> <span class="nav-text">4.3 有瑕疵的软件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E8%A7%86%E8%A7%89%E8%A6%81%E7%B4%A0"><span class="nav-number">1.6.</span> <span class="nav-text">5. 视觉要素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-%E7%82%B9%E3%80%81%E7%BA%BF%E6%9D%A1%E5%92%8C%E5%9B%BE%E5%BD%A2"><span class="nav-number">1.6.1.</span> <span class="nav-text">5.1 点、线条和图形</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E9%A2%9C%E8%89%B2"><span class="nav-number">1.7.</span> <span class="nav-text">6. 颜色</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-1-%E6%9A%96%E8%89%B2VS%E5%86%B7%E8%89%B2%EF%BC%9A%E4%B8%BB%E9%A2%98%E8%89%B2"><span class="nav-number">1.7.1.</span> <span class="nav-text">6.1 暖色VS冷色：主题色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2-%E6%AC%A1%E8%A6%81%E8%89%B2"><span class="nav-number">1.7.2.</span> <span class="nav-text">6.2 次要色</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E6%96%87%E6%9C%AC%E5%92%8C%E5%8F%AF%E8%AF%BB%E6%80%A7"><span class="nav-number">1.8.</span> <span class="nav-text">7. 文本和可读性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1-%E7%AB%8B%E4%BD%93%E6%96%87%E6%9C%AC"><span class="nav-number">1.8.1.</span> <span class="nav-text">7.1 立体文本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-2-%E5%9B%BE%E5%B1%82%E5%92%8C%E5%90%8E%E6%9C%9F%E5%A4%84%E7%90%86"><span class="nav-number">1.8.2.</span> <span class="nav-text">7.2 图层和后期处理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-%E7%9D%80%E8%89%B2%E5%99%A8%E5%92%8C%E8%A7%86%E8%A7%89%E6%95%88%E6%9E%9C"><span class="nav-number">1.9.</span> <span class="nav-text">8. 着色器和视觉效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-%E5%9B%BE%E6%A0%87%E9%A3%8E%E6%A0%BC"><span class="nav-number">1.10.</span> <span class="nav-text">9. 图标风格</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#9-1-%E5%88%9B%E4%BD%9C%E5%9B%BE%E6%A0%87"><span class="nav-number">1.10.1.</span> <span class="nav-text">9.1 创作图标</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-%E6%91%84%E5%83%8F%E6%9C%BA"><span class="nav-number">1.11.</span> <span class="nav-text">10. 摄像机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#10-1-%E8%A7%92%E8%89%B2%E5%8D%B3%E7%8E%8B"><span class="nav-number">1.11.1.</span> <span class="nav-text">10.1 角色即王</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%BA%E5%AE%9AUI"><span class="nav-number">1.11.1.1.</span> <span class="nav-text">固定UI</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B8%B8%E6%88%8F%E4%B8%96%E7%95%8CUI"><span class="nav-number">1.11.1.2.</span> <span class="nav-text">游戏世界UI</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8E%E8%AE%B0"><span class="nav-number">1.12.</span> <span class="nav-text">后记</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="顺风幽SecluSong"
+      src="/images/dice.jpg">
+  <p class="site-author-name" itemprop="name">顺风幽SecluSong</p>
+  <div class="site-description" itemprop="description">顺风幽的个人站点</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">61</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">75</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://bitzhangmo.github.io/" title="https:&#x2F;&#x2F;bitzhangmo.github.io" rel="noopener" target="_blank">zhangMo Blog</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://dygistdeity.github.io/" title="https:&#x2F;&#x2F;dygistdeity.github.io&#x2F;" rel="noopener" target="_blank">Faust's Lesparadisartificiels</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://timemachinet.github.io/" title="https:&#x2F;&#x2F;timemachinet.github.io&#x2F;" rel="noopener" target="_blank">yukimi</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SecluSong</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">198k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">3:01</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'OyOUtQYgTzwTixHyqgErsfjc-MdYXbMMI',
+      appKey     : '7OesyXI9qckpKl8JCMKPtT69',
+      placeholder: "随便说点什么呗？",
+      avatar     : 'retro',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : 'https://oyoutqyg.api.lncldglobal.com'
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

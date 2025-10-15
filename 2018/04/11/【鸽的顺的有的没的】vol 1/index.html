@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icon180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icon16.png">
+  <link rel="mask-icon" href="/images/icon.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"seclusong.xyz","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="vol.1 不知道副标题该写啥并且瞎写了标题的第一期【虽然想说拒绝无授权转载，但是其实也没啥好转的，而且本来这里也有很多无授权转载（笑）。】 这个栏目大概是写一些我平常随便收集到的梗还有豆知识还有奇怪的暂时没有放到其他专有栏目里的内容。 本期导视：  【游戏制作工具箱】如何（不作恶的）的吸引玩家玩下去——相关笔记 军武豆知识-轻武器弹药和火炮——相关词条简介 我看了京紫">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【鸽的顺的有的没的】vol-1">
+<meta property="og:url" content="https://seclusong.xyz/2018/04/11/%E3%80%90%E9%B8%BD%E7%9A%84%E9%A1%BA%E7%9A%84%E6%9C%89%E7%9A%84%E6%B2%A1%E7%9A%84%E3%80%91vol%201/index.html">
+<meta property="og:site_name" content="SecluSong">
+<meta property="og:description" content="vol.1 不知道副标题该写啥并且瞎写了标题的第一期【虽然想说拒绝无授权转载，但是其实也没啥好转的，而且本来这里也有很多无授权转载（笑）。】 这个栏目大概是写一些我平常随便收集到的梗还有豆知识还有奇怪的暂时没有放到其他专有栏目里的内容。 本期导视：  【游戏制作工具箱】如何（不作恶的）的吸引玩家玩下去——相关笔记 军武豆知识-轻武器弹药和火炮——相关词条简介 我看了京紫">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2018-04-11T13:11:18.000Z">
+<meta property="article:modified_time" content="2019-07-24T10:40:25.000Z">
+<meta property="article:author" content="顺风幽SecluSong">
+<meta property="article:tag" content="游戏设计">
+<meta property="article:tag" content="豆知识">
+<meta property="article:tag" content="杂谈">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://seclusong.xyz/2018/04/11/%E3%80%90%E9%B8%BD%E7%9A%84%E9%A1%BA%E7%9A%84%E6%9C%89%E7%9A%84%E6%B2%A1%E7%9A%84%E3%80%91vol%201/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>【鸽的顺的有的没的】vol-1 | SecluSong</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="SecluSong" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">SecluSong</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">幽歌</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">21</span></a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://seclusong.xyz/2018/04/11/%E3%80%90%E9%B8%BD%E7%9A%84%E9%A1%BA%E7%9A%84%E6%9C%89%E7%9A%84%E6%B2%A1%E7%9A%84%E3%80%91vol%201/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dice.jpg">
+      <meta itemprop="name" content="顺风幽SecluSong">
+      <meta itemprop="description" content="顺风幽的个人站点">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SecluSong">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          【鸽的顺的有的没的】vol-1
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-04-11 21:11:18" itemprop="dateCreated datePublished" datetime="2018-04-11T21:11:18+08:00">2018-04-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-07-24 18:40:25" itemprop="dateModified" datetime="2019-07-24T18:40:25+08:00">2019-07-24</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2018/04/11/%E3%80%90%E9%B8%BD%E7%9A%84%E9%A1%BA%E7%9A%84%E6%9C%89%E7%9A%84%E6%B2%A1%E7%9A%84%E3%80%91vol%201/" class="post-meta-item leancloud_visitors" data-flag-title="【鸽的顺的有的没的】vol-1" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2018/04/11/%E3%80%90%E9%B8%BD%E7%9A%84%E9%A1%BA%E7%9A%84%E6%9C%89%E7%9A%84%E6%B2%A1%E7%9A%84%E3%80%91vol%201/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2018/04/11/%E3%80%90%E9%B8%BD%E7%9A%84%E9%A1%BA%E7%9A%84%E6%9C%89%E7%9A%84%E6%B2%A1%E7%9A%84%E3%80%91vol%201/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="vol-1-不知道副标题该写啥并且瞎写了标题的第一期"><a href="#vol-1-不知道副标题该写啥并且瞎写了标题的第一期" class="headerlink" title="vol.1 不知道副标题该写啥并且瞎写了标题的第一期"></a>vol.1 不知道副标题该写啥并且瞎写了标题的第一期</h1><p>【虽然想说拒绝无授权转载，但是其实也没啥好转的，而且本来这里也有很多无授权转载（笑）。】</p>
+<p>这个栏目大概是写一些我平常随便收集到的<strong>梗</strong>还有<strong>豆知识</strong>还有<strong>奇怪的暂时没有放到其他专有栏目里的内容</strong>。</p>
+<p>本期导视：</p>
+<ul>
+<li>【游戏制作工具箱】如何（不作恶的）的吸引玩家玩下去——相关笔记</li>
+<li>军武豆知识-轻武器弹药和火炮——相关词条简介</li>
+<li>我看了京紫</li>
+</ul>
+<span id="more"></span>
+<hr>
+<h2 id="看了最新一期卡姐翻译的【游戏制作工具箱】，拣了一些对自己有用的内容。"><a href="#看了最新一期卡姐翻译的【游戏制作工具箱】，拣了一些对自己有用的内容。" class="headerlink" title="看了最新一期卡姐翻译的【游戏制作工具箱】，拣了一些对自己有用的内容。"></a>看了最新一期卡姐翻译的<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av21786911">【游戏制作工具箱】</a>，拣了一些对自己有用的内容。</h2><blockquote>
+<h3 id="节奏Pacing能让游戏吸引玩家一直游玩而不会使其觉得疲倦"><a href="#节奏Pacing能让游戏吸引玩家一直游玩而不会使其觉得疲倦" class="headerlink" title="节奏Pacing能让游戏吸引玩家一直游玩而不会使其觉得疲倦"></a><strong>节奏Pacing</strong>能让游戏吸引玩家一直游玩而不会使其觉得疲倦</h3><ol>
+<li>应该安排<strong>不同强度的核心玩法Pillars/演出</strong>来保持节奏。适用于线性故事强的类电影游戏。</li>
+<li>一步步展示<strong>新鲜内容</strong>，并适当留下<strong>悬念</strong>让玩家好奇。需要优秀的关卡和玩法设计。</li>
+<li>为玩家<strong>规划目标</strong>，将长目标拆分为短目标；设计让玩家可以优化玩法的选项，以达成<strong>正反馈循环</strong>。举例：技能树；可见的成就回报。</li>
+<li>适当的<strong>难度曲线</strong>以让玩家不断挑战；使用随机生成并降低失败惩罚（RL类）。需要优秀的难度设计。<h3 id="一些关键词（原视频中表示，其中一些概念对于游戏设计者来说是作恶）"><a href="#一些关键词（原视频中表示，其中一些概念对于游戏设计者来说是作恶）" class="headerlink" title="一些关键词（原视频中表示，其中一些概念对于游戏设计者来说是作恶）"></a>一些关键词（原视频中表示，其中一些概念对于游戏设计者来说是作恶）</h3></li>
+<li>斯金纳箱：<br>著名的小白鼠按按钮掉食物的实验。具体可以自己搜索。值得一提的是，那其中的最后一个实验——概率掉落食物，导致小鼠不知疲倦地按按钮——直接关系到现在依然主流的手游机制：抽卡机制。更讽刺的是，小鼠甚至会自己发明玄学抽卡方式（比如转圈或者撞墙），只是因为它在这样做时恰巧有食物掉落。</li>
+<li>资源衰减：<br>没有搜索到直接相关的内容。如果靠字面意思猜测：随着玩家操作次数增多而降低收益，逼迫玩家投入更多资源；随时间减少玩家手上的资源，强迫玩家在限定时间内消耗掉资源。</li>
+<li>损失厌恶：<br>查到了经济学的概念。玩家会乐意接受收益而厌恶损失，哪怕两者最后导向了同一结果。举例：你会乐意接受一个苹果，而厌恶获得两个苹果后失去一个。更具体的解析可以看<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/437d077e875a?from=timeline">这篇文章</a>。</li>
+</ol>
+</blockquote>
+<hr>
+<h2 id="为项目准备稍微看了一点点点点的军武知识"><a href="#为项目准备稍微看了一点点点点的军武知识" class="headerlink" title="为项目准备稍微看了一点点点点的军武知识"></a>为项目准备稍微看了一点点点点的军武知识</h2><p><del>基本上</del>都是百度的</p>
+<ul>
+<li><strong>曳光弹</strong>：因为几乎所有的子弹/炮弹都是不会发光的，而夜晚作战以及需要连续射击的武器都需要弹道参考，所以人们将表面覆盖有燃烧发光涂料的子弹炮弹以一定比例加入其他弹药中，以期在战斗中显示弹道。</li>
+<li><strong>穿甲弹</strong>：为了穿透很厚的金属装甲，人们将铅质子弹弹芯换成密度更大的钢甚至贫铀。后来则在子弹中加入铝热燃料，在击中装甲时以高温熔化装甲以达到穿甲的效果——称为穿甲燃烧弹。再后来伟大的人类为了杀害同类又发明了什么可怕的黑科技，我就看不大懂了（笑）。</li>
+<li><strong>空尖弹</strong>：将弹头制成中空，这样弹头在进入人体时会膨胀扁平，对组织造成大量伤害。但是由于中空质量很小，所以精度和射程都很一般。由于过于反人类所以某公约说在国际战争中不让用（但是可以在狩猎、反恐中使用），可真的打仗谁管国际法呢（笑）。同理，后来还有更反人类的弹头出现——真不愧是人类。</li>
+<li><strong>加农炮</strong>：音译Cannon，来自拉丁文，意为管子。这种炮一般炮管细而长，仰角不能太高，以追求夸张的长射程。</li>
+<li><strong>迫击炮</strong>：举例就是抗日片里常见的步兵阵地战用装备，但其实迫击炮并不只有那一种。迫击炮仰角很高而炮身不长，炮弹多是抛物线。其优势主要在可以越过大多数掩体而伤害到后方的敌人。</li>
+<li><strong>榴弹</strong>：即会爆炸的子弹/炮弹。其内部填充炸药，按照伤害类型也可以分成杀伤弹和爆破弹。杀伤弹会在弹身预留破片，爆炸时碎裂四散的破片会对人员造成有效杀伤；爆破弹大量填充炸药，以爆炸时的冲击破坏建筑或载具的结构。</li>
+<li><strong>榴弹炮</strong>：这类炮并不是根据功用而是根据弹种分类的。顾名思义它是发射榴弹的炮。在火炮刚投入使用的时候，榴弹炮并不能和上文所提的两种炮共用，毕竟当时的技术，很难做到能把会爆炸的炮弹射的又高又远且不会炸膛。而在现代，几乎看不见射实心弹的火炮——不管是加农炮还是迫击炮，基本上都是发射榴弹或者其他特殊弹种了。</li>
+<li><strong>线膛枪/来复枪</strong>：音译Rifle，意为膛线。这种枪如此命名是因为其使用膛线。其实现在几乎所有枪械火炮都会使用膛线以保证射击精度，而甚至有些并没有使用膛线的枪械也会使用来复这一名称。可以说词汇的误用古今中外皆难幸免了。</li>
+<li><strong>滑膛枪</strong>：相对于线膛枪，内部没有膛线。因为对精度和射程要求不高，现在多见于霰弹枪和猎枪。</li>
+</ul>
+<blockquote>
+<p>人类在折磨屠杀同类这方面是真的pro。<br>突然想起奥运会组委会认为电竞过于暴力没有奥林匹克精神。同意设立了拳击射击标枪的他们可以说是很讽刺了（笑）。</p>
+</blockquote>
+<hr>
+<h2 id="补完了京紫"><a href="#补完了京紫" class="headerlink" title="补完了京紫"></a>补完了京紫</h2><p>行吧。很厉害了。起码作画是真的nb。</p>
+<p>前面的小剧场都很棒，一集一个泪点，二十分钟整个情绪都能被调动起来。</p>
+<p>被人诟病的最后两集个人感觉也不错，也就第12集节奏稍微有点跳戏，打着架还讨论人生，可以说很悠闲了。</p>
+<p>一方面小说原作摆在那里，另一方面京阿尼的构成编剧监督也是真的厉害。亲情、爱情、离别、反战，虽然都是很普通而常见的设定，能这样把故事讲出来，让人不得不佩服。</p>
+<p>就，感觉自己要学习的还有很多。</p>
+<p>京紫，吹爆！</p>
+<p>差不多就这样。</p>
+<ul>
+<li>注：作品名《紫罗兰永恒花园》</li>
+</ul>
+<hr>
+<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><p>重启博客之后补充了一下标签和分类。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1/" rel="tag"># 游戏设计</a>
+              <a href="/tags/%E8%B1%86%E7%9F%A5%E8%AF%86/" rel="tag"># 豆知识</a>
+              <a href="/tags/%E6%9D%82%E8%B0%88/" rel="tag"># 杂谈</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2018/04/10/RPG%E6%B8%B8%E6%88%8F%E8%A7%92%E8%89%B2%E6%88%90%E9%95%BF/" rel="prev" title="RPG游戏中角色成长、等级和经验值的关系浅析">
+      <i class="fa fa-chevron-left"></i> RPG游戏中角色成长、等级和经验值的关系浅析
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2018/04/17/%E6%B6%88%E9%99%A4%E7%B1%BB%E6%B8%B8%E6%88%8F%E8%AF%95%E8%A7%A3%E6%9E%90/" rel="next" title="消除类游戏试解析">
+      消除类游戏试解析 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vol-1-%E4%B8%8D%E7%9F%A5%E9%81%93%E5%89%AF%E6%A0%87%E9%A2%98%E8%AF%A5%E5%86%99%E5%95%A5%E5%B9%B6%E4%B8%94%E7%9E%8E%E5%86%99%E4%BA%86%E6%A0%87%E9%A2%98%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9C%9F"><span class="nav-number">1.</span> <span class="nav-text">vol.1 不知道副标题该写啥并且瞎写了标题的第一期</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9C%8B%E4%BA%86%E6%9C%80%E6%96%B0%E4%B8%80%E6%9C%9F%E5%8D%A1%E5%A7%90%E7%BF%BB%E8%AF%91%E7%9A%84%E3%80%90%E6%B8%B8%E6%88%8F%E5%88%B6%E4%BD%9C%E5%B7%A5%E5%85%B7%E7%AE%B1%E3%80%91%EF%BC%8C%E6%8B%A3%E4%BA%86%E4%B8%80%E4%BA%9B%E5%AF%B9%E8%87%AA%E5%B7%B1%E6%9C%89%E7%94%A8%E7%9A%84%E5%86%85%E5%AE%B9%E3%80%82"><span class="nav-number">1.1.</span> <span class="nav-text">看了最新一期卡姐翻译的【游戏制作工具箱】，拣了一些对自己有用的内容。</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8A%82%E5%A5%8FPacing%E8%83%BD%E8%AE%A9%E6%B8%B8%E6%88%8F%E5%90%B8%E5%BC%95%E7%8E%A9%E5%AE%B6%E4%B8%80%E7%9B%B4%E6%B8%B8%E7%8E%A9%E8%80%8C%E4%B8%8D%E4%BC%9A%E4%BD%BF%E5%85%B6%E8%A7%89%E5%BE%97%E7%96%B2%E5%80%A6"><span class="nav-number">1.1.1.</span> <span class="nav-text">节奏Pacing能让游戏吸引玩家一直游玩而不会使其觉得疲倦</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E5%85%B3%E9%94%AE%E8%AF%8D%EF%BC%88%E5%8E%9F%E8%A7%86%E9%A2%91%E4%B8%AD%E8%A1%A8%E7%A4%BA%EF%BC%8C%E5%85%B6%E4%B8%AD%E4%B8%80%E4%BA%9B%E6%A6%82%E5%BF%B5%E5%AF%B9%E4%BA%8E%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%E8%80%85%E6%9D%A5%E8%AF%B4%E6%98%AF%E4%BD%9C%E6%81%B6%EF%BC%89"><span class="nav-number">1.1.2.</span> <span class="nav-text">一些关键词（原视频中表示，其中一些概念对于游戏设计者来说是作恶）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E9%A1%B9%E7%9B%AE%E5%87%86%E5%A4%87%E7%A8%8D%E5%BE%AE%E7%9C%8B%E4%BA%86%E4%B8%80%E7%82%B9%E7%82%B9%E7%82%B9%E7%82%B9%E7%9A%84%E5%86%9B%E6%AD%A6%E7%9F%A5%E8%AF%86"><span class="nav-number">1.2.</span> <span class="nav-text">为项目准备稍微看了一点点点点的军武知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A1%A5%E5%AE%8C%E4%BA%86%E4%BA%AC%E7%B4%AB"><span class="nav-number">1.3.</span> <span class="nav-text">补完了京紫</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0"><span class="nav-number">1.4.</span> <span class="nav-text">更新</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="顺风幽SecluSong"
+      src="/images/dice.jpg">
+  <p class="site-author-name" itemprop="name">顺风幽SecluSong</p>
+  <div class="site-description" itemprop="description">顺风幽的个人站点</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">61</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">75</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://bitzhangmo.github.io/" title="https:&#x2F;&#x2F;bitzhangmo.github.io" rel="noopener" target="_blank">zhangMo Blog</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://dygistdeity.github.io/" title="https:&#x2F;&#x2F;dygistdeity.github.io&#x2F;" rel="noopener" target="_blank">Faust's Lesparadisartificiels</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://timemachinet.github.io/" title="https:&#x2F;&#x2F;timemachinet.github.io&#x2F;" rel="noopener" target="_blank">yukimi</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SecluSong</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">198k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">3:01</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'OyOUtQYgTzwTixHyqgErsfjc-MdYXbMMI',
+      appKey     : '7OesyXI9qckpKl8JCMKPtT69',
+      placeholder: "随便说点什么呗？",
+      avatar     : 'retro',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : 'https://oyoutqyg.api.lncldglobal.com'
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
