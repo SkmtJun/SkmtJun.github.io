@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:xhtml="http://www.w3.org/1999/xhtml"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="1358px"
+   height="671px"
+   viewBox="-0.5 -0.5 1358 671"
+   content="&lt;mxfile host=&quot;Electron&quot; modified=&quot;2020-01-15T15:15:40.365Z&quot; agent=&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/12.3.2 Chrome/78.0.3904.113 Electron/7.1.2 Safari/537.36&quot; etag=&quot;TJYK4WvhvhY52J2KI8zw&quot; version=&quot;12.3.2&quot; type=&quot;device&quot; pages=&quot;1&quot;&gt;&lt;diagram id=&quot;fr1wwv4_BxcGhwhcOlIa&quot; name=&quot;Page-1&quot;&gt;7Vpbc+MmFP41nmkf4tFd8qPt2NtttzOZup1uHomEZRoEKsIbub++IIF19d1ZZzc7zsTicEDA+b5PB+SBPU3yDwykq99pBPHAMqJ8YN8PLMv0zUB8SctGWQxtiRmKlK0yLNB/UDsq6xpFMGs4ckoxR2nTGFJCYMgbNsAYfWm6LSlu3jUFMewYFiHAXevfKOKr0hpYfmX/BaJ4pe9seqOyJgHaWc0kW4GIvjRMMOdzSrga4oKuWQiFeQFIJr4eGB24sxXncqrjgTUXf0vpPowpjTEEKcqGIU2EOcyEy3wJEoTlQuueJmVPE9mTuKE9G9hTRikvr5J8CrEMlw5EOar5jtrtSjBI+DENAm86hnEa/Wq6v5EPf00c/jG/c8tevgC8ViucccD4DMNEdPsJLWG4CcXil0vGNzoOMBJhUUXK+IrGlAA8q6wTRtckgvLehihVPp8oTYXRFMZ/IOcbhTGw5lSYVjzBqhbmiH+uXT/KroauKt3nqueisNEFwtnmc71QayWLVbOipNvJOKqBCCjZEwyeIJ6A8DkupjGlmDJRRyiBynveDm4dJvYk44w+byFqq0a6n4Fl+8Vn69lXo0AZdRhRRVyZsnIMu8OsqQpYDPkeP2eLSyEhkCZQLJJop/TDGBq2q5imBOTOVtxhEAOOvjSHChSV4m1X294fKBKTqFzocpmJodUALC5qg6hMBaxPgLjZgfhHgjgCsuGCA94DboyFnslIv6wQh4sUFIv7IjS1CVGQpaXILVEuoT5ZIoxroTQM735s9eCrBYa5JT/HIUvNBjIO8/246MZRBc32VdBeKgk1tQiu6vKpjX2BbMTp5KBYnagsuBAGeUMPi9tPnpi4iuXVT1TMVjyNIkhEvVgzGazClzMUx5D9fJE8mWfK05WkRstcJW2PNdHrl7mrCtB+rfsq8uQcKU/+AXkyzWD01uXI6QE+INHTpgPiJkQPSNEpynMAOvM/N6n0j3VzNSSJPJTUMi/L2SNll+iUauBYo8bDxh716Jbbo1vBa8nWqBO8GYnqilWLn/fvWqZ2xQLdZUUIRNZoWH6aF8uj67cyRygvMuckxZDD24ratnCpqFnHq9r3lnR5V0q6RKs3r2p6f/g6zLgOJ87dh2wf9BUNHhsseJ97imPhfeihbRim3ZB5/+1vKbp7ip7s9RLEd1PeK/X8FjLnSzb2psCL33o4BcEBKhalB8iQCDxkO/j5Xhl4JyloBOdwbswY2NQcUsnArIeSOgO0fKdBdctrnVkdauAZVovQ5Ri+ugR4HQX4Y00IIvGPNL4NsMBrBd26dRpvdqMHSXTVQ88LtfHU04BvW8h2CNS5CYDC3chubh99v4WnUjhVq+tLhN8B2VTlsT804pBGuK57Y40IelI8wHhXFEg0li+2RCnEIMtQ2IrWUed9xl6Gn3vWeFiwvj2tOPas0OvHWw1PfXByL9x7aPy3pcdswbScZkd6uh0FzY487zgNOzUzc429iVkzz7raNqr79nHxjNLbPnety2lpnXpc9v2ycP/Zlth6mG5gXoVyjukNfdOxArf8HzTwvD06PpWAtt8koNNm8pUI6HjePgJ2x6VfvJ7pr+dx842U2X3QzhF5j29ndSrk70hbX+NtrShWv0ApQ1r9csie/Q8=&lt;/diagram&gt;&lt;/mxfile&gt;"
+   id="svg128"
+   sodipodi:docname="11_statemachine.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata132">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     id="namedview130"
+     showgrid="false"
+     inkscape:zoom="0.51546392"
+     inkscape:cx="155.13786"
+     inkscape:cy="-76.029899"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg128" />
+  <defs
+     id="defs4">
+    <style
+       type="text/css"
+       id="style2">@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);</style>
+  </defs>
+  <path
+     style="fill:none;stroke:#737373;stroke-width:3;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path6"
+     pointer-events="stroke"
+     stroke-miterlimit="10"
+     d="M 70.33,244.33 H 368.56" />
+  <path
+     style="fill:#737373;stroke:#737373;stroke-width:3;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path8"
+     pointer-events="all"
+     stroke-miterlimit="10"
+     d="m 375.31,244.33 -9,4.5 2.25,-4.5 -2.25,-4.5 z" />
+  <path
+     style="fill:none;stroke:#737373;stroke-width:3;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path24"
+     pointer-events="stroke"
+     stroke-miterlimit="10"
+     d="m 453.67,284.33 v 115 q 0,10 10,10 h 339.89" />
+  <path
+     style="fill:#737373;stroke:#737373;stroke-width:3;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path26"
+     pointer-events="all"
+     stroke-miterlimit="10"
+     d="m 810.31,409.33 -9,4.5 2.25,-4.5 -2.25,-4.5 z" />
+  <rect
+     style="fill:#006da2;stroke:#000000"
+     id="rect34"
+     pointer-events="all"
+     ry="12"
+     rx="12"
+     height="80"
+     width="150"
+     y="204"
+     x="379" />
+  <g
+     id="g40"
+     transform="translate(406.5,228.5)">
+    <switch
+       id="switch38">
+      <foreignObject
+         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+         height="30"
+         width="94"
+         pointer-events="all"
+         style="overflow:visible;">
+        <xhtml:div
+           style="display: inline-block; font-size: 27px; font-family: &quot;Source Sans Pro&quot;; color: rgb(242, 242, 242); line-height: 1.2; vertical-align: top; width: 94px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+          <xhtml:div
+             style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">Standby</xhtml:div>
+        </xhtml:div>
+      </foreignObject>
+      <text
+         style="font-size:27px;font-family:'Source Sans Pro';text-anchor:middle;fill:#f2f2f2"
+         id="text36"
+         font-size="27px"
+         y="29"
+         x="47">Standby</text>
+    </switch>
+  </g>
+  <path
+     style="fill:none;stroke:#737373;stroke-width:3;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path42"
+     pointer-events="stroke"
+     stroke-miterlimit="10"
+     d="m 851.17,114.33 v 120 q 0,10 -10,10 h -302.4" />
+  <path
+     style="fill:#737373;stroke:#737373;stroke-width:3;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path44"
+     pointer-events="all"
+     stroke-miterlimit="10"
+     d="m 532.02,244.33 9,-4.5 -2.25,4.5 2.25,4.5 z" />
+  <path
+     style="fill:none;stroke:#737373;stroke-width:3;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path52"
+     pointer-events="stroke"
+     stroke-miterlimit="10"
+     d="m 888.67,114 v 127.83 117.4" />
+  <path
+     style="fill:#737373;stroke:#737373;stroke-width:3;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path54"
+     pointer-events="all"
+     stroke-miterlimit="10"
+     d="m 888.67,365.98 -4.5,-9 4.5,2.25 4.5,-2.25 z" />
+  <path
+     style="fill:none;stroke:#737373;stroke-width:3;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path62"
+     pointer-events="stroke"
+     stroke-miterlimit="10"
+     d="m 963.67,74.33 h 250 q 10,0 10,10 V 406 q 0,10 -10,10 H 975.44" />
+  <path
+     style="fill:#737373;stroke:#737373;stroke-width:3;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path64"
+     pointer-events="all"
+     stroke-miterlimit="10"
+     d="m 968.69,416 9,-4.5 -2.25,4.5 2.25,4.5 z" />
+  <rect
+     style="fill:#006da2;stroke:#000000"
+     id="rect72"
+     pointer-events="all"
+     ry="12"
+     rx="12"
+     height="80"
+     width="150"
+     y="34"
+     x="814" />
+  <g
+     id="g78"
+     transform="translate(841.5,58.5)">
+    <switch
+       id="switch76">
+      <foreignObject
+         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+         height="30"
+         width="94"
+         pointer-events="all"
+         style="overflow:visible;">
+        <xhtml:div
+           style="display: inline-block; font-size: 27px; font-family: &quot;Source Sans Pro&quot;; color: rgb(242, 242, 242); line-height: 1.2; vertical-align: top; width: 96px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+          <xhtml:div
+             style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">Running</xhtml:div>
+        </xhtml:div>
+      </foreignObject>
+      <text
+         style="font-size:27px;font-family:'Source Sans Pro';text-anchor:middle;fill:#f2f2f2"
+         id="text74"
+         font-size="27px"
+         y="29"
+         x="47">Running</text>
+    </switch>
+  </g>
+  <path
+     style="fill:none;stroke:#737373;stroke-width:3;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path80"
+     pointer-events="stroke"
+     stroke-miterlimit="10"
+     d="m 888.67,449.33 v 57.5 q 0,10 0.05,20 l 0.23,47.07" />
+  <path
+     style="fill:#737373;stroke:#737373;stroke-width:3;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path82"
+     pointer-events="all"
+     stroke-miterlimit="10"
+     d="m 888.98,580.65 -4.54,-8.98 4.51,2.23 4.49,-2.28 z" />
+  <rect
+     style="fill:#006da2;stroke:#000000"
+     id="rect90"
+     pointer-events="all"
+     ry="12"
+     rx="12"
+     height="80"
+     width="150"
+     y="369"
+     x="814" />
+  <g
+     id="g96"
+     transform="translate(833.5,393.5)">
+    <switch
+       id="switch94">
+      <foreignObject
+         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+         height="30"
+         width="110"
+         pointer-events="all"
+         style="overflow:visible;">
+        <xhtml:div
+           style="display: inline-block; font-size: 27px; font-family: &quot;Source Sans Pro&quot;; color: rgb(242, 242, 242); line-height: 1.2; vertical-align: top; width: 110px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+          <xhtml:div
+             style="display:inline-block;text-align:inherit;text-decoration:inherit;white-space:normal;">Complete</xhtml:div>
+        </xhtml:div>
+      </foreignObject>
+      <text
+         style="font-size:27px;font-family:'Source Sans Pro';text-anchor:middle;fill:#f2f2f2"
+         id="text92"
+         font-size="27px"
+         y="29"
+         x="55">Complete</text>
+    </switch>
+  </g>
+  <path
+     style="fill:none;stroke:#737373;stroke-width:3;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path98"
+     pointer-events="stroke"
+     stroke-miterlimit="10"
+     d="m 453.67,204.33 v -120 q 0,-10 10,-10 h 339.89" />
+  <path
+     style="fill:#737373;stroke:#737373;stroke-width:3;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path100"
+     pointer-events="all"
+     stroke-miterlimit="10"
+     d="m 810.31,74.33 -9,4.5 2.25,-4.5 -2.25,-4.5 z" />
+  <path
+     style="fill:none;stroke:#737373;stroke-width:3;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path108"
+     pointer-events="stroke"
+     stroke-miterlimit="10"
+     d="m 416.17,204.33 v -120 q 0,-10 -10,-10 H 290.33 q -10,0 -10,10 v 130 q 0,10 10,10 h 78.23" />
+  <path
+     style="fill:#737373;stroke:#737373;stroke-width:3;stroke-miterlimit:10"
+     inkscape:connector-curvature="0"
+     id="path110"
+     pointer-events="all"
+     stroke-miterlimit="10"
+     d="m 375.31,224.33 -9,4.5 2.25,-4.5 -2.25,-4.5 z" />
+  <circle
+     style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.14878297;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="path1024"
+     cx="51.807228"
+     cy="244.15633"
+     r="20" />
+  <g
+     id="g1053"
+     transform="translate(-51.56688,40.00938)">
+    <path
+       transform="translate(-0.5,-0.5)"
+       id="path1024-6"
+       d="m 941.04688,541.14062 a 19.205021,19.205021 0 0 0 -19.20508,19.20508 19.205021,19.205021 0 0 0 19.20508,19.20508 19.205021,19.205021 0 0 0 19.20507,-19.20508 19.205021,19.205021 0 0 0 -19.20507,-19.20508 z m 0,3.20508 a 16,16 0 0 1 16,16 16,16 0 0 1 -16,16 16,16 0 0 1 -16,-16 16,16 0 0 1 16,-16 z"
+       style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.02362204;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <circle
+       r="10"
+       cy="559.8457"
+       cx="940.54688"
+       id="path1043"
+       style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.26540446;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';letter-spacing:0px;word-spacing:0px;fill:#339433;fill-opacity:1;stroke:none"
+     x="19.587189"
+     y="203.93761"
+     id="text1057"><tspan
+       sodipodi:role="line"
+       id="tspan1055"
+       x="19.587189"
+       y="203.93761"
+       style="font-size:26.66666603px;fill:#333333;fill-opacity:1">Initial</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';letter-spacing:0px;word-spacing:0px;fill:#339433;fill-opacity:1;stroke:none"
+     x="92.817398"
+     y="275.77353"
+     id="text1057-5"><tspan
+       sodipodi:role="line"
+       id="tspan1055-1"
+       x="92.817398"
+       y="275.77353"
+       style="font-size:26.66666603px;fill:#333333;fill-opacity:1">startElementLifecycle</tspan></text>
+  <rect
+     style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.02362204;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect1077"
+     width="58.200001"
+     height="30.07"
+     x="296.76001"
+     y="59.450001" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';letter-spacing:0px;word-spacing:0px;fill:#339433;fill-opacity:1;stroke:none"
+     x="302.3374"
+     y="80.803535"
+     id="text1057-4"><tspan
+       sodipodi:role="line"
+       x="302.3374"
+       y="80.803535"
+       style="font-size:26.66666603px;fill:#333333;fill-opacity:1"
+       id="tspan1097">Skip</tspan></text>
+  <rect
+     style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.14708567;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect1077-8"
+     width="63.049999"
+     height="30.07"
+     x="617.83002"
+     y="55.084999" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';letter-spacing:0px;word-spacing:0px;fill:#339433;fill-opacity:1;stroke:none"
+     x="621.46741"
+     y="82.25853"
+     id="text1057-4-2"><tspan
+       sodipodi:role="line"
+       x="621.46741"
+       y="82.25853"
+       style="font-size:26.66666603px;fill:#333333;fill-opacity:1"
+       id="tspan1097-9">Start</tspan></text>
+  <rect
+     style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.02362204;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect1155"
+     width="188.17999"
+     height="114.46"
+     x="1124.17"
+     y="191.37" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';letter-spacing:0px;word-spacing:0px;fill:#339433;fill-opacity:1;stroke:none"
+     x="1224.9008"
+     y="222.42354"
+     id="text1057-55"><tspan
+       sodipodi:role="line"
+       id="tspan1055-6"
+       x="1224.9008"
+       y="222.42354"
+       style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#333333;fill-opacity:1">Stop</tspan><tspan
+       sodipodi:role="line"
+       x="1228.5466"
+       y="255.75687"
+       style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#333333;fill-opacity:1"
+       id="tspan1151">[overridden or </tspan><tspan
+       sodipodi:role="line"
+       x="1224.9008"
+       y="289.09021"
+       style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#333333;fill-opacity:1"
+       id="tspan1153">stop trigger]</tspan></text>
+  <rect
+     style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.02362204;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect1175"
+     width="261.89999"
+     height="39.77"
+     x="756.06"
+     y="507.59" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';letter-spacing:0px;word-spacing:0px;fill:#339433;fill-opacity:1;stroke:none"
+     x="765.50598"
+     y="533.86499"
+     id="text1057-5-4"><tspan
+       sodipodi:role="line"
+       id="tspan1055-1-4"
+       x="765.50598"
+       y="533.86499"
+       style="font-size:26.66666603px;fill:#333333;fill-opacity:1">stopElementLifecycle</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';letter-spacing:0px;word-spacing:0px;fill:#339433;fill-opacity:1;stroke:none"
+     x="967.85071"
+     y="206.90355"
+     id="text1057-55-0"><tspan
+       sodipodi:role="line"
+       id="tspan1055-6-4"
+       x="967.85071"
+       y="206.90355"
+       style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#333333;fill-opacity:1">End</tspan><tspan
+       sodipodi:role="line"
+       x="967.85071"
+       y="240.23688"
+       style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#333333;fill-opacity:1"
+       id="tspan1153-1">[complete]</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';letter-spacing:0px;word-spacing:0px;fill:#339433;fill-opacity:1;stroke:none"
+     x="690.43073"
+     y="230.85355"
+     id="text1057-55-0-9"><tspan
+       sodipodi:role="line"
+       id="tspan1055-6-4-8"
+       x="690.43073"
+       y="230.85355"
+       style="font-size:26.66666603px;line-height:1.5;text-align:center;text-anchor:middle;fill:#333333;fill-opacity:1">End</tspan><tspan
+       sodipodi:role="line"
+       x="690.43073"
+       y="270.85355"
+       style="font-size:26.66666603px;line-height:1.5;text-align:center;text-anchor:middle;fill:#333333;fill-opacity:1"
+       id="tspan1153-1-7">[not complete]</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';letter-spacing:0px;word-spacing:0px;fill:#339433;fill-opacity:1;stroke:none"
+     x="610.89075"
+     y="399.08353"
+     id="text1057-55-2"><tspan
+       sodipodi:role="line"
+       id="tspan1055-6-8"
+       x="610.89075"
+       y="399.08353"
+       style="font-size:26.66666603px;line-height:1.5;text-align:center;text-anchor:middle;fill:#333333;fill-opacity:1">Stop</tspan><tspan
+       sodipodi:role="line"
+       x="610.89075"
+       y="439.08353"
+       style="font-size:26.66666603px;line-height:1.5;text-align:center;text-anchor:middle;fill:#333333;fill-opacity:1"
+       id="tspan1153-7">[overridden or stop trigger]</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:1.25;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';letter-spacing:0px;word-spacing:0px;fill:#339433;fill-opacity:1;stroke:none"
+     x="936.71741"
+     y="607.51355"
+     id="text1057-7"><tspan
+       sodipodi:role="line"
+       id="tspan1055-8"
+       x="936.71741"
+       y="607.51355"
+       style="font-size:26.66666603px;fill:#333333;fill-opacity:1">Final</tspan></text>
+</svg>
